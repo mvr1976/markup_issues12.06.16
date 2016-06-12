@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title= portfolio
+    link(rel='stylesheet', href='app/bower/normalize-css/normalize.css')   
+    link(rel='stylesheet', href='app/css/main.css')
+    script(src='app/bower/jquery/dist/jquery.min.js')
+    script(src='app/js/main.js')
+  body
+    wrapper.wrapper
+        section.work__header
+            ul.header__socials
+                    each val, index in {'vk': 'https://vk.com', 'github':'https://github.com', 'linkedin':'https://linkedin.com'}             
+                        li.footer_socials_item= index
+                            a.footer__socials__link(href= val)
+            nav.hamburger
+            div.avatar
+                img(src="app/img/ava.jpg", alt="avatar")
+                h3 Максим Рудик
+                span Личный сайт веб-разработчика
+                div.arrow__down 
+        section.work__items
+            div.active__item__description
+                h4 Сайт школы онлайн-образования
+                p html, css, javascript
+                button.button
+                    a(href="#" alt="link_to_site") Посмотреть сайт
+            div.work__items__list
+                div.work__item__active Картинки активного сайта                    
+                div.work__item__store картинки др. сайтов 
+        section.people__feedback
+            h1 Что обо мне говорят
+            div.people__feedback__item
+                p.
+                    Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                div.tutor__avatar
+                    img(src='#' alt='Да это же Дима!')
+                p Ковальчук Дмитрий
+                    span основатель LoftSchool
+            div.people__feedback__item
+                p.
+                    Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!
+                div.tutor__avatar
+                    img(src='#' alt='Да это же Зар!')
+                p Зар Захаров
+                    span главный преподаватель
+                div.feedback__form
+                    label Связаться со мной
+                    input(name="name", placeholder="имя")
+                    input(name="email", placeholder="Email")
+                    textarea(name="text", rows="3", placeholder="Ваше сообщение")
+                    button(type="submit", class="button__submit") Отправить
+                    button(type="reset", class="button__reset") Очистить
+
+
+
+        footer.footer
+            div.upper__footer
+                nav.footer__navy
+                    ul.footer__navy__list
+                        each val, index in {'Мои работы':'my_works.html', 'Обо мне':'about_me.html', 'Блог':'my_blog.html', 'Авторизация':'admin_panel.html'}
+                            li.footer__navy__item= index
+                                a.footer__navy__link(href= val)
+                ul.footer__socials
+                    each val, index in {'vk': 'https://vk.com', 'github':'https://github.com', 'linkedin':'https://linkedin.com'}             
+                        li.footer_socials_item= index
+                            a.footer__socials__link(href= val)
+            div.down__footer
+                div.down__footer__left
+                    p Я веб-разработчик из г. Геленджика и этот сайт я сделал в рамках обучения в Школе онлайн-образования LoftSchool.
+                div.down__footer__right
+                    p &copy Максим Рудик | создано с любовью в Loftschool | 2016
