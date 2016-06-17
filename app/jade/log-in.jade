@@ -1,0 +1,24 @@
+extends layout
+block content
+    div.log__in
+        div.log__in__header
+            h3 Авторизуйтесь
+        div.form__group
+            label.label
+                i(class="fa fa-key", aria-hidden="true")
+                input(id="login", name="login", type="text", placeholder="Логин")
+        div.form__group
+            label.label
+            i(class="fa fa-user" aria-hidden="true")
+            input(id="password", name="password", type="text", placeholder="Пароль")
+        div.capcha
+            div.checkbox
+                i(class="fa fa-check-square fa-lg" aria-hidden="true")
+                input(type="checkbox", name="checkbox")
+                label Я человек                    
+        h4 Вы точно не робот?
+        div.radio
+            label Да
+                input(type="radio", checked="checked", name="yes")
+            label Не уверен
+                input(type="radio", checked="checked", name="yes")

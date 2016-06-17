@@ -1,0 +1,24 @@
+extends layout
+block content
+    wrapper.wrapper
+        include includes/blog_header.jade 
+        section.articles
+            article
+                h3 Самое важное в САСС
+                p
+                    span 22 ноября 2016
+                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.                              
+            article
+                h3 Приемы верстки, без которых не обходится ни один сайт
+                p
+                    span 23 ноября 2016
+                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+        aside.articles_navy
+            ul.navy__list
+                each val, index in {'Самое важное в САСС': '#', 'Приемы верстки, без которых не обходится ни один сайт':'#', 'Джентльменский набор плагинов Gulp':'#', 'Почему я выбрал Jade':'#'}             
+                        li.navy__list__item
+                            a.navy__link(href= val)= index
+        include includes/common_footer.jade
+
+
+        

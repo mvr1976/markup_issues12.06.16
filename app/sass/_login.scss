@@ -1,0 +1,55 @@
+$dash: #c5cbcd;
+$h3: #455a64;
+$fa-icon_bg:#f0efe9;
+$fa-icon:#c4cbcd;
+.log__in{
+	margin: 50px auto;
+	max-width: 380px;
+	height: 400px;
+	background: rgba(255,255,255,.7);
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin: auto;
+	color: $welcome_h3;
+	text-align: center;
+	border: 2px solid #777;	
+}
+.log__in__header{
+	width:100%;
+	height:100px;
+	position: relative;
+	text-transform: uppercase;
+	text-align:center;
+	color: $h3;
+	&:before{
+		content:"";
+		width: 25px;
+		height: 6px;
+		background-color: $dash;
+		position: absolute;
+		left: 60px;
+		top: 8px;
+	}
+	&:after{
+		content:"";
+		width: 25px;
+		height: 6px;
+		background-color: $dash;
+		position: absolute;
+		right: 60px;
+		top: 8px;
+	}
+}
+.fa{
+	background-color: $fa-icon_bg;
+	color: $fa-icon;
+	padding:7px;
+	width:15px;
+	height:15px;
+}
+.fa.fa-check-square{
+	padding:0;
+	color:$welcome_nav;
+}

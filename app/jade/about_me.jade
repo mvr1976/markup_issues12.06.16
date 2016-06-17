@@ -1,0 +1,40 @@
+extends layout
+block content
+    wrapper.wrapper
+        include includes/common_header
+        section.about__me
+            div.about__me__left
+                h3 Обо мне
+            div.about__me__right
+                img(src="#", alt="здесь мое фото")
+                h4 Кто я
+                p . Я будущий веб-разработчик из еще не определенной на сегодня точки мира. Мне 39 лет.
+                p . Этот сайт я сделал в рамках обучения в Школе онлайн-образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво.
+        section.my__skills
+            h4 Чем я могу быть вам полезен
+            p Больше всего меня привлекает фронтенд-разработка, но я также могу решать несложные задачи на Backend. Но давайте по порядку.
+            div.frontend
+                h4 frontend
+                p html5
+                p css3
+                p javascript&jquery
+            div.backend
+                h4 backend
+                p php
+                p mysql
+                p node.js&npm
+                p mongoDB
+            div.workflow
+                h4 workflow
+                p git
+                p gulp
+                p bower
+        section.my_map
+            div.contact__info
+                h3 Контакты
+                p maxim_rudik
+                p mvr1976@gmail.com
+                p +7-928-400-15-03
+                p г. Геленджик, ул. Виноградарь-5, д.42
+
+        include includes/common_footer.jade

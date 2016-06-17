@@ -1,0 +1,11 @@
+section.inner__pages__header
+            ul.header__socials
+                    each val, index in {'vk': 'https://vk.com', 'github':'https://github.com', 'linkedin':'https://linkedin.com'}             
+                        li.footer_socials_item= index
+                            a.footer__socials__link(href= val)
+            nav.hamburger
+            div.avatar
+                img(src="app/img/ava.jpg", alt="avatar")
+                h3 Блог
+                span Статьи, которые я написал
+                div.arrow__down

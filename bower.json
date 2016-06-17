@@ -1,0 +1,7 @@
+{
+  "name": "portfolio",
+  "dependencies": {
+    "normalize-css": "^4.1.1",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

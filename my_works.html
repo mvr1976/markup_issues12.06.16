@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link rel="stylesheet" href="app/bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="app/css/main.css">
     <script src="app/bower/jquery/dist/jquery.min.js"></script>
     <script src="app/js/main.js"></script>
   </head>
   <body>
     <wrapper class="wrapper">
-      <section class="work__header">
+      <section class="inner__pages__header">
         <ul class="header__socials">
           <li class="footer_socials_item">vk<a href="https://vk.com" class="footer__socials__link"></a></li>
           <li class="footer_socials_item">github<a href="https://github.com" class="footer__socials__link"></a></li>
           <li class="footer_socials_item">linkedin<a href="https://linkedin.com" class="footer__socials__link"></a></li>
         </ul>
         <nav class="hamburger"></nav>
-        <div class="avatar"><img src="app/img/ava.jpg" alt="avatar">
+        <div class="avatar__inner"><img src="app/img/ava.jpg" alt="avatar">
           <h3>Максим Рудик</h3><span>Личный сайт веб-разработчика</span>
-          <div class="arrow__down"> </div>
+          <div class="arrow__down"></div>
+        </div>
+        <div class="box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle"></svg>
+          <polygon points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+          <polygon points="1000,0   1000,86   500,86   500,75.5"></polygon>
         </div>
       </section>
       <section class="work__items">
@@ -29,9 +35,13 @@
           <p>html, css, javascript</p>
           <button class="button"><a href="#" alt="link_to_site">Посмотреть сайт</a></button>
         </div>
-        <div class="work__items__list">
+        <div class="work__items__store">
           <div class="work__item__active">Картинки активного сайта                    </div>
-          <div class="work__item__store">картинки др. сайтов </div>
+          <ul class="work__items__list">
+            <li class="work__item"><a href="#" class="work__link">Сайт1</a></li>
+            <li class="work__item"><a href="#" class="work__link">Сайт2</a></li>
+            <li class="work__item"><a href="#" class="work__link">Сайт3</a></li>
+          </ul>
         </div>
       </section>
       <section class="people__feedback">

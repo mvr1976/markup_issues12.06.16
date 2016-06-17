@@ -1,46 +1,24 @@
-extends ./_layout.jade
-body
-wrapper.wrapper
-    div.welcome
+extends layout
+block content
+    div.wrapper__welcome        
+        button.welcome_login Авторизоваться
         div.avatar
-            img(src="app/img/ava.jpg", alt="avatar")
-            h3 Максим Рудик
+            div.avatar__img                    
+            h3.avatar_name Максим Рудик
             span Личный сайт веб-разработчика
-        ul
-            li
-                a(href="app/icons/vk.svg") vk
-            li
-                a(href="app/icons/github.svg") github
-            li
-                a(href="app/icons/link.svg") linkedin
-        nav
-            ul
-                li
-                    a(href="my_works.html") Мои работы
-
-                li
-                    a(href="#") Обо мне
-                li
-                    a(href="#") Блог
-    div.log__in
-        div.log__in__header
-        h4 Авторизуйтесь
-        div.form__group
-            label.label
-            img(src="#", alt="login")
-            input(id="login", name="login", type="text", placeholder="Логин")
-        div.form__group
-            label.label
-            img(src="#", alt="password")
-            input(id="password", name="password", type="text", placeholder="Пароль")
-        div.capcha
-            div.checkbox
-                input(type="checkbox", name="checkbox")
-                label Я человек                    
-        h4 Вы точно не робот?
-        div.radio
-            label Да
-                input(type="radio", checked="checked", name="yes")
-            label Не уверен
-                input(type="radio", checked="checked", name="yes")
+            ul.welcome__social__list
+                li.welcome__social__item.vk
+                    a.welcome__social__link(href="http://vk.com") vk
+                li.welcome__social__item.github
+                    a.welcome__social__link(href="http://github.com") github
+                li.welcome__social__item.linkedin
+                    a.welcome__social__link(href="http://linkedin.com") linkedin
+            nav.welcome__nav
+                ul.welcome__nav__list
+                    li.welcome__nav__item
+                        a.welcome__nav__link(href="my_works.html") Мои работы
+                    li.welcome__nav__item
+                        a.welcome__nav__link(href="about_me.html") Обо мне
+                    li.welcome__nav__item
+                        a.welcome__nav__link(href="my_blog.html") Блог        
     footer.footer &copy Максим Рудик | создано с любовью в Loftschool | 2016

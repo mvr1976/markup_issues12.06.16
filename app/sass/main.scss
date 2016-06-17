@@ -1,0 +1,16 @@
+@import "_index.scss";
+@import "_login.scss";
+@import "_myWorks.scss";
+html, body{
+	height:100%;
+}
+body{
+	box-sizing: border-box;
+	background: url(../img/welcome-bg.jpg) no-repeat center;
+}
+li{
+	list-style:none;
+}
+p{
+	padding:0;
+}

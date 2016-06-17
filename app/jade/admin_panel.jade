@@ -1,0 +1,45 @@
+extends layout
+block content
+    wrapper.wrapper
+        header.header
+            h1.admin__head Панель администрирования
+            a.back__to__site вернуться на сайт
+        nav.admin__tabs
+        div.about__me__edit
+            h3 Страница "Обо мне"
+            div.skills_list
+                div.frontend
+                    label html
+                        input(type="text")
+                        span %
+                    label css
+                        input(type="text")
+                        span %
+                    label javascript
+                        input(type="text")
+                        span %
+                    button.submit Сохранить
+                div.workflow
+                    label git
+                        input(type="text")
+                        span %
+                    label gulp
+                        input(type="text")
+                        span %
+                    label bower
+                        input(type="text")
+                        span %
+                    button.submit Добавить
+                div.backend
+                    label PHP
+                        input(type="text")
+                        span %
+                    label Node.js
+                        input(type="text")
+                        span %
+                    label MongoDB
+                        input(type="text")
+                        span %
+                    button.submit Добавить
+        div.blog__edit
+        div.my__works__edit
