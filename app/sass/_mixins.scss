@@ -1,0 +1,20 @@
+@mixin titles-dashes($dash-left, $dash-right, $top){
+	&:before{
+		content:"";
+		width: 25px;
+		height: 6px;
+		background-color: $dash;
+		position: absolute;
+		left: $dash-left;
+		top: $top;
+	}
+	&:after{
+		content:"";
+		width: 25px;
+		height: 6px;
+		background-color: $dash;
+		position: absolute;
+		right: $dash-right;
+		top: $top;
+	}
+}

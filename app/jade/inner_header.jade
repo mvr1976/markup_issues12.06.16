@@ -5,13 +5,23 @@ section.inner__pages__header
                             a.footer__socials__link(href= val)
             nav.hamburger
             div.avatar__inner
-                img(src="app/img/ava.jpg", alt="avatar")
-                h3 Максим Рудик
+                img.ava__inner(src="app/img/ava.jpg", alt="avatar")
+                h3.ava__title Максим
                 span Личный сайт веб-разработчика
                 div.arrow__down
-            div(class="box")
-              svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle")
-              polygon(points="0,0   0,86   500.8,86   500.8,75.5")
-              polygon(points="1000,0   1000,86   500,86   500,75.5")
+                  img(src="app/icons/arrow_down.svg" alt="arrow_down")            
+            div.triangles
+                svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle")
+                    polygon.trian_left(points="0,0   0,86   500.8,86   500.8,75.5")
+                    polygon.trian_right(points="1000,0   1000,86   500,86   500,75.5")
+            div.title__inner
+                h1.title__inner__text Мои работы
+                //- svg(class="works_header")
+                //-     use(xlink:href="app/icons/works_header.svg")
+           
+         
+
+
+              
   
   
