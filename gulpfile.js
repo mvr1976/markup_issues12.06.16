@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	svgSprite = require('gulp-svg-sprite');
 
-var src_sass = 'app/sass/**/main.scss',
+var src_sass = 'app/sass/**/*.scss',
 	src_jade = 'app/jade/*.jade',
 	dest_sass = 'app/css',
 	dest_jade = './';
@@ -42,10 +42,23 @@ gulp.task('svgSprite', function(){
 });
 
 gulp.task('watch', function(){
-	gulp.watch(src_jade, ['jade']);
-	gulp.watch(src_sass, ['sass']);
+	gulp.watch(src_jade, gulp.series('jade'));
+	gulp.watch(src_sass, gulp.series('sass'));
 });
 
-// gulp.task('default', ['watch']);
+
+
+gulp.task('default', gulp.series(
+	gulp.parallel(
+		'sass',
+		'jade'
+
+	),
+
+	gulp.parallel(
+		'watch'
+
+	)
+));
 
 

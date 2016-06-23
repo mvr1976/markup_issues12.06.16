@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="app/css/main.css">
@@ -11,33 +12,41 @@
     <script src="app/js/main.js"></script>
   </head>
   <body>
-    <div class="log__in">
-      <div class="log__in__header">
-        <h3>Авторизуйтесь</h3>
-      </div>
-      <div class="form__group">
-        <label class="label"><i aria-hidden="true" class="fa fa-key"></i>
-          <input id="login" name="login" type="text" placeholder="Логин">
-        </label>
-      </div>
-      <div class="form__group">
-        <label class="label"></label><i aria-hidden="true" class="fa fa-user"></i>
-        <input id="password" name="password" type="text" placeholder="Пароль">
-      </div>
-      <div class="capcha">
-        <div class="checkbox"><i aria-hidden="true" class="fa fa-check-square fa-lg"></i>
-          <input type="checkbox" name="checkbox">
-          <label>Я человек                    </label>
+    <div class="log__in__wrapper">
+      <div class="login__vert__align__wrap">
+        <div class="log__in__welcome">
+          <div class="log__in__header">
+            <h3>Авторизуйтесь</h3>
+          </div>
+          <div class="form__group__log-in">
+            <label class="log-in__label"><i aria-hidden="true" class="fa fa-key login-key"></i>
+              <input id="login" name="login" type="text" placeholder="Логин" class="log-input login_input_text">
+            </label>
+          </div>
+          <div class="form__group__log-in">
+            <label class="log-in__label"></label><i aria-hidden="true" class="fa fa-user login-user"></i>
+            <input id="password" name="password" type="text" placeholder="Пароль" class="log-input login_input_text">
+          </div>
+          <div class="capcha">
+            <div class="checkbox"><i aria-hidden="true" class="fa fa-check-square fa-lg"></i>
+              <input type="checkbox" name="checkbox">
+              <label>Я человек                    </label>
+            </div>
+          </div>
+          <h4>Вы точно не робот?</h4>
+          <div class="radio">
+            <label class="login__radio">
+              <input type="radio" checked="checked" name="yes"><span>Да</span>
+            </label>
+            <label class="login__radio"> 
+              <input type="radio" checked="checked" name="yes"><span>Не уверен</span>
+            </label>
+          </div>
+          <ul class="login_nav_list">
+            <li class="login_nav_item"><a href="#" alt="#" class="login_nav_link">На главную</a></li>
+            <li class="login_nav_item"><a href="#" alt="#" class="login_nav_link">Войти</a></li>
+          </ul>
         </div>
-      </div>
-      <h4>Вы точно не робот?</h4>
-      <div class="radio">
-        <label>Да
-          <input type="radio" checked="checked" name="yes">
-        </label>
-        <label>Не уверен
-          <input type="radio" checked="checked" name="yes">
-        </label>
       </div>
     </div>
   </body>

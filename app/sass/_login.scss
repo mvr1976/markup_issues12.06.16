@@ -1,55 +1,160 @@
+@import '_mixins.scss';
 $dash: #c5cbcd;
 $h3: #455a64;
 $fa-icon_bg:#f0efe9;
 $fa-icon:#c4cbcd;
-.log__in{
-	margin: 50px auto;
-	max-width: 380px;
-	height: 400px;
+$dash-left2:40px;
+$dash-right2:40px;
+$top2:74px;
+.log__in__wrapper{
+	display:table;
+	width:100%;
+	max-width:1800px;	
+	height: 100%;		
+	position:relative;
+}
+.login__vert__align__wrap{
+	display:table-cell;
+	vertical-align:middle;
+}
+.log__in__welcome{
+	max-width: 380px;	
 	background: rgba(255,255,255,.7);
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
+	border-radius: 5px;
 	margin: auto;
 	color: $welcome_h3;
-	text-align: center;
-	border: 2px solid #777;	
+	text-align: center;		
 }
 .log__in__header{
 	width:100%;
 	height:100px;
+	padding-top: 10px;
 	position: relative;
 	text-transform: uppercase;
 	text-align:center;
+	font-family: 'bernier-distressed';
+	font-size:2.2em;
+	font-weight:normal;
 	color: $h3;
-	&:before{
-		content:"";
-		width: 25px;
-		height: 6px;
-		background-color: $dash;
-		position: absolute;
-		left: 60px;
-		top: 8px;
-	}
-	&:after{
-		content:"";
-		width: 25px;
-		height: 6px;
-		background-color: $dash;
-		position: absolute;
-		right: 60px;
-		top: 8px;
-	}
+	@include titles-dashes($dash-left2, $dash-right2, $top2); 
 }
-.fa{
+.form__group__log-in{
+	width:100%;
+	margin: 5px auto;
+	position:relative;
+}
+.log-in__label{
+	display:block;
+	position:relative;
+}
+.log-input{
+	display:block;
+	width:87%;
+	height:45px;
+	margin:20px auto;
+	border-radius: 5px;
+	background-color:#fff;
+	outline:none;
+}
+
+
+.login-key,.login-user{
+	display:block;
+	position:absolute;
+	top:2px;
+	left:24px;
 	background-color: $fa-icon_bg;
 	color: $fa-icon;
 	padding:7px;
-	width:15px;
-	height:15px;
+	width:42px;
+	height:42px;
+	&:before{
+		position:absolute;
+		top:22px;
+		left:22px;
+	}
+}
+.login_input_text{
+	padding: 5px 0;
+	text-indent: 70px;
+	outline:none;
 }
 .fa.fa-check-square{
+	display:block;
+	position: absolute;
+	top:3px;
+	left:140px;
 	padding:0;
 	color:$welcome_nav;
+}
+.radio{
+	position: relative;
+	margin-bottom:10px;
+}
+.checkbox{
+	display:block;
+	position:relative;
+	
+}
+.login__radio{
+	margin-right: 20px;
+	&:before{
+		content:"";
+		width:20px;
+		height:20px;
+		border: 1px solid #cfcfd0;
+		border-radius:50%;
+		background:#fff;
+		position:relative;
+		display:inline-block;
+		vertical-align: middle;
+		margin-right:-18px;
+	}
+	&:after{
+		content:"";
+		width: 10px;
+		height:10px;
+		background:$welcome_nav;
+		border-radius:50%;
+		position:absolute;
+		top:8px;
+		left:97px;//170 px - position yes i'm robot!!! js on.click()		
+	}
+	& span{
+		padding-left: 7px;
+	}
+}
+
+.login_nav_list{
+	margin:0;
+	padding:0;
+	width:100%;
+	display: table;	
+}
+.login_nav_item{
+	display: table-cell;
+	width:50%;
+	// overflow: hidden;
+	border-right: 1px solid #fff;
+	&:last-child{
+		border:none;
+	}
+	// @include clearfix();
+}
+.login_nav_link{
+	display:block;
+	float:left;
+	width:100%;	
+	// overflow:hidden;
+	padding: 15px 0;		
+	text-decoration: none;
+	color:#fff;
+	font-size:16px;			
+	background-color:$welcome_nav;
+	&:hover{
+		background-color:$welcome_nav_hover;
+	}
+	&:last-child{
+		border: none;
+	}
 }

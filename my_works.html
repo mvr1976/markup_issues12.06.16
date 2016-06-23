@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="app/css/main.css">
@@ -12,66 +13,111 @@
   </head>
   <body>
     <wrapper class="wrapper">
-      <section class="inner__pages__header">
+      <section class="inner__pages__header">                        
         <ul class="header__socials">
-          <li class="footer_socials_item">vk<a href="https://vk.com" class="footer__socials__link"></a></li>
-          <li class="footer_socials_item">github<a href="https://github.com" class="footer__socials__link"></a></li>
-          <li class="footer_socials_item">linkedin<a href="https://linkedin.com" class="footer__socials__link"></a></li>
+          <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+              <svg width="30.011px" height="17.123px" viewbox="0 0 30.011 17.123" class="svg-socials--vk-dims svg_inner_header vk">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#vk"></use>
+              </svg></a></li>
+          <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+              <svg width="26px" height="22px" viewbox="0 0 26 22" class="svg-socials--github-dims svg_inner_header github">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#github"></use>
+              </svg></a></li>
+          <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+              <svg width="24px" height="23px" viewbox="0 0 24 23" class="svg-socials--in-dims svg_inner_header linkedin">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#in">            </use>
+              </svg></a></li>
         </ul>
-        <nav class="hamburger"></nav>
-        <div class="avatar__inner"><img src="app/img/ava.jpg" alt="avatar" class="ava__inner">
-          <h3 class="ava__title">Максим</h3><span>Личный сайт веб-разработчика</span>
-          <div class="arrow__down"><img src="app/icons/arrow_down.svg" alt="arrow_down"></div>
-        </div>
-        <div class="triangles">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle">
-            <polygon points="0,0   0,86   500.8,86   500.8,75.5" class="trian_left"></polygon>
-            <polygon points="1000,0   1000,86   500,86   500,75.5" class="trian_right"></polygon>
+        <div class="hamburger">
+          <svg width="40px" height="35px" viewbox="0 0 40 35" class="svg-hamburger-dims svg_inner_hamburger">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#hamburger"></use>
           </svg>
         </div>
-        <div class="title__inner">
-          <h1 class="title__inner__text">Мои работы</h1>
-          
-          
-          
-          
-          
+        <div class="portfolio_bg">
+          <svg width="1175.495px" height="313.961px" viewBox="0 0 1175.495 313.961" enable-background="new 0 0 1175.495 313.961" class="svg-portfolio_header-dims svg_portfolio_bg">
+            <use xlink:href="app/icons/sprites/sprite_social.svg#portfolio_header"></use>
+          </svg>
+        </div>
+        <div class="avatar__inner"><img src="app/img/ava.jpg" alt="avatar" class="ava__inner">
+          <h3 class="ava__title">Максим</h3><span>Личный сайт веб-разработчика</span>
+          <div class="arrow__down">
+            <svg width="25.18px" height="16.164px" viewBox="0 0 25.18 16.164" class="svg-arrow_down-dims svg_inner_header_arrow">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#arrow_down">           </use>
+            </svg>
+          </div>
         </div>
       </section>
+      <div class="triangles">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="inner_header_triangle">
+          <polygon points="0,0   0,86   500.8,86   500.8,75.5" class="trian_left"></polygon>
+          <polygon points="1000,0   1000,86   500,86   500,75.5" class="trian_right"></polygon>
+        </svg>
+      </div>
+      <div class="title__inner">
+        <h1 class="title__inner__text">Мои работы</h1>
+        <svg width="505.101px" height="165.036px" viewBox="0 0 505.101 165.036" class="svg-works_header-dims svg_inner_works">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#works_header"></use>
+        </svg>
+      </div>
       <section class="work__items">
         <div class="active__item__description">
-          <h4>Сайт школы онлайн-образования</h4>
-          <p>html, css, javascript</p>
-          <button class="button"><a href="#" alt="link_to_site">Посмотреть сайт</a></button>
+          <div class="a-i-d_center">
+            <div class="a-i-d_title">Сайт школы онлайн-образования</div>
+            <div class="a-i-d_text">html, css, javascript</div>
+            <button class="a-i-d_button">
+              <svg viewbox="0 0 200 30" class="svg-socials--link-dims svg_works_link">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#link"></use>
+              </svg><a href="#" alt="link_to_site" class="a-i-d_link">Посмотреть сайт</a>
+            </button>
+          </div>
         </div>
-        <div class="work__items__store">
-          <div class="work__item__active">Картинки активного сайта                    </div>
-          <ul class="work__items__list">
-            <li class="work__item"><a href="#" class="work__link">Сайт1</a></li>
-            <li class="work__item"><a href="#" class="work__link">Сайт2</a></li>
-            <li class="work__item"><a href="#" class="work__link">Сайт3</a></li>
-          </ul>
+        <div class="work__items__slider">
+          <div class="work__item__active"><img src="app/img/works_active.png"></div>
+          <div class="works_slides">                   
+            <ul class="work__items__list">
+              <li class="work__item">
+                <svg width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435" class="svg-portf_arrow_down-dims svg_works_arrow_down">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_down"></use>
+                </svg><img src="app/img/joga.png" class="work_img"><a href="#" class="work__link"></a>
+              </li>
+              <li class="work__item">
+                <svg width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435" class="svg-portf_arrow_up-dims svg_works_arrow_up">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_up"></use>
+                </svg><img src="app/img/joga2.png" class="work_img"><a href="#" class="work__link"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="people__feedback">
-        <h1>Что обо мне говорят</h1>
-        <div class="people__feedback__item">
-          <p>Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
-          <div class="tutor__avatar"><img src="#" alt="Да это же Дима!"></div>
-          <p>Ковальчук Дмитрий<span>основатель LoftSchool</span></p>
+        <div class="people_say">
+          <h1 class="my_works_text">Что обо мне говорят</h1>
         </div>
-        <div class="people__feedback__item">
-          <p>Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!</p>
-          <div class="tutor__avatar"><img src="#" alt="Да это же Зар!"></div>
-          <p>Зар Захаров<span>главный преподаватель</span></p>
-          <div class="feedback__form">
-            <label>Связаться со мной</label>
-            <input name="name" placeholder="имя">
-            <input name="email" placeholder="Email">
-            <textarea name="text" rows="3" placeholder="Ваше сообщение"></textarea>
-            <button type="submit" class="button__submit">Отправить</button>
-            <button type="reset" class="button__reset">Очистить</button>
+        <div class="feedback_list">
+          <div class="people__feedback__item">
+            <p>Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
+            <div class="tutor__avatar"><img src="app/img/dima.jpg" alt="Да это же Дима!" class="tutor_img"></div>
+            <div class="tutor_name">
+              <h4>Ковальчук Дмитрий</h4>
+              <p>основатель LoftSchool</p>
+            </div>
           </div>
+          <div class="people__feedback__item">
+            <p>Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!</p>
+            <div class="tutor__avatar"><img src="app/img/zar.jpg" alt="Да это же Зар!" class="tutor_img"></div>
+            <div class="tutor_name">
+              <h4>Зар Захаров</h4>
+              <p>главный преподаватель</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback__form">
+          <label>Связаться со мной</label>
+          <input name="name" placeholder="имя">
+          <input name="email" placeholder="Email">
+          <textarea name="text" rows="3" placeholder="Ваше сообщение"></textarea>
+          <button type="submit" class="button__submit">Отправить</button>
+          <button type="reset" class="button__reset">Очистить</button>
         </div>
       </section>
       <footer class="footer">

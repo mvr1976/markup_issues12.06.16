@@ -4,42 +4,58 @@ block content
         include inner_header 
         section.work__items
             div.active__item__description
-                h4 Сайт школы онлайн-образования
-                p html, css, javascript
-                button.button
-                    a(href="#" alt="link_to_site") Посмотреть сайт
-            div.work__items__store
-                div.work__item__active Картинки активного сайта                    
-                ul.work__items__list
-                    li.work__item
-                        a.work__link(href="#") Сайт1
-                    li.work__item
-                        a.work__link(href="#") Сайт2
-                    li.work__item
-                        a.work__link(href="#") Сайт3
+                div.a-i-d_center
+                    div.a-i-d_title Сайт школы онлайн-образования
+                    div.a-i-d_text html, css, javascript
+                    button.a-i-d_button
+                        svg(class="svg-socials--link-dims svg_works_link" viewbox="0 0 200 30")
+                            use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#link")
+                        a.a-i-d_link(href="#" alt="link_to_site") Посмотреть сайт
+            div.work__items__slider
+                div.work__item__active
+                    img(src="app/img/works_active.png")
+                div.works_slides                    
+                    ul.work__items__list
+                        li.work__item
+                            svg(class="svg-portf_arrow_down-dims svg_works_arrow_down" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_down")
+                            img.work_img(src="app/img/joga.png")
+                            a.work__link(href="#")
+                        li.work__item
+                            svg(class="svg-portf_arrow_up-dims svg_works_arrow_up" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_up")
+                            img.work_img(src="app/img/joga2.png")
+                            a.work__link(href="#")
+                        //- li.work__item
+                        //-     img(src="app/img/*.png")
+                        //-     a.work__link(href="#") Сайт3
         section.people__feedback
-            h1 Что обо мне говорят
-            div.people__feedback__item
-                p.
-                    Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                div.tutor__avatar
-                    img(src='#' alt='Да это же Дима!')
-                p Ковальчук Дмитрий
-                    span основатель LoftSchool
-            div.people__feedback__item
-                p.
-                    Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!
-                div.tutor__avatar
-                    img(src='#' alt='Да это же Зар!')
-                p Зар Захаров
-                    span главный преподаватель
-                div.feedback__form
-                    label Связаться со мной
-                    input(name="name", placeholder="имя")
-                    input(name="email", placeholder="Email")
-                    textarea(name="text", rows="3", placeholder="Ваше сообщение")
-                    button(type="submit", class="button__submit") Отправить
-                    button(type="reset", class="button__reset") Очистить
+            div.people_say
+                h1.my_works_text Что обо мне говорят
+            div.feedback_list
+                div.people__feedback__item
+                    p.
+                        Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    div.tutor__avatar
+                        img.tutor_img(src='app/img/dima.jpg' alt='Да это же Дима!')
+                    div.tutor_name
+                        h4 Ковальчук Дмитрий
+                        p основатель LoftSchool
+                div.people__feedback__item
+                    p.
+                        Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!
+                    div.tutor__avatar
+                        img.tutor_img(src='app/img/zar.jpg' alt='Да это же Зар!')
+                    div.tutor_name
+                        h4 Зар Захаров
+                        p главный преподаватель
+            div.feedback__form
+                label Связаться со мной
+                input(name="name", placeholder="имя")
+                input(name="email", placeholder="Email")
+                textarea(name="text", rows="3", placeholder="Ваше сообщение")
+                button(type="submit", class="button__submit") Отправить
+                button(type="reset", class="button__reset") Очистить
         include includes/common_footer.jade
 
 

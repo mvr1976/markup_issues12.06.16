@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="app/css/main.css">
@@ -13,21 +14,30 @@
   <body>
     <div class="wrapper__welcome">       
       <button class="welcome_login">Авторизоваться</button>
-      <div class="avatar">
-        <div class="avatar__img">                   </div>
-        <h3 class="avatar_name">Максим Рудик</h3><span>Личный сайт веб-разработчика</span>
-        <ul class="welcome__social__list">
-          <li class="welcome__social__item vk"><a href="http://vk.com" class="welcome__social__link">vk</a></li>
-          <li class="welcome__social__item github"><a href="http://github.com" class="welcome__social__link">github</a></li>
-          <li class="welcome__social__item linkedin"><a href="http://linkedin.com" class="welcome__social__link">linkedin</a></li>
-        </ul>
-        <nav class="welcome__nav">
+      <div class="avatar__vert__align__wrap">
+        <div class="avatar">
+          <div class="avatar__img__store"><img src="app/img/ava.jpg" class="ava__img"></div>
+          <h3 class="avatar_name">Максим Рудик</h3><span>Личный сайт веб-разработчика</span>
+          <ul class="welcome__social__list">                   
+            <li class="welcome__social__item"><a class="welcome__social__link">
+                <svg width="30.011" height="17.123" viewbox="0 0 30.011 17.123" class="svg-socials--vk-dims svg_welcome_social vk">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#vk"></use>
+                </svg></a></li>
+            <li class="welcome__social__item"><a class="welcome__social__link">
+                <svg width="26" height="22" viewbox="0 0 26 22" class="svg-socials--github-dims svg_welcome_social github">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#github">                   </use>
+                </svg></a></li>
+            <li class="welcome__social__item"><a class="welcome__social__link">
+                <svg width="24" height="23" viewbox="0 0 24 23" class="svg-socials--in-dims svg_welcome_social linkedin">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#in">               </use>
+                </svg></a></li>
+          </ul>
           <ul class="welcome__nav__list">
             <li class="welcome__nav__item"><a href="my_works.html" class="welcome__nav__link">Мои работы</a></li>
             <li class="welcome__nav__item"><a href="about_me.html" class="welcome__nav__link">Обо мне</a></li>
             <li class="welcome__nav__item"><a href="my_blog.html" class="welcome__nav__link">Блог        </a></li>
           </ul>
-        </nav>
+        </div>
       </div>
     </div>
     <footer class="footer">&copy Максим Рудик | создано с любовью в Loftschool | 2016</footer>

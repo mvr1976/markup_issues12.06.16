@@ -1,6 +1,110 @@
+@font-face {
+  font-family: 'bernier-distressed';
+  src: url("../fonts/bernierdistressed-regular-webfont.eot");
+  src: url("../fonts/bernierdistressed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bernierdistressed-regular-webfont.woff2") format("woff2"), url("../fonts/bernierdistressed-regular-webfont.woff") format("woff"), url("../fonts/bernierdistressed-regular-webfont.ttf") format("truetype"), url("../fonts/bernierdistressed-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-regular';
+  src: url("../fonts/bernierregular-regular-webfont.eot");
+  src: url("../fonts/bernierregular-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bernierregular-regular-webfont.woff2") format("woff2"), url("../fonts/bernierregular-regular-webfont.woff") format("woff"), url("../fonts/bernierregular-regular-webfont.ttf") format("truetype"), url("../fonts/bernierregular-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-shade';
+  src: url("../fonts/fonts/berniershade-regular-webfont.eot");
+  src: url("../fonts/berniershade-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berniershade-regular-webfont.woff2") format("woff2"), url("../fonts/berniershade-regular-webfont.woff") format("woff"), url("../fonts/berniershade-regular-webfont.ttf") format("truetype"), url("../fonts/berniershade-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'awesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-light';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff"), url("../fonts/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-distressed';
+  src: url("../fonts/bernierdistressed-regular-webfont.eot");
+  src: url("../fonts/bernierdistressed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bernierdistressed-regular-webfont.woff2") format("woff2"), url("../fonts/bernierdistressed-regular-webfont.woff") format("woff"), url("../fonts/bernierdistressed-regular-webfont.ttf") format("truetype"), url("../fonts/bernierdistressed-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-regular';
+  src: url("../fonts/bernierregular-regular-webfont.eot");
+  src: url("../fonts/bernierregular-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bernierregular-regular-webfont.woff2") format("woff2"), url("../fonts/bernierregular-regular-webfont.woff") format("woff"), url("../fonts/bernierregular-regular-webfont.ttf") format("truetype"), url("../fonts/bernierregular-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-shade';
+  src: url("../fonts/fonts/berniershade-regular-webfont.eot");
+  src: url("../fonts/berniershade-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berniershade-regular-webfont.woff2") format("woff2"), url("../fonts/berniershade-regular-webfont.woff") format("woff"), url("../fonts/berniershade-regular-webfont.ttf") format("truetype"), url("../fonts/berniershade-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'awesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-light';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff"), url("../fonts/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: url(../img/welcome-bg.jpg) no-repeat center;
+  box-sizing: border-box; }
+
 .wrapper__welcome {
+  display: table;
   width: 100%;
-  min-height: 100%;
+  max-width: 1800px;
+  height: 100%;
   margin-bottom: -100px;
   position: relative; }
 
@@ -17,6 +121,8 @@
   color: #fff; }
 
 .welcome_login {
+  font-family: 'roboto-medium';
+  font-size: 1em;
   position: absolute;
   right: 0;
   top: 0;
@@ -31,15 +137,14 @@
     background-color: #fff;
     color: #07ac99; }
 
+.avatar__vert__align__wrap {
+  display: table-cell;
+  vertical-align: middle; }
+
 .avatar {
-  position: absolute;
   max-width: 380px;
-  height: 400px;
   background: rgba(255, 255, 255, 0.7);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  border-radius: 5px;
   margin: auto;
   color: #455a64;
   text-align: center; }
@@ -49,97 +154,97 @@
   height: 142px;
   border: 1px solid #fff;
   border-radius: 50%;
-  margin: 40px auto;
-  background: url(../img/ava.jpg) no-repeat center; }
+  margin: 40px auto; }
+
+.ava__img {
+  border-radius: 50%;
+  padding: 40px; }
 
 .avatar_name {
-  margin-bottom: 10px; }
-
-.welcome__nav {
-  width: 380px; }
+  font-family: 'roboto-medium';
+  font-size: 1.7em;
+  margin: 10px auto; }
 
 .welcome__nav__list {
   margin: 0;
   padding: 0;
-  font-size: 0;
-  text-align: justify; }
-  .welcome__nav__list :after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 0; }
+  width: 100%;
+  display: table; }
 
 .welcome__nav__item {
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  padding: 5px 30.8px;
-  border-right: 1px solid #fff;
-  background-color: #07ac99;
-  cursor: pointer; }
-  .welcome__nav__item :hover {
-    background-color: #009688; }
+  display: table-cell;
+  border-right: 1px solid #fff; }
 
 .welcome__nav__item:last-child {
   border: none; }
 
 .welcome__nav__link {
-  margin: 0;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
   text-decoration: none;
   color: #fff;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #07ac99; }
+  .welcome__nav__link:hover {
+    background-color: #009688; }
+  .welcome__nav__link:last-child {
+    border: none; }
 
 .welcome__social__list {
-  width: 100%;
+  width: 50%;
   margin: 20px auto;
   padding: 0; }
+  .welcome__social__list:before, .welcome__social__list:after {
+    content: "";
+    display: table; }
+  .welcome__social__list:after {
+    clear: both; }
 
 .welcome__social__item {
   display: inline-block;
-  width: 31px;
-  height: 23px;
-  margin-left: 15px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; }
-  .welcome__social__item:hover {
-    background-position-y: -23px;
-    cursor: pointer; }
+  margin-left: 15px; }
   .welcome__social__item:first-child {
     margin-left: 0; }
 
-.vk {
-  background: url(../img/sprite_social.png);
-  background-position: 0 0; }
+.welcome__social__link {
+  padding: 5px; }
 
-.github {
-  background: url(../img/sprite_social.png);
-  background-position: 56px 0; }
+.svg_welcome_social {
+  fill: #07ac99; }
+  .svg_welcome_social:hover {
+    fill: #009688; }
 
-.linkedin {
-  background: url(../img/sprite_social.png);
-  background-position: 28px 0; }
+.log__in__wrapper {
+  display: table;
+  width: 100%;
+  max-width: 1800px;
+  height: 100%;
+  position: relative; }
 
-.log__in {
-  margin: 50px auto;
+.login__vert__align__wrap {
+  display: table-cell;
+  vertical-align: middle; }
+
+.log__in__welcome {
   max-width: 380px;
-  height: 400px;
   background: rgba(255, 255, 255, 0.7);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  border-radius: 5px;
   margin: auto;
   color: #455a64;
-  text-align: center;
-  border: 2px solid #777; }
+  text-align: center; }
 
 .log__in__header {
   width: 100%;
   height: 100px;
+  padding-top: 10px;
   position: relative;
   text-transform: uppercase;
   text-align: center;
+  font-family: 'bernier-distressed';
+  font-size: 2.2em;
+  font-weight: normal;
   color: #455a64; }
   .log__in__header:before {
     content: "";
@@ -147,75 +252,477 @@
     height: 6px;
     background-color: #c5cbcd;
     position: absolute;
-    left: 60px;
-    top: 8px; }
+    left: 40px;
+    top: 74px; }
   .log__in__header:after {
     content: "";
     width: 25px;
     height: 6px;
     background-color: #c5cbcd;
     position: absolute;
-    right: 60px;
-    top: 8px; }
+    right: 40px;
+    top: 74px; }
 
-.fa {
+.form__group__log-in {
+  width: 100%;
+  margin: 5px auto;
+  position: relative; }
+
+.log-in__label {
+  display: block;
+  position: relative; }
+
+.log-input {
+  display: block;
+  width: 87%;
+  height: 45px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none; }
+
+.login-key, .login-user {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 24px;
   background-color: #f0efe9;
   color: #c4cbcd;
   padding: 7px;
-  width: 15px;
-  height: 15px; }
+  width: 42px;
+  height: 42px; }
+  .login-key:before, .login-user:before {
+    position: absolute;
+    top: 22px;
+    left: 22px; }
+
+.login_input_text {
+  padding: 5px 0;
+  text-indent: 70px;
+  outline: none; }
 
 .fa.fa-check-square {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 140px;
   padding: 0;
   color: #07ac99; }
 
+.radio {
+  position: relative;
+  margin-bottom: 10px; }
+
+.checkbox {
+  display: block;
+  position: relative; }
+
+.login__radio {
+  margin-right: 20px; }
+  .login__radio:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cfcfd0;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -18px; }
+  .login__radio:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #07ac99;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 97px; }
+  .login__radio span {
+    padding-left: 7px; }
+
+.login_nav_list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table; }
+
+.login_nav_item {
+  display: table-cell;
+  width: 50%;
+  border-right: 1px solid #fff; }
+  .login_nav_item:last-child {
+    border: none; }
+
+.login_nav_link {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  background-color: #07ac99; }
+  .login_nav_link:hover {
+    background-color: #009688; }
+  .login_nav_link:last-child {
+    border: none; }
+
+@font-face {
+  font-family: 'bernier-distressed';
+  src: url("../fonts/bernierdistressed-regular-webfont.eot");
+  src: url("../fonts/bernierdistressed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bernierdistressed-regular-webfont.woff2") format("woff2"), url("../fonts/bernierdistressed-regular-webfont.woff") format("woff"), url("../fonts/bernierdistressed-regular-webfont.ttf") format("truetype"), url("../fonts/bernierdistressed-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-regular';
+  src: url("../fonts/bernierregular-regular-webfont.eot");
+  src: url("../fonts/bernierregular-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bernierregular-regular-webfont.woff2") format("woff2"), url("../fonts/bernierregular-regular-webfont.woff") format("woff"), url("../fonts/bernierregular-regular-webfont.ttf") format("truetype"), url("../fonts/bernierregular-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-shade';
+  src: url("../fonts/fonts/berniershade-regular-webfont.eot");
+  src: url("../fonts/berniershade-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berniershade-regular-webfont.woff2") format("woff2"), url("../fonts/berniershade-regular-webfont.woff") format("woff"), url("../fonts/berniershade-regular-webfont.ttf") format("truetype"), url("../fonts/berniershade-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'awesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-light';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff"), url("../fonts/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.work__items {
+  width: 100%;
+  height: 100%; }
+  .work__items:before, .work__items:after {
+    content: "";
+    display: table; }
+  .work__items:after {
+    clear: both; }
+
+.active__item__description {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: #f0efe9; }
+
+.a-i-d_center {
+  max-width: 420px;
+  max-height: 250px;
+  margin: 0 auto;
+  margin-top: 23vh;
+  text-align: center;
+  text-transform: uppercase; }
+  .a-i-d_center:before {
+    content: "";
+    width: 25px;
+    height: 6px;
+    background-color: #c5cbcd;
+    position: absolute;
+    left: 85px;
+    top: 125px; }
+  .a-i-d_center:after {
+    content: "";
+    width: 25px;
+    height: 6px;
+    background-color: #c5cbcd;
+    position: absolute;
+    right: 85px;
+    top: 125px; }
+
+.a-i-d_title {
+  font-family: 'bernier-distressed';
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+.a-i-d_text {
+  color: #07ac99;
+  border-top: 2px solid #07ac99;
+  border-bottom: 2px solid #07ac99;
+  padding: 5px 0;
+  margin-bottom: 20px; }
+
+.a-i-d_button {
+  position: relative;
+  background-color: #07ac99;
+  padding: 10px 35px;
+  border-radius: 5px; }
+
+.a-i-d_link {
+  color: #fff;
+  text-decoration: none; }
+
+.svg_works_link {
+  position: absolute;
+  left: -46px;
+  top: 9px; }
+
+.work__items__slider {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: #efebe0; }
+  .work__items__slider:before, .work__items__slider:after {
+    content: "";
+    display: table; }
+  .work__items__slider:after {
+    clear: both; }
+
+.work__item__active {
+  width: 100%;
+  height: 50%; }
+
+.works_slides {
+  position: relative;
+  height: 50%; }
+
+.work__items__list {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.work__item {
+  margin: 0 auto;
+  display: inline-block;
+  width: 49%;
+  vertical-align: bottom; }
+
+.svg_works_arrow_down {
+  position: absolute;
+  fill: rgba(255, 255, 255, 0.7);
+  top: 43%;
+  left: 20%; }
+
+.svg_works_arrow_up {
+  position: absolute;
+  fill: rgba(255, 255, 255, 0.7);
+  top: 43%;
+  left: 70%; }
+
+.work_img {
+  max-width: 100%; }
+
+.people__feedback {
+  width: 100%;
+  background: url(../img/about_bg.jpg) no-repeat center;
+  background-size: cover;
+  z-index: 1; }
+
+.people_say {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  width: 32%; }
+  .people_say:before {
+    content: "";
+    width: 25px;
+    height: 6px;
+    background-color: #c5cbcd;
+    position: absolute;
+    left: -27px;
+    top: 17px; }
+  .people_say:after {
+    content: "";
+    width: 25px;
+    height: 6px;
+    background-color: #c5cbcd;
+    position: absolute;
+    right: -27px;
+    top: 17px; }
+
+.my_works_text {
+  font-family: 'bernier-distressed';
+  font-size: 55px;
+  font-style: normal; }
+
+.feedback_list {
+  display: table;
+  margin: 0 auto;
+  width: 80%; }
+
+.people__feedback__item {
+  display: table-cell;
+  vertical-align: top;
+  text-align: justify;
+  padding: 10px;
+  width: 50%; }
+  .people__feedback__item:before, .people__feedback__item:after {
+    content: "";
+    display: table; }
+  .people__feedback__item:after {
+    clear: both; }
+
+.tutor_img {
+  border-radius: 50%; }
+
+.tutor_name {
+  float: right;
+  width: 70%; }
+
+@font-face {
+  font-family: 'bernier-distressed';
+  src: url("../fonts/bernierdistressed-regular-webfont.eot");
+  src: url("../fonts/bernierdistressed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bernierdistressed-regular-webfont.woff2") format("woff2"), url("../fonts/bernierdistressed-regular-webfont.woff") format("woff"), url("../fonts/bernierdistressed-regular-webfont.ttf") format("truetype"), url("../fonts/bernierdistressed-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-regular';
+  src: url("../fonts/bernierregular-regular-webfont.eot");
+  src: url("../fonts/bernierregular-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bernierregular-regular-webfont.woff2") format("woff2"), url("../fonts/bernierregular-regular-webfont.woff") format("woff"), url("../fonts/bernierregular-regular-webfont.ttf") format("truetype"), url("../fonts/bernierregular-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bernier-shade';
+  src: url("../fonts/fonts/berniershade-regular-webfont.eot");
+  src: url("../fonts/berniershade-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berniershade-regular-webfont.woff2") format("woff2"), url("../fonts/berniershade-regular-webfont.woff") format("woff"), url("../fonts/berniershade-regular-webfont.ttf") format("truetype"), url("../fonts/berniershade-regular-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'awesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#bernier_distressedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-light';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff"), url("../fonts/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: url(../img/welcome-bg.jpg) no-repeat center;
+  box-sizing: border-box; }
+
 .inner__pages__header {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  background: url(../img/welcome-bg.jpg) no-repeat center;
-  z-index: 5; }
+  max-width: 1800px;
+  height: 100%; }
+  .inner__pages__header:before, .inner__pages__header:after {
+    content: "";
+    display: table; }
+  .inner__pages__header:after {
+    clear: both; }
+
+.header__socials {
+  float: left;
+  margin: 15px 0 0 0;
+  padding-left: 20px; }
+
+.header__soc__item {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center; }
+
+.svg_inner_header {
+  fill: rgba(255, 255, 255, 0.7); }
+  .svg_inner_header:hover {
+    fill: #fff; }
+
+.hamburger {
+  float: right;
+  margin: 20px 20px 0 0;
+  cursor: pointer; }
+
+.portfolio_bg {
+  position: absolute;
+  top: 30%;
+  left: 5%; }
+
+.svg_portfolio_bg {
+  fill: rgba(255, 255, 255, 0.1);
+  width: 100%; }
 
 .avatar__inner {
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 150px;
   color: #fff;
   text-align: center; }
+
+.ava__inner {
+  border: 2px solid #fff;
+  border-radius: 50%; }
 
 .ava__title {
   margin-bottom: 10px; }
 
 .arrow__down {
-  margin-top: 10%; }
+  margin-top: 8%; }
 
-svg {
-  z-index: 2;
+.svg_inner_header_arrow {
+  margin: 0 auto;
+  margin-bottom: 5%;
+  opacity: .7; }
+
+.triangles {
+  position: relative;
+  width: 100%; }
+
+.inner_header_triangle {
   position: absolute;
-  bottom: 165px;
+  bottom: 135px;
   left: 0;
-  right: 0; }
-
-.trian_left {
-  fill: #faf8f0;
-  width: 50%; }
-
-.trian_right {
-  fill: #faf8f0;
-  width: 50%; }
+  fill: #faf8f0; }
 
 .title__inner {
   width: 100%;
-  height: 165px;
+  height: 135px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #faf8f0;
   text-transform: uppercase;
-  text-align: center;
-  background-image: url(../icons/works_header.svg);
-  background-repeat: no-repeat;
-  background-position: center; }
+  text-align: center; }
   .title__inner:before {
     content: "";
     width: 25px;
@@ -234,16 +741,26 @@ svg {
     top: 72px; }
 
 .title__inner__text {
+  font-family: 'bernier-distressed';
+  font-weight: normal;
+  font-style: normal; }
+
+.title__inner__text {
   margin: 0;
-  margin-top: 40px;
   font-size: 60px; }
+
+.svg_inner_works {
+  position: relative;
+  bottom: 98px;
+  opacity: .2; }
 
 html, body {
   height: 100%; }
 
 body {
   box-sizing: border-box;
-  background: url(../img/welcome-bg.jpg) no-repeat center; }
+  font-family: 'roboto-regular';
+  font-size: 16px; }
 
 li {
   list-style: none; }

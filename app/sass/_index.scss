@@ -1,9 +1,17 @@
 @import "_color.scss";
+@import "_fonts.scss";
+body{
+	background: url(../img/welcome-bg.jpg) no-repeat center;
+	box-sizing:border-box;
+}
 .wrapper__welcome{
-	width:100%;	
-	min-height: 100%;	
+	display:table;
+	width:100%;
+	max-width:1800px;	
+	height: 100%;	
 	margin-bottom: -100px;
 	position:relative;
+	
 }
 .wrapper-welcome:after {	
 	content: '';
@@ -19,6 +27,8 @@
 }
 
 .welcome_login{
+	font-family: 'roboto-medium';
+	font-size:1em;
 	position: absolute;
 	right:0;
 	top:0;
@@ -34,15 +44,14 @@
 		color: $welcome_nav;
 	}	  
 }
-.avatar{
-	position: absolute;
-	max-width: 380px;
-	height: 400px;
+.avatar__vert__align__wrap{
+	display:table-cell;
+	vertical-align:middle;
+}
+.avatar{	
+	max-width: 380px;	
 	background: rgba(255,255,255,.7);
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
+	border-radius: 5px;
 	margin: auto;
 	color: $welcome_h3;
 	text-align: center;	
@@ -54,84 +63,71 @@
 	border: 1px solid #fff;
 	border-radius: 50%;
 	margin: 40px auto;
-	background:url(../img/ava.jpg)no-repeat center;
+	
 }
+.ava__img{
+	border-radius: 50%;
+	padding:40px;
+}
+
 .avatar_name{
-	margin-bottom: 10px;
+	font-family: 'roboto-medium';
+	font-size:1.7em;
+	margin: 10px auto;
 }
 .welcome__nav{
-	// position: absolute;
-	// bottom: 0;
-	width: 380px;
+	
 }
 .welcome__nav__list{	
 	margin:0;
 	padding:0;
-	font-size:0;
-	text-align: justify;
-	& :after{
-		content:"";
-		display: inline-block;
-		width: 100%;
-		height:0;
-	}
-
+	width:100%;
+	display: table;	
 }
-.welcome__nav__item{
-	display: inline-block;
-	height: 50px;
-	line-height: 50px;
-	padding: 5px 30.8px;
+.welcome__nav__item{		
+	display: table-cell;
 	border-right: 1px solid #fff;	
-	background-color:$welcome_nav;
-	cursor: pointer;
-	& :hover{
-		background-color:$welcome_nav_hover;
-	}
-	
 }
 .welcome__nav__item:last-child{
-		border: none;
-	}
+	border:none;	
+}
 
 .welcome__nav__link{
-	margin: 0;		
+	display:block;
+	width:100%;	
+	overflow:hidden;
+	padding: 15px 0;		
 	text-decoration: none;
 	color:#fff;
-	font-size:16px;
+	font-size:16px;			
+	background-color:$welcome_nav;
+	&:hover{
+		background-color:$welcome_nav_hover;
+	}
+	&:last-child{
+		border: none;
+	}
 }
 //social icons
 .welcome__social__list{
-	width: 100%;
+	@include clearfix();
+	width: 50%;
 	margin:20px auto;
 	padding:0;
 }
 .welcome__social__item{
 	display: inline-block;	
-	width: 31px;
-	height: 23px;
 	margin-left: 15px;	
-	text-indent: 100%;//mixin - скрытие текста
-  	white-space: nowrap;//
-  	overflow: hidden;//
-  	&:hover{
-  		background-position-y: -23px;
-  		cursor: pointer;
-  	}
   	&:first-child{
   		margin-left:0;
   	}
 }
-.vk{
-	background:url(../img/sprite_social.png);
-	background-position: 0 0;
-	
+.welcome__social__link{
+	padding: 5px;
 }
-.github{
-	background:url(../img/sprite_social.png);
-	background-position: 56px 0;
-}
-.linkedin{
-	background:url(../img/sprite_social.png);
-	background-position: 28px 0;
+.svg_welcome_social{
+	fill:$welcome_nav;
+	&:hover{
+		fill:$welcome_nav_hover;
+	}
 }

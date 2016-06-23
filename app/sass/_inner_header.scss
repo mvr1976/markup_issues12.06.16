@@ -1,0 +1,139 @@
+@import "_mixins.scss";
+@import "_fonts.scss";
+$trian_color:#faf8f0;
+$dash: #c5cbcd;
+$dash-left: 385px;
+$dash-right: 385px;
+$top: 72px;
+$dash-left-1: 85px;
+$dash-right-1: 85px;
+$top-1: 125px;
+body{
+	background: url(../img/welcome-bg.jpg) no-repeat center;
+	box-sizing:border-box;
+}
+.inner__pages__header{
+	@include clearfix();
+	width: 100%;
+	max-width:1800px;
+	height:100%;
+	// height:auto;
+	// min-height: 100%;	
+	// background: url(../img/welcome-bg.jpg) top center;
+	// background-repeat: no-repeat;
+}
+
+.header__socials{
+	float: left;
+	margin:15px 0 0 0;
+	padding-left: 20px;
+
+}
+.header__soc__item{
+	display:inline-block;
+	margin: 0 10px;
+	text-align: center;
+}
+.svg_inner_header{
+	fill: rgba(255,255,255,.7);
+	// z-index:10;
+	&:hover{
+		fill: #fff;
+	}
+}
+.hamburger{
+	float: right;
+	margin: 20px 20px 0 0;
+	cursor: pointer;
+}
+.portfolio_bg{
+	position: absolute;
+	top: 30%;
+	left:5%;
+}
+.svg_portfolio_bg{
+	fill:rgba(255,255,255,.1);
+	width:100%;
+}
+.avatar__inner{
+	
+	margin: 0 auto;
+	margin-top: 150px;	
+	color: #fff;
+	text-align: center;
+}
+.ava__inner{
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+.ava__title{
+	margin-bottom: 10px;
+}
+.arrow__down{
+	margin-top: 8%;
+}
+.svg_inner_header_arrow{
+	margin: 0 auto;
+	margin-bottom: 5%;
+	opacity:.7;
+}
+
+.triangles{
+	position: relative;	
+	width: 100%;
+	// height: 200px;
+
+}
+.inner_header_triangle{
+	position: absolute;
+	bottom: 135px;
+	left:0;
+	fill:$trian_color;
+}
+// .triangle{
+// 	float:left;
+// 	width:50%;
+// 	height:100%;
+// }
+// .svg_inner_bg{
+	// display:block;
+	// position:relative;
+	// margin-top: -165px;
+	
+			
+// .trian_left{
+// 	fill:$trian_color;
+// 	width:50%;
+// }
+// .trian_right{
+// 	fill:$trian_color;
+// 	width:50%;
+// }
+.title__inner{
+	width: 100%;
+	height:135px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $trian_color;
+	text-transform: uppercase;
+	text-align: center;	
+	@include titles-dashes($dash-left, $dash-right, $top)	
+}
+.title__inner__text{
+	font-family: 'bernier-distressed';	
+	font-weight: normal;
+	font-style: normal;
+}
+
+.title__inner__text{
+	margin:0;
+	// margin-top: -5px;
+	font-size: 60px;
+}
+.svg_inner_works{
+	position:relative;
+	bottom: 98px;
+	opacity:.2;
+}

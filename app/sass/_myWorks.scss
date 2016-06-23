@@ -1,101 +1,164 @@
 @import "_mixins.scss";
+@import "_fonts.scss";
 $trian_color:#faf8f0;
 $dash: #c5cbcd;
 $dash-left: 385px;
 $dash-right: 385px;
 $top: 72px;
-.inner__pages__header{
-	width: 100%;
-	height: 100vh;
+$dash-left-1: 85px;
+$dash-right-1: 85px;
+$top-1: 125px;
+$dash-left-3: -27px;
+$dash-right-3: -27px;
+$top-3: 17px;
+
+
+//section work items
+.work__items{
+	width:100%;
+	height:100%;
+	@include clearfix();
+}
+.active__item__description{
 	position: relative;
-	background: url(../img/welcome-bg.jpg) no-repeat center;
-	z-index:5;
-}
-
-.avatar__inner{
-	margin:0 auto;
-	margin-top: 5%;
-	color: #fff;
-	text-align: center;
-}
-.ava__title{
-	margin-bottom: 10px;
-}
-.arrow__down{
-	margin-top: 10%;
-}
-// .triangles{
-// 	width: 100%;
-// 	overflow:hidden;
+	width: 50%;
+	height:100%;
+	float: left;
+	background-color:#f0efe9;
 	
-// }
-svg{
-	z-index: 2;
-	position: absolute;
-	bottom: 165px;
-	left: 0;
-	right: 0;
 }
-				
-.trian_left{
-	fill:$trian_color;
-	width:50%;
-}
-.trian_right{
-	fill:$trian_color;
-	width:50%;
-}
-.title__inner{
-	width: 100%;
-	height:165px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: $trian_color;
-	text-transform: uppercase;
+.a-i-d_center{
+	max-width: 420px;
+	max-height: 250px;
+	margin: 0 auto;
+	margin-top: 23vh;
 	text-align: center;
-	background-image:url(../icons/works_header.svg);
-	background-repeat:no-repeat;
-	background-position: center;
-	@include titles-dashes($dash-left, $dash-right, $top)	
-	// &:before{
-	// 	content:"";
-	// 	width: 25px;
-	// 	height: 6px;
-	// 	background-color: $dash;
-	// 	position: absolute;
-	// 	left: 365px;
-	// 	top: 15px;
-	// }
-	// &:after{
-	// 	content:"";
-	// 	width: 25px;
-	// 	height: 6px;
-	// 	background-color: $dash;
-	// 	position: absolute;
-	// 	right: 365px;
-	// 	top: 15px;
-	// }
+	text-transform: uppercase;
+	@include titles-dashes($dash-left-1, $dash-right-1, $top-1)
 }
-.title__inner__text{
-	margin:0;
-	margin-top: 40px;
-	font-size: 60px;
-}
-// .triangle__left{
-// 	float:left;
-// 	width:50%;
-// 	background-color:#777;
-// }
-// .triangle__right{
-// 	float:right;
-// 	width: 50%;
-// }
-// .box {
-//   margin: 50px auto;
-// }
 
-// .traingle {
-//   fill: #4CAF50;
-// }
+
+
+.a-i-d_title{
+	font-family: 'bernier-distressed';
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.a-i-d_text{
+	color:$welcome_nav;
+	border-top: 2px solid $welcome_nav;
+	border-bottom: 2px solid $welcome_nav;
+	padding: 5px 0;
+	margin-bottom: 20px;
+}
+.a-i-d_button{
+	position: relative;
+	background-color: $welcome_nav;	
+	padding: 10px 35px;
+	border-radius: 5px;
+}
+.a-i-d_link{
+	color: #fff;
+	text-decoration: none;
+}
+.svg_works_link{
+	position: absolute;
+	left: -46px;
+	top: 9px;
+}
+.work__items__slider{
+	@include clearfix();
+	width:50%;
+	height:100%;
+	float: right;
+	background-color:#efebe0;
+}
+.work__item__active{
+	width: 100%;
+	height: 50%;
+}
+.works_slides{
+	position: relative;
+	height: 50%;
+}
+//slider sites section
+.work__items__list{
+	position: absolute;
+	bottom:0;
+	width:100%;
+	padding:0; 
+	margin:0;
+}
+.work__item{
+	// position: relative;
+	// top: 157px;
+	// float: left;
+	margin: 0 auto;
+	display: inline-block;
+	width: 49%;
+	vertical-align: bottom;
+	// background:black;
+	
+}
+.svg_works_arrow_down, {
+	position: absolute;
+	fill:rgba(255,255,255,.7);
+	top: 43%;
+	left:20%;
+
+}
+.svg_works_arrow_up{
+	position: absolute;
+	fill:rgba(255,255,255,.7);
+	top: 43%;
+	left:70%;
+}
+.work_img{
+	max-width:100%;
+}
+
+//section about me inner
+.people__feedback{
+	width:100%;
+	
+	background: url(../img/about_bg.jpg) no-repeat center;
+	background-size:cover;
+	z-index:1;
+}
+.people_say{
+	
+	text-transform: uppercase;
+	text-align:center;
+	position:relative;
+	margin: 20px auto;
+	width: 32%;
+	@include titles-dashes($dash-left-3, $dash-right-3, $top-3)
+}
+.my_works_text{
+	font-family: 'bernier-distressed';
+	font-size: 55px;
+	font-style:normal;
+}
+.feedback_list{
+	display:table;
+	margin: 0 auto;
+	width:80%;
+	
+}
+.people__feedback__item{
+	@include clearfix();
+	display:table-cell;
+	vertical-align: top;
+	text-align:justify;
+	padding: 10px;
+	width: 50%;
+	// height:100%;
+	// background:#888;
+}
+.tutor_img{
+	border-radius: 50%;
+}
+.tutor_name{
+	float: right;
+	width: 70%;
+}
