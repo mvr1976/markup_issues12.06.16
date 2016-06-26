@@ -31,32 +31,41 @@ block content
                         //-     a.work__link(href="#") Сайт3
         section.people__feedback
             div.people_say
+                svg(class="svg-about_header-dims svg_about_people_say" width="498.161px" height="175.44px" viewBox="0 0 498.161 175.44")
+                    use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#about_header")
                 h1.my_works_text Что обо мне говорят
             div.feedback_list
                 div.people__feedback__item
-                    p.
-                        Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    div.blockquote_left
+                        i(class="fa fa-quote-left fa-2x" aria-hidden="true")
+                    blockquote Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                     div.tutor__avatar
                         img.tutor_img(src='app/img/dima.jpg' alt='Да это же Дима!')
-                    div.tutor_name
-                        h4 Ковальчук Дмитрий
-                        p основатель LoftSchool
+                        div.tutor_name
+                            h4.tutor_surname Ковальчук Дмитрий
+                            p.tutor_position основатель LoftSchool
                 div.people__feedback__item
-                    p.
-                        Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!
+                    div.blockquote_left
+                        i(class="fa fa-quote-left fa-2x" aria-hidden="true")
+                    blockquote Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!
                     div.tutor__avatar
                         img.tutor_img(src='app/img/zar.jpg' alt='Да это же Зар!')
-                    div.tutor_name
-                        h4 Зар Захаров
-                        p главный преподаватель
+                        div.tutor_name
+                            h4.tutor_surname Зар Захаров
+                            p.tutor_position главный преподаватель
             div.feedback__form
-                label Связаться со мной
-                input(name="name", placeholder="имя")
-                input(name="email", placeholder="Email")
-                textarea(name="text", rows="3", placeholder="Ваше сообщение")
-                button(type="submit", class="button__submit") Отправить
-                button(type="reset", class="button__reset") Очистить
-        include includes/common_footer.jade
+                label.feedback_form_label Связаться со мной
+                input.feedback_form_input(name="name", placeholder="имя")
+                input.feedback_form_input(name="email", placeholder="Email")
+                textarea.feedback__form_textarea(name="text", rows="3", placeholder="Ваше сообщение")
+                div.buttons_list
+                    button.button_item(type="submit", class="button__submit") Отправить
+                    button.button_item(type="reset", class="button__reset") Очистить
+            div.works_arrow_up
+                svg(class="svg-portf_arrow_up-dims svg_works_arrow_up2" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_up")
+            
+        include inner_footer
 
 
         

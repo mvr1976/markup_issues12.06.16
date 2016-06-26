@@ -1,33 +1,29 @@
-extends layout
-block content
-    div.log__in__wrapper
-        div.login__vert__align__wrap
-            div.log__in__welcome
-                div.log__in__header
-                    h3 Авторизуйтесь
-                div.form__group__log-in
-                    label.log-in__label
-                        i(class="fa fa-key login-key", aria-hidden="true")
-                        input.log-input(id="login", name="login", type="text", placeholder="Логин" class="login_input_text")
-                div.form__group__log-in
-                    label.log-in__label
-                    i(class="fa fa-user login-user" aria-hidden="true")
-                    input.log-input(id="password", name="password", type="text", placeholder="Пароль" class="login_input_text")
-                div.capcha
-                    div.checkbox
-                        i(class="fa fa-check-square fa-lg" aria-hidden="true")
-                        input(type="checkbox", name="checkbox")
-                        label Я человек                    
-                h4 Вы точно не робот?
-                div.radio
-                    label.login__radio
-                        input(type="radio", checked="checked", name="yes")
-                        span Да
-                    label.login__radio 
-                        input(type="radio", checked="checked", name="yes")
-                        span Не уверен
-                ul.login_nav_list
-                    li.login_nav_item
-                        a.login_nav_link(href="#" alt="#") На главную
-                    li.login_nav_item
-                        a.login_nav_link(href="#" alt="#") Войти
+div.log__in__welcome.flipover_hidden
+    div.log__in__header
+        h3 Авторизуйтесь
+    div.form__group__log-in
+        label.log-in__label
+            i(class="fa fa-key login-key", aria-hidden="true")
+            input.log-input(id="login", name="login", type="text", placeholder="Логин" class="login_input_text")
+    div.form__group__log-in
+        label.log-in__label
+        i(class="fa fa-user login-user" aria-hidden="true")
+        input.log-input(id="password", name="password", type="text", placeholder="Пароль" class="login_input_text")
+    div.capcha
+        div.checkbox
+            i(class="fa fa-check-square fa-lg" aria-hidden="true")
+            input(type="checkbox", name="checkbox")
+            label Я человек                    
+    h4 Вы точно не робот?
+    div.radio
+        label.login__radio
+            input(type="radio", checked="checked", name="yes")
+            span Да
+        label.login__radio 
+            input(type="radio", checked="checked", name="yes")
+            span Не уверен
+    ul.login_nav_list
+        li.login_nav_item
+            a.login_nav_link(href="#" alt="#") На главную
+        li.login_nav_item
+            a.login_nav_link(href="#" alt="#") Войти

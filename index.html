@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="app/css/main.css">
-    <script src="app/bower/jquery/dist/jquery.min.js"></script>
-    <script src="app/js/main.js"></script>
   </head>
   <body>
     <div class="wrapper__welcome">       
@@ -35,11 +33,46 @@
           <ul class="welcome__nav__list">
             <li class="welcome__nav__item"><a href="my_works.html" class="welcome__nav__link">Мои работы</a></li>
             <li class="welcome__nav__item"><a href="about_me.html" class="welcome__nav__link">Обо мне</a></li>
-            <li class="welcome__nav__item"><a href="my_blog.html" class="welcome__nav__link">Блог        </a></li>
+            <li class="welcome__nav__item"><a href="my_blog.html" class="welcome__nav__link">Блог</a></li>
+          </ul>
+        </div>
+        <div class="log__in__welcome flipover_hidden">
+          <div class="log__in__header">
+            <h3>Авторизуйтесь</h3>
+          </div>
+          <div class="form__group__log-in">
+            <label class="log-in__label"><i aria-hidden="true" class="fa fa-key login-key"></i>
+              <input id="login" name="login" type="text" placeholder="Логин" class="log-input login_input_text">
+            </label>
+          </div>
+          <div class="form__group__log-in">
+            <label class="log-in__label"></label><i aria-hidden="true" class="fa fa-user login-user"></i>
+            <input id="password" name="password" type="text" placeholder="Пароль" class="log-input login_input_text">
+          </div>
+          <div class="capcha">
+            <div class="checkbox"><i aria-hidden="true" class="fa fa-check-square fa-lg"></i>
+              <input type="checkbox" name="checkbox">
+              <label>Я человек                    </label>
+            </div>
+          </div>
+          <h4>Вы точно не робот?</h4>
+          <div class="radio">
+            <label class="login__radio">
+              <input type="radio" checked="checked" name="yes"><span>Да</span>
+            </label>
+            <label class="login__radio"> 
+              <input type="radio" checked="checked" name="yes"><span>Не уверен</span>
+            </label>
+          </div>
+          <ul class="login_nav_list">
+            <li class="login_nav_item"><a href="#" alt="#" class="login_nav_link">На главную</a></li>
+            <li class="login_nav_item"><a href="#" alt="#" class="login_nav_link">Войти</a></li>
           </ul>
         </div>
       </div>
     </div>
     <footer class="footer">&copy Максим Рудик | создано с любовью в Loftschool | 2016</footer>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="app/js/main.js"></script>
   </body>
 </html>

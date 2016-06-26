@@ -25,6 +25,20 @@ $top2:74px;
 	color: $welcome_h3;
 	text-align: center;		
 }
+.flipover_hidden{
+	-moz-perspective: 800px;
+ 	-webkit-perspective: 800px;
+ 	perspective: 800px;
+ 	-moz-transform:rotateY(-180deg);
+ 	-webkit-transform:rotateY(-180deg);
+ 	transform:rotateY(-180deg);
+ 	-moz-backface-visibility: hidden;
+ 	-webkit-backface-visibility: hidden;
+ 	backface-visibility: hidden;
+ 	-moz-transition:0.8s;
+ 	-webkit-transition:0.8s;
+ 	transition:0.8s;
+}
 .log__in__header{
 	width:100%;
 	height:100px;
