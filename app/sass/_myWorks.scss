@@ -5,21 +5,27 @@ $dash: #c5cbcd;
 $dash-left: 385px;
 $dash-right: 385px;
 $top: 72px;
-$dash-left-1: 85px;
-$dash-right-1: 85px;
-$top-1: 125px;
+$dash-left-1: 36px;
+$dash-right-1: 36px;
+$top-1: 18px;
 $dash-left-3: -27px;
 $dash-right-3: -27px;
 $top-3: 17px;
 $dash-left-4: 25px;
 $dash-right-4: 25px;
 $top-4: 38px;
-
+.works_background_container{
+	background: url(../img/welcome-bg.jpg) no-repeat center;
+	width:100%;
+	height:100%;
+	margin-bottom:-100px;
+}
 
 //section work items
 .work__items{
 	width:100%;
 	height:100%;
+	margin-top:-35px;
 	@include clearfix();
 }
 .active__item__description{
@@ -31,6 +37,7 @@ $top-4: 38px;
 	
 }
 .a-i-d_center{
+	position:relative;
 	max-width: 420px;
 	max-height: 250px;
 	margin: 0 auto;
@@ -44,20 +51,21 @@ $top-4: 38px;
 
 .a-i-d_title{
 	font-family: 'bernier-regular';
-	font-size: 40px;
-	margin-bottom: 20px;
+	font-size: 2.1em;
+	margin-bottom: 30px;
+	color: #455a64;
 }
 .a-i-d_text{
 	color:$welcome_nav;
 	border-top: 2px solid $welcome_nav;
 	border-bottom: 2px solid $welcome_nav;
-	padding: 5px 0;
-	margin-bottom: 20px;
+	padding: 14px 0;
+	margin-bottom: 40px;
 }
 .a-i-d_button{
 	position: relative;
 	background-color: $welcome_nav;	
-	padding: 10px 35px;
+	padding: 10px 18px 10px 50px;
 	border-radius: 5px;
 }
 .a-i-d_link{
@@ -66,8 +74,8 @@ $top-4: 38px;
 }
 .svg_works_link{
 	position: absolute;
-	left: -46px;
-	top: 9px;
+	left: -40px;
+	top: 12px;
 }
 .work__items__slider{
 	@include clearfix();
@@ -144,8 +152,10 @@ $top-4: 38px;
 }
 .my_works_text{
 	font-family: 'bernier-regular';
-	font-size: 43px;
-	// font-style:normal;
+	font-size: 2.1em;
+	color: #455a64;
+	font-weight:normal;
+	font-style:normal;
 }
 .blockquote_left{
 	padding-left: 41px;
@@ -155,21 +165,20 @@ $top-4: 38px;
 }
 
 .feedback_list{
-	display:table;
+	display:flex;
+	justify-content:space-between;
+
 	margin: 0 auto;
 	width:72%;
 	
 }
-.people__feedback__item{
-	@include clearfix();
-	display:table-cell;
-	vertical-align: top;
-	text-align:justify;
+.people__feedback__item{	
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	flex:1;
 	padding: 10px;
-	width: 50%;
-	height:100%;
-	// background:#888;
-
+	color:#77868d;	
 }
 .tutor__avatar{
 	@include clearfix();

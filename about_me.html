@@ -8,67 +8,189 @@
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="app/css/main.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="app/js/main.js"></script>
   </head>
   <body>
-    <wrapper class="wrapper">
-      <section class="inner__pages__header">
-        <ul class="header__socials">
-          <li class="footer_socials_item">vk<a href="https://vk.com" class="footer__socials__link"></a></li>
-          <li class="footer_socials_item">github<a href="https://github.com" class="footer__socials__link"></a></li>
-          <li class="footer_socials_item">linkedin<a href="https://linkedin.com" class="footer__socials__link"></a></li>
-        </ul>
-        <nav class="hamburger"></nav>
-        <div class="avatar"><img src="app/img/ava.jpg" alt="avatar">
-          <h3>Максим Рудик</h3><span>Личный сайт веб-разработчика отважного летчика</span>
-          <div class="arrow__down"></div>
+    <div class="wrapper">
+      <div class="background_container">
+        <div class="inner__pages__header"> 
+          <ul class="header__socials">
+            <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+                <svg width="30.011px" height="17.123px" viewbox="0 0 30.011 17.123" class="svg-socials--vk-dims svg_inner_header vk">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#vk"></use>
+                </svg></a></li>
+            <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+                <svg width="26px" height="22px" viewbox="0 0 26 22" class="svg-socials--github-dims svg_inner_header github">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#github"></use>
+                </svg></a></li>
+            <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+                <svg width="24px" height="23px" viewbox="0 0 24 23" class="svg-socials--in-dims svg_inner_header linkedin">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#in">            </use>
+                </svg></a></li>
+          </ul>
+          <div class="hamburger">
+            <svg width="40px" height="35px" viewbox="0 0 40 35" class="svg-hamburger-dims svg_inner_hamburger">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#hamburger"></use>
+            </svg>
+          </div>
+          <div class="portfolio_bg">
+            <svg width="1175.495px" height="313.961px" viewBox="0 0 1175.495 313.961" enable-background="new 0 0 1175.495 313.961" class="svg-portfolio_header-dims svg_portfolio_bg">
+              <use xlink:href="app/icons/sprites/sprite_social.svg#portfolio_header"></use>
+            </svg>
+          </div>
+          <div class="avatar__inner"><img src="app/img/ava.jpg" alt="avatar" class="ava__inner">
+            <h3 class="ava__title">Максим Рудик</h3><span>Личный сайт веб-разработчика</span>
+            <div class="arrow__down">
+              <svg width="25.18px" height="16.164px" viewBox="0 0 25.18 16.164" class="svg-arrow_down-dims svg_inner_header_arrow">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#arrow_down">           </use>
+              </svg>
+            </div>
+          </div>
         </div>
-        <div class="box"></div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle"></svg>
-        <polygon points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-        <polygon points="1000,0   1000,86   500,86   500,75.5"></polygon>
-      </section>
-      <section class="about__me">
-        <div class="about__me__left">
-          <h3>Обо мне</h3>
+        <div class="triangles">           
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="inner_header_triangle inner_header_triangle_about_me">
+            <polygon points="0,0   0,86   500.8,86   500.8,75.5" class="trian_left trian_left_about"></polygon>
+            <polygon points="1000,0   1000,86   500,86   500,75.5" class="trian_right trian_right_about"></polygon>
+          </svg>
         </div>
-        <div class="about__me__right"><img src="#" alt="здесь мое фото">
-          <h4>Кто я</h4>
-          <p>. Я будущий веб-разработчик из еще не определенной на сегодня точки мира. Мне 39 лет.</p>
-          <p>. Этот сайт я сделал в рамках обучения в Школе онлайн-образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво.</p>
+      </div>
+      <div class="triangles_extentions">
+        <div class="extent_left">
+          <div class="extent_left_left">
+            <div class="left_about_me">
+              <h3 class="left_about_me_title">Обо мне</h3>
+            </div>
+          </div>
+          <div class="extent_left_right"><img src="app/img/page_about_photo.jpg" class="page_about_ava">
+            <div class="left_about_description">
+              <h4 class="who_am_i">Кто я</h4>
+              <p>Я веб-разработчик из Ростова-на-Дону. Все хотят стать веб-разработчиками, чтобы жить у моря, а я и так уже 3 года живу у моря, и вот, захотел стать веб-разработчиком.</p>
+              <p>Очевидно существует как прямая, так и обратная зависимость между расстоянием от береговой линии и тягой к маловысокохудожественной самодеятельности.</p>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="my__skills">
-        <h4>Чем я могу быть вам полезен</h4>
-        <p>Больше всего меня привлекает фронтенд-разработка, но я также могу решать несложные задачи на Backend. Но давайте по порядку.</p>
-        <div class="frontend">
-          <h4>frontend</h4>
-          <p>html5</p>
-          <p>css3</p>
-          <p>javascript&jquery</p>
+        <div class="extent_right">
+          <h3 class="extent_right_title">Чем я могу быть вам полезен</h3>
+          <p class="extent_right_text">Когда я всему научусь, больше всего меня будет привлекать FRONTEND разработка, но смогу решать и несложные задачи по BACKEND. Например устанавливать Вордпресс.</p>
+          <div class="about_me_skills">
+            <div class="skills_list">frontend
+              <ul class="frontend_list">
+                <li class="frontend_item"> 
+                  <div class="skills">
+                    <div class="skills_text">html5</div>
+                    <svg width="120" height="120" class="common_circle">
+                      <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                      <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                    </svg>
+                  </div>
+                </li>
+                <li class="frontend_item"> 
+                  <div class="skills">
+                    <div class="skills_text">css3</div>
+                    <svg width="120" height="120" class="common_circle">
+                      <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                      <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                    </svg>
+                  </div>
+                </li>
+                <li class="frontend_item"> 
+                  <div class="skills">
+                    <div class="skills_text">javascript &jquery</div>
+                    <svg width="120" height="120" class="common_circle">
+                      <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                      <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"> </circle>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills_list">backend
+              <ul class="backend_list">
+                <li class="backend_item"> 
+                  <div class="skills">
+                    <div class="skills_text">php
+                      <svg width="120" height="120" class="common_circle">
+                        <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                        <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="backend_item"> 
+                  <div class="skills">
+                    <div class="skills_text">mysql
+                      <svg width="120" height="120" class="common_circle">
+                        <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                        <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="backend_item"> 
+                  <div class="skills">
+                    <div class="skills_text">node.js&npm
+                      <svg width="120" height="120" class="common_circle">
+                        <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                        <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="backend_item"> 
+                  <div class="skills">
+                    <div class="skills_text">mongo.db
+                      <svg width="120" height="120" class="common_circle">
+                        <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                        <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills_list">workflow
+              <ul class="workflow_list">
+                <li class="workflow_item"> 
+                  <div class="skills">
+                    <div class="skills_text">git
+                      <svg width="120" height="120" class="common_circle">
+                        <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                        <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="workflow_item"> 
+                  <div class="skills">
+                    <div class="skills_text">gulp
+                      <svg width="120" height="120" class="common_circle">
+                        <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                        <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="workflow_item"> 
+                  <div class="skills">
+                    <div class="skills_text">bower
+                      <svg width="120" height="120" class="common_circle">
+                        <circle r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none"></circle>
+                        <circle r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)" class="sector"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="backend">
-          <h4>backend</h4>
-          <p>php</p>
-          <p>mysql</p>
-          <p>node.js&npm</p>
-          <p>mongoDB</p>
-        </div>
-        <div class="workflow">
-          <h4>workflow</h4>
-          <p>git</p>
-          <p>gulp</p>
-          <p>bower</p>
-        </div>
-      </section>
-      <section class="my_map">
-        <div class="contact__info">
-          <h3>Контакты</h3>
-          <p>maxim_rudik</p>
-          <p>mvr1976@gmail.com</p>
-          <p>+7-928-400-15-03</p>
-          <p>г. Геленджик, ул. Виноградарь-5, д.42</p>
-        </div>
-      </section>
+      </div>
+      <div id="google-map">
+        <div id="google-container"></div>
+        <div id="zoom-in"></div>
+        <div id="zoom-out"></div>
+      </div>
       <footer class="inner_footer">
         <div class="upper__footer">
           <nav class="footer__navy">
@@ -103,6 +225,20 @@
           </div>
         </div>
       </footer>
-    </wrapper>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADBkK0q02rT0ZN2wCEwIdTvmmHcG5AuP4&amp;callback=initMap">       </script>
+      <script src="app/js/main.js"></script>
+    </div>
+    <div class="modal_window">
+      <div class="modal_nav">
+        <ul class="modal_nav_list">
+          <li class="modal_nav_item"><a href="my_works.html" class="modal_nav_link">Мои работы</a></li>
+          <li class="modal_nav_item"><a href="about_me.html" class="modal_nav_link">Обо мне</a></li>
+          <li class="modal_nav_item"><a href="my_blog.html" class="modal_nav_link">Блог</a></li>
+          <li class="modal_nav_item"><a href="index.html" class="modal_nav_link">Авторизация</a></li>
+        </ul>
+      </div>
+      <div class="overlay"></div>
+      <div class="modal_close"></div>
+    </div>
   </body>
 </html>

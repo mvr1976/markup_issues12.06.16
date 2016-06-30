@@ -1,10 +1,24 @@
+.inner_footer{
+	position: relative;
+	z-index: 10;
+	margin-top: -165px;
+	// position: absolute;
+	// bottom: 0;
+	// left:0;
+	// z-index:10;
+}
+.inner_footer.works_footer{
+	margin-top:0;
+	background:#555b5e;
+}
 .upper__footer,.down__footer{
 	width: 100%;
 	max-width:1800px;
 	@include clearfix();
-	background: #2f4449;
+	background:rgba(47,68,73,.5);
 	color: #fff;
 	border-bottom: 1px solid #606e72;
+	// z-index:1000000000;
 }
 .footer__navy{
 	float: left;

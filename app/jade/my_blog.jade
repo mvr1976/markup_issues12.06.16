@@ -1,24 +1,85 @@
 extends layout
 block content
-    wrapper.wrapper
-        include includes/blog_header.jade 
-        section.articles
-            article
-                h3 Самое важное в САСС
-                p
-                    span 22 ноября 2016
-                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.                              
-            article
-                h3 Приемы верстки, без которых не обходится ни один сайт
-                p
-                    span 23 ноября 2016
-                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
-        aside.articles_navy
-            ul.navy__list
-                each val, index in {'Самое важное в САСС': '#', 'Приемы верстки, без которых не обходится ни один сайт':'#', 'Джентльменский набор плагинов Gulp':'#', 'Почему я выбрал Jade':'#'}             
-                        li.navy__list__item
-                            a.navy__link(href= val)= index
-        include inner_footer
+    div.wrapper
+        section.inner__pages__header_blog
+            div.header_blog_top
+                nav.blog_socials                         
+                    ul.header__socials_blog
+                        li.header__soc__item
+                            a.header__soc__link(href="#" alt="#")
+                                svg(class="svg-socials--vk-dims svg_inner_header vk" width ="30.011px" height="17.123px" viewbox="0 0 30.011 17.123")
+                                    use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#vk")
+                        li.header__soc__item
+                            a.header__soc__link(href="#" alt="#")
+                                svg(class="svg-socials--github-dims svg_inner_header github" width ="26px" height="22px" viewbox="0 0 26 22")
+                                    use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#github")
+                        li.header__soc__item
+                            a.header__soc__link(href="#" alt="#")
+                                svg(class="svg-socials--in-dims svg_inner_header linkedin" width ="24px" height="23px" viewbox="0 0 24 23")
+                                    use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#in")             
+                div.hamburger.hamburger_blog
+                    svg(class="svg-hamburger-dims svg_inner_hamburger" width ="40px" height="35px" viewbox="0 0 40 35")
+                        use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#hamburger")            
+            div.avatar__inner_blog
+                img.ava__inner.ava__inner_blog(src="app/img/ava.jpg", alt="avatar")
+                div.blog_bg_wrap
+                    svg(class="svg-blog_header-dims svg_blog_bg" width="400px" height="250px" viewBox="0 0 400 250")
+                        use(xlink:href="app/icons/sprites/sprite_social.svg#blog_header")
+                    div.blog_header_text_box
+                        h1.ava__title_blog Блог
+                        span.title_blog_span Статьи которые я напишу                
+                    div.arrow__down_blog
+                        svg(class="svg-arrow_down-dims svg_blog_header_arrow"  width="25.18px" height="16.164px" viewBox="0 0 25.18 16.164")
+                            use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#arrow_down")            
+            div.triangles_blog             
+                svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="blog_header_triangle")
+                    polygon.trian_left(points="0,0   0,86   500.8,86   500.8,75.5")
+                    polygon.trian_right(points="1000,0   1000,86   500,86   500,75.5")
+        
+        div.blog_articles_and_nav   
+            section.articles_blog
+                article
+                    h2 Самое важное в САСС
+                    p
+                        span 22 ноября 2016
+                    p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.                              
+                article
+                    h2 Приемы верстки, без которых не обходится ни один сайт
+                    p
+                        span 23 ноября 2016
+                    p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+            aside.articles_navy_blog
+                ul.navy__list_blog
+                    each val, index in {'Самое важное в САСС': '#', 'Приемы верстки, без которых не обходится ни один сайт':'#', 'Джентльменский набор плагинов Gulp':'#', 'Почему я выбрал Jade':'#'}             
+                            li.navy__list__item_blog
+                                a.navy__link_blog(href= val)= index
+        footer.blog_footer
+            div.upper__footer
+                nav.footer__navy
+                    ul.footer__navy__list
+                        each val, index in {'Мои работы':'my_works.html', 'Обо мне':'about_me.html', 'Блог':'my_blog.html', 'Авторизация':'admin_panel.html'}
+                            li.footer__navy__item= index
+                                a.footer__navy__link(href= val)
+                ul.footer__socials
+                    li.footer_socials_item
+                        a.footer__socials__link
+                            svg(class="svg-vk_round-dims svg_footer vk" width="50px" height="50px" viewBox="0 0 50 50")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#vk_round")                    
+                    li.footer_socials_item
+                        a.footer__socials__link
+                            svg(class="svg-github_round-dims svg_footer github" width="50px" height="50px" viewBox="0 0 50 50")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#github_round")
+                    li.footer_socials_item
+                        a.footer__socials__link
+                            svg(class="svg-in_round-dims svg_footer linkedin" width="50px" height="50px" viewBox="0 0 50 50")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#in_round")
 
-
+            div.down__footer
+                div.down__footer__left
+                    p Я веб-разработчик из г. Геленджика и этот сайт я сделал в рамках обучения в Школе онлайн-образования LoftSchool.
+                div.down__footer__right
+                    p &copy Максим Рудик | создано с любовью в Loftschool | 2016
+    include modal_window
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="app/js/main.js")
         

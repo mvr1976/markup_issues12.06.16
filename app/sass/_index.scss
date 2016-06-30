@@ -1,32 +1,62 @@
 @import "_color.scss";
 @import "_fonts.scss";
-body{
-	background: url(../img/welcome-bg.jpg) no-repeat center;
+body{	
 	box-sizing:border-box;
 }
 .wrapper__welcome{
-	display:table;
+	background: url(../img/welcome-bg.jpg) no-repeat center;
+	
 	width:100%;
 	max-width:1800px;	
 	height: 100%;	
-	margin-bottom: -100px;
+	margin-bottom: -50px;
 	position:relative;
-
-	
+	display: flex;
 }
-.wrapper-welcome:after {	
+.wrapper__welcome:after {	
 	content: '';
 	display: block;
-	height: 100px;
+	height: 50px;
 }
-.footer{
-	min-width: 100%;	
-	height: 100px;
+.footer_welcome{
+	position: absolute;
+	bottom:0;
+	left:0;
+	min-width:100%;
+	height: 50px;
 	text-align: center;
-	line-height: 100px;
-	color: #fff;
+	line-height: 50px;
+	color: rgba(255,255,255,.7);
 }
 
+//flip-container
+.flip_container {
+	perspective: 1000px;
+	width: 380px;
+	height:400px;
+	margin: auto ;	
+}
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;	
+	transform: rotateY(0deg);
+	transition: 1s;
+}
+.back {
+	transform: rotateY(180deg);
+	transition: 1s;
+}
+//
 .welcome_login{
 	font-family: 'roboto-medium';
 	font-size:1em;
@@ -40,59 +70,36 @@ body{
 	border-radius: 5px;
 	padding: 15px 30px;
 	cursor: pointer;
+	outline:none;
 	&:hover{
 		background-color: #fff;
 		color: $welcome_nav;
 	}	  
 }
-.avatar__vert__align__wrap{
-	display:table-cell;
-	vertical-align:middle;
 
-}
-.avatar{	
-	max-width: 380px;	
+.avatar{
+	overflow:hidden;	
+	width: 380px;	
 	background: rgba(255,255,255,.7);
 	border-radius: 5px;
 	margin: auto;
 	color: $welcome_h3;
 	text-align: center;	
 }
-
-//
-
-.flipover{
-	-moz-perspective: 800px;
- 	-webkit-perspective: 800px;
- 	perspective: 800px;
- 	-moz-transform:rotateY(180deg);
- 	-webkit-transform:rotateY(180deg);
- 	transform:rotateY(180deg);
- 	-moz-backface-visibility: hidden;
- 	-webkit-backface-visibility: hidden;
- 	backface-visibility: hidden;
- 	// display:none;
- 	-moz-transition:0.8s;
- 	-webkit-transition:0.8s;
- 	transition:0.8s;
-}
-.avatar__img{
+.avatar__img__store{
 	width: 142px;
-	height: 142px;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	margin: 40px auto;
-	
+	height: 142px;	
+	margin: 40px auto 15px;	
 }
 .ava__img{
-	border-radius: 50%;
-	padding:40px;
+	border-radius: 50%;	
 }
 
 .avatar_name{
 	font-family: 'roboto-medium';
-	font-size:1.7em;
-	margin: 10px auto;
+	font-size:1.6em;
+	font-weight: normal;
+	margin: 10px auto 0;
 }
 .welcome__nav{
 	
@@ -105,7 +112,8 @@ body{
 }
 .welcome__nav__item{		
 	display: table-cell;
-	border-right: 1px solid #fff;	
+	border-right: 1px solid #fff;
+		
 }
 .welcome__nav__item:last-child{
 	border:none;	
@@ -115,7 +123,7 @@ body{
 	display:block;
 	width:100%;	
 	overflow:hidden;
-	padding: 15px 0;		
+	padding: 11px 0;		
 	text-decoration: none;
 	color:#fff;
 	font-size:16px;			
@@ -131,7 +139,7 @@ body{
 .welcome__social__list{
 	@include clearfix();
 	width: 50%;
-	margin:20px auto;
+	margin:30px auto 40px;
 	padding:0;
 }
 .welcome__social__item{
@@ -153,64 +161,58 @@ body{
 
 // login flipover
 
-@import '_mixins.scss';
+// @import '_mixins.scss';
 $dash: #c5cbcd;
 $h3: #455a64;
 $fa-icon_bg:#f0efe9;
 $fa-icon:#c4cbcd;
-$dash-left2:40px;
-$dash-right2:40px;
-$top2:74px;
-.log__in__wrapper{
-	display:table;
-	width:100%;
-	max-width:1800px;	
-	height: 100%;		
-	position:relative;
-}
-.login__vert__align__wrap{
-	display:table-cell;
-	vertical-align:middle;
-}
+$dash-left2:50px;
+$dash-right2:50px;
+$top2:49px;
+// .log__in__wrapper{
+// 	display:table;
+// 	width:100%;
+// 	max-width:1800px;	
+// 	height: 100%;		
+// 	position:relative;
+// }
+// .login__vert__align__wrap{
+// 	display:table-cell;
+// 	vertical-align:middle;
+// }
 .log__in__welcome{
-	max-width: 380px;	
+	width: 380px;	
 	background: rgba(255,255,255,.7);
 	border-radius: 5px;
 	margin: auto;
 	color: $welcome_h3;
-	text-align: center;		
+	text-align: center;
+	& h4{
+		margin: 0;
+		margin-top:15px;
+	}
+			
 }
-.flipover_hidden{
-	display: none;
-	// -moz-perspective: 800px;
- // 	-webkit-perspective: 800px;
- // 	perspective: 800px;
- // 	-moz-transform:rotateY(-180deg);
- // 	-webkit-transform:rotateY(-180deg);
- // 	transform:rotateY(-180deg);
- // 	-moz-backface-visibility: hidden;
- // 	-webkit-backface-visibility: hidden;
- // 	backface-visibility: hidden;
- // 	-moz-transition:0.8s;
- // 	-webkit-transition:0.8s;
- // 	transition:0.8s;
-}
+
 .log__in__header{
 	width:100%;
-	height:100px;
-	padding-top: 10px;
+	margin:20px auto 30px;
+	padding-top: 30px;
 	position: relative;
 	text-transform: uppercase;
 	text-align:center;
-	font-family: 'bernier-distressed';
-	font-size:2.2em;
+	font-family: 'bernier-regular';
+	font-size:1.8em;
 	font-weight:normal;
 	color: $h3;
-	@include titles-dashes($dash-left2, $dash-right2, $top2); 
+	@include titles-dashes($dash-left2, $dash-right2, $top2);
+	& h3{
+		margin:0;
+	} 
 }
 .form__group__log-in{
 	width:100%;
-	margin: 5px auto;
+	margin: 0 auto;
 	position:relative;
 }
 .log-in__label{
@@ -220,7 +222,7 @@ $top2:74px;
 .log-input{
 	display:block;
 	width:87%;
-	height:45px;
+	height:35px;
 	margin:20px auto;
 	border-radius: 5px;
 	background-color:#fff;
@@ -236,12 +238,12 @@ $top2:74px;
 	background-color: $fa-icon_bg;
 	color: $fa-icon;
 	padding:7px;
-	width:42px;
-	height:42px;
+	width:31px;
+	height:31px;
 	&:before{
 		position:absolute;
-		top:22px;
-		left:22px;
+		top:17px;
+		left:17px;
 	}
 }
 .login_input_text{
@@ -259,7 +261,7 @@ $top2:74px;
 }
 .radio{
 	position: relative;
-	margin-bottom:10px;
+	margin:8px auto 30px;
 }
 .checkbox{
 	display:block;
@@ -299,24 +301,24 @@ $top2:74px;
 	margin:0;
 	padding:0;
 	width:100%;
-	display: table;	
+	display: table;
+
 }
 .login_nav_item{
 	display: table-cell;
-	width:50%;
-	// overflow: hidden;
+	width:50%;	
 	border-right: 1px solid #fff;
+	
 	&:last-child{
 		border:none;
 	}
-	// @include clearfix();
+	
 }
 .login_nav_link{
-	display:block;
+	display:block;	
 	float:left;
 	width:100%;	
-	// overflow:hidden;
-	padding: 15px 0;		
+	padding: 12px 0;		
 	text-decoration: none;
 	color:#fff;
 	font-size:16px;			
@@ -324,7 +326,9 @@ $top2:74px;
 	&:hover{
 		background-color:$welcome_nav_hover;
 	}
+	
 	&:last-child{
 		border: none;
+		// border-radius: 0 0 5px 0;
 	}
 }

@@ -1,20 +1,29 @@
 @import "_mixins.scss";
 @import "_color.scss";
 @import "_fonts.scss";
+@import "_modal_window.scss";
 @import "_index.scss";
-@import "_login.scss";
 @import "_myWorks.scss";
 @import "_inner_header.scss";
 @import "_inner_footer.scss";
+@import "_about_me.scss";
+@import "_myBlog.scss";
+
 
 
 html, body{
 	height:100%;
 }
 body{
+	// position: relative;
 	box-sizing: border-box;
 	font-family:'roboto-regular';
-	font-size: 16px;	
+	font-size: 16px;
+	margin:0;
+	padding:0;	
+}
+ul{
+	padding:0;
 }
 li{
 	list-style:none;

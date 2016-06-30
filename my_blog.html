@@ -8,42 +8,80 @@
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="app/css/main.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="app/js/main.js"></script>
   </head>
   <body>
-    <wrapper class="wrapper">
-      <section class="inner__pages__header">
-        <ul class="header__socials">
-          <li class="footer_socials_item">vk<a href="https://vk.com" class="footer__socials__link"></a></li>
-          <li class="footer_socials_item">github<a href="https://github.com" class="footer__socials__link"></a></li>
-          <li class="footer_socials_item">linkedin<a href="https://linkedin.com" class="footer__socials__link"></a></li>
-        </ul>
-        <nav class="hamburger"></nav>
-        <div class="avatar"><img src="app/img/ava.jpg" alt="avatar">
-          <h3>Блог</h3><span>Статьи, которые я написал</span>
-          <div class="arrow__down"></div>
+    <div class="wrapper">
+      <section class="inner__pages__header_blog">
+        <div class="header_blog_top">
+          <nav class="blog_socials">                        
+            <ul class="header__socials_blog">
+              <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+                  <svg width="30.011px" height="17.123px" viewbox="0 0 30.011 17.123" class="svg-socials--vk-dims svg_inner_header vk">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#vk"></use>
+                  </svg></a></li>
+              <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+                  <svg width="26px" height="22px" viewbox="0 0 26 22" class="svg-socials--github-dims svg_inner_header github">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#github"></use>
+                  </svg></a></li>
+              <li class="header__soc__item"><a href="#" alt="#" class="header__soc__link">
+                  <svg width="24px" height="23px" viewbox="0 0 24 23" class="svg-socials--in-dims svg_inner_header linkedin">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#in">            </use>
+                  </svg></a></li>
+            </ul>
+          </nav>
+          <div class="hamburger hamburger_blog">
+            <svg width="40px" height="35px" viewbox="0 0 40 35" class="svg-hamburger-dims svg_inner_hamburger">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#hamburger">           </use>
+            </svg>
+          </div>
+        </div>
+        <div class="avatar__inner_blog"><img src="app/img/ava.jpg" alt="avatar" class="ava__inner ava__inner_blog">
+          <div class="blog_bg_wrap">
+            <svg width="400px" height="250px" viewBox="0 0 400 250" class="svg-blog_header-dims svg_blog_bg">
+              <use xlink:href="app/icons/sprites/sprite_social.svg#blog_header"></use>
+            </svg>
+            <div class="blog_header_text_box">
+              <h1 class="ava__title_blog">Блог</h1><span class="title_blog_span">Статьи которые я напишу                </span>
+            </div>
+            <div class="arrow__down_blog">
+              <svg width="25.18px" height="16.164px" viewBox="0 0 25.18 16.164" class="svg-arrow_down-dims svg_blog_header_arrow">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#arrow_down">           </use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="triangles_blog">            
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="blog_header_triangle">
+            <polygon points="0,0   0,86   500.8,86   500.8,75.5" class="trian_left"></polygon>
+            <polygon points="1000,0   1000,86   500,86   500,75.5" class="trian_right"></polygon>
+          </svg>
         </div>
       </section>
-      <section class="articles">
-        <article>
-          <h3>Самое важное в САСС</h3>
-          <p><span>22 ноября 2016</span></p>
-          <p>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.                              </p>
-        </article>
-        <article>
-          <h3>Приемы верстки, без которых не обходится ни один сайт</h3>
-          <p><span>23 ноября 2016</span></p>
-          <p>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.</p>
-        </article>
-      </section>
-      <aside class="articles_navy">
-        <ul class="navy__list">
-          <li class="navy__list__item"><a href="#" class="navy__link">Самое важное в САСС</a></li>
-          <li class="navy__list__item"><a href="#" class="navy__link">Приемы верстки, без которых не обходится ни один сайт</a></li>
-          <li class="navy__list__item"><a href="#" class="navy__link">Джентльменский набор плагинов Gulp</a></li>
-          <li class="navy__list__item"><a href="#" class="navy__link">Почему я выбрал Jade</a></li>
-        </ul>
-      </aside>
-      <footer class="inner_footer">
+      <div class="blog_articles_and_nav">  
+        <section class="articles_blog">
+          <article>
+            <h2>Самое важное в САСС</h2>
+            <p><span>22 ноября 2016</span></p>
+            <p>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.                              </p>
+          </article>
+          <article>
+            <h2>Приемы верстки, без которых не обходится ни один сайт</h2>
+            <p><span>23 ноября 2016</span></p>
+            <p>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.</p>
+          </article>
+        </section>
+        <aside class="articles_navy_blog">
+          <ul class="navy__list_blog">
+            <li class="navy__list__item_blog"><a href="#" class="navy__link_blog">Самое важное в САСС</a></li>
+            <li class="navy__list__item_blog"><a href="#" class="navy__link_blog">Приемы верстки, без которых не обходится ни один сайт</a></li>
+            <li class="navy__list__item_blog"><a href="#" class="navy__link_blog">Джентльменский набор плагинов Gulp</a></li>
+            <li class="navy__list__item_blog"><a href="#" class="navy__link_blog">Почему я выбрал Jade</a></li>
+          </ul>
+        </aside>
+      </div>
+      <footer class="blog_footer">
         <div class="upper__footer">
           <nav class="footer__navy">
             <ul class="footer__navy__list">
@@ -77,6 +115,20 @@
           </div>
         </div>
       </footer>
-    </wrapper>
+    </div>
+    <div class="modal_window">
+      <div class="modal_nav">
+        <ul class="modal_nav_list">
+          <li class="modal_nav_item"><a href="my_works.html" class="modal_nav_link">Мои работы</a></li>
+          <li class="modal_nav_item"><a href="about_me.html" class="modal_nav_link">Обо мне</a></li>
+          <li class="modal_nav_item"><a href="my_blog.html" class="modal_nav_link">Блог</a></li>
+          <li class="modal_nav_item"><a href="index.html" class="modal_nav_link">Авторизация</a></li>
+        </ul>
+      </div>
+      <div class="overlay"></div>
+      <div class="modal_close"></div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="app/js/main.js"></script>
   </body>
 </html>

@@ -1,40 +1,127 @@
 extends layout
 block content
-    wrapper.wrapper
-        include includes/common_header
-        section.about__me
-            div.about__me__left
-                h3 Обо мне
-            div.about__me__right
-                img(src="#", alt="здесь мое фото")
-                h4 Кто я
-                p . Я будущий веб-разработчик из еще не определенной на сегодня точки мира. Мне 39 лет.
-                p . Этот сайт я сделал в рамках обучения в Школе онлайн-образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво.
-        section.my__skills
-            h4 Чем я могу быть вам полезен
-            p Больше всего меня привлекает фронтенд-разработка, но я также могу решать несложные задачи на Backend. Но давайте по порядку.
-            div.frontend
-                h4 frontend
-                p html5
-                p css3
-                p javascript&jquery
-            div.backend
-                h4 backend
-                p php
-                p mysql
-                p node.js&npm
-                p mongoDB
-            div.workflow
-                h4 workflow
-                p git
-                p gulp
-                p bower
-        section.my_map
-            div.contact__info
-                h3 Контакты
-                p maxim_rudik
-                p mvr1976@gmail.com
-                p +7-928-400-15-03
-                p г. Геленджик, ул. Виноградарь-5, д.42
-
+    div.wrapper
+        div.background_container
+            div.inner__pages__header 
+                ul.header__socials
+                    li.header__soc__item
+                        a.header__soc__link(href="#" alt="#")
+                            svg(class="svg-socials--vk-dims svg_inner_header vk" width ="30.011px" height="17.123px" viewbox="0 0 30.011 17.123")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#vk")
+                    li.header__soc__item
+                        a.header__soc__link(href="#" alt="#")
+                            svg(class="svg-socials--github-dims svg_inner_header github" width ="26px" height="22px" viewbox="0 0 26 22")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#github")
+                    li.header__soc__item
+                        a.header__soc__link(href="#" alt="#")
+                            svg(class="svg-socials--in-dims svg_inner_header linkedin" width ="24px" height="23px" viewbox="0 0 24 23")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#in")             
+                div.hamburger
+                    svg(class="svg-hamburger-dims svg_inner_hamburger" width ="40px" height="35px" viewbox="0 0 40 35")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#hamburger")
+                div.portfolio_bg
+                    svg(class="svg-portfolio_header-dims svg_portfolio_bg" width="1175.495px" height="313.961px" viewBox="0 0 1175.495 313.961" enable-background="new 0 0 1175.495 313.961")
+                            use(xlink:href="app/icons/sprites/sprite_social.svg#portfolio_header")
+                div.avatar__inner
+                    img.ava__inner(src="app/img/ava.jpg", alt="avatar")
+                    h3.ava__title Максим Рудик
+                    span Личный сайт веб-разработчика
+                    div.arrow__down
+                      svg(class="svg-arrow_down-dims svg_inner_header_arrow"  width="25.18px" height="16.164px" viewBox="0 0 25.18 16.164")
+                        use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#arrow_down")            
+            div.triangles            
+                svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="inner_header_triangle inner_header_triangle_about_me")
+                    polygon.trian_left.trian_left_about(points="0,0   0,86   500.8,86   500.8,75.5")
+                    polygon.trian_right.trian_right_about(points="1000,0   1000,86   500,86   500,75.5")
+        div.triangles_extentions
+            div.extent_left
+                div.extent_left_left
+                    div.left_about_me
+                        h3.left_about_me_title Обо мне
+                div.extent_left_right
+                    img.page_about_ava(src="app/img/page_about_photo.jpg")                
+                    div.left_about_description
+                        h4.who_am_i Кто я
+                        p Я веб-разработчик из Ростова-на-Дону. Все хотят стать веб-разработчиками, чтобы жить у моря, а я и так уже 3 года живу у моря, и вот, захотел стать веб-разработчиком.
+                        p Очевидно существует как прямая, так и обратная зависимость между расстоянием от береговой линии и тягой к маловысокохудожественной самодеятельности.
+            div.extent_right
+                h3.extent_right_title Чем я могу быть вам полезен
+                p.extent_right_text Когда я всему научусь, больше всего меня будет привлекать FRONTEND разработка, но смогу решать и несложные задачи по BACKEND. Например устанавливать Вордпресс.
+                div.about_me_skills
+                    div.skills_list frontend
+                        ul.frontend_list
+                            li.frontend_item 
+                                div.skills
+                                    div.skills_text html5
+                                    svg.common_circle(width="120" height="120")
+                                        circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                        circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+                            li.frontend_item 
+                                div.skills
+                                    div.skills_text css3
+                                    svg.common_circle(width="120" height="120")
+                                        circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                        circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+                            li.frontend_item 
+                                div.skills
+                                    div.skills_text javascript &jquery
+                                    svg.common_circle(width="120" height="120")
+                                        circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                        circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)") 
+                    div.skills_list backend
+                        ul.backend_list
+                            li.backend_item 
+                                div.skills
+                                    div.skills_text php
+                                        svg.common_circle(width="120" height="120")
+                                            circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                            circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+                            li.backend_item 
+                                div.skills
+                                    div.skills_text mysql
+                                        svg.common_circle(width="120" height="120")
+                                            circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                            circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+                            li.backend_item 
+                                div.skills
+                                    div.skills_text node.js&npm
+                                        svg.common_circle(width="120" height="120")
+                                            circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                            circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+                            li.backend_item 
+                                div.skills
+                                    div.skills_text mongo.db
+                                        svg.common_circle(width="120" height="120")
+                                            circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                            circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+                    div.skills_list workflow
+                        ul.workflow_list
+                            li.workflow_item 
+                                div.skills
+                                    div.skills_text git
+                                        svg.common_circle(width="120" height="120")
+                                            circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                            circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+                            li.workflow_item 
+                                div.skills
+                                    div.skills_text gulp
+                                        svg.common_circle(width="120" height="120")
+                                            circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                            circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+                            li.workflow_item 
+                                div.skills
+                                    div.skills_text bower
+                                        svg.common_circle(width="120" height="120")
+                                            circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
+                                            circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
+        div(id="google-map")
+            div(id="google-container")
+            div(id="zoom-in")
+            div(id="zoom-out")
         include inner_footer
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADBkK0q02rT0ZN2wCEwIdTvmmHcG5AuP4&callback=initMap")        
+        script(src="app/js/main.js")
+    include modal_window
+
+
+        

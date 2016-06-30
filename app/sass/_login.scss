@@ -18,27 +18,27 @@ $top2:74px;
 	vertical-align:middle;
 }
 .log__in__welcome{
-	max-width: 380px;	
+	width: 380px;	
 	background: rgba(255,255,255,.7);
 	border-radius: 5px;
 	margin: auto;
 	color: $welcome_h3;
 	text-align: center;		
 }
-.flipover_hidden{
-	-moz-perspective: 800px;
- 	-webkit-perspective: 800px;
- 	perspective: 800px;
- 	-moz-transform:rotateY(-180deg);
- 	-webkit-transform:rotateY(-180deg);
- 	transform:rotateY(-180deg);
- 	-moz-backface-visibility: hidden;
- 	-webkit-backface-visibility: hidden;
- 	backface-visibility: hidden;
- 	-moz-transition:0.8s;
- 	-webkit-transition:0.8s;
- 	transition:0.8s;
-}
+// .flipover_hidden{
+// 	-moz-perspective: 800px;
+//  	-webkit-perspective: 800px;
+//  	perspective: 800px;
+//  	-moz-transform:rotateY(-180deg);
+//  	-webkit-transform:rotateY(-180deg);
+//  	transform:rotateY(-180deg);
+//  	-moz-backface-visibility: hidden;
+//  	-webkit-backface-visibility: hidden;
+//  	backface-visibility: hidden;
+//  	-moz-transition:0.8s;
+//  	-webkit-transition:0.8s;
+//  	transition:0.8s;
+// }
 .log__in__header{
 	width:100%;
 	height:100px;
@@ -46,8 +46,8 @@ $top2:74px;
 	position: relative;
 	text-transform: uppercase;
 	text-align:center;
-	font-family: 'bernier-distressed';
-	font-size:2.2em;
+	font-family: 'bernier-regular';
+	font-size:1.8em;
 	font-weight:normal;
 	color: $h3;
 	@include titles-dashes($dash-left2, $dash-right2, $top2); 
