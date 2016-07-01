@@ -48,11 +48,11 @@
   font-style: normal; }
 
 .modal_window {
-  display: none;
-  opacity: 0;
+  display: block;
   position: relative; }
 
 .modal_nav {
+  display: none;
   width: 450px;
   height: 600px;
   position: fixed;
@@ -66,13 +66,23 @@
 .overlay {
   z-index: 3;
   position: fixed;
-  width: 100%;
+  width: 50%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: -50%;
+  background-color: rgba(7, 172, 153, 0.8); }
+
+.overlay_right {
+  z-index: 3;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: -50%;
   background-color: rgba(7, 172, 153, 0.8); }
 
 .modal_close {
+  display: none;
   position: fixed;
   z-index: 6;
   top: 22px;
@@ -1283,7 +1293,7 @@ body {
 
 .header_blog_top {
   width: 70%;
-  margin: 20px auto;
+  margin: 0 auto;
   margin-bottom: 10%; }
   .header_blog_top:before, .header_blog_top:after {
     content: "";
@@ -1425,6 +1435,44 @@ body {
 
 .blog_footer {
   background-color: #555b5e; }
+
+.wrapper_preloader {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/preloader_bg.jpg); }
+
+.svg_preloader {
+  position: fixed;
+  top: 50%;
+  margin-top: -46px;
+  left: 50%;
+  margin-left: -46px; }
+
+.circle_preload {
+  animation-iteration-count: infinite;
+  transform-origin: 50%; }
+
+.circle_preload_mid {
+  transform: rotate(-120deg);
+  animation: moving-inner-circle 3s; }
+
+.circle_preload_inner {
+  transform: rotate(-90deg);
+  animation: moving-inner-circle 3s;
+  animation-delay: 1s; }
+
+@-webkit-keyframes moving-inner-circle {
+  from {
+    stroke-dasharray: 0 251; }
+  to {
+    stroke-dasharray: 251 251; } }
+
+@-webkit-keyframes moving-mid-circle {
+  from {
+    stroke-dasharray: 0 345; }
+  to {
+    stroke-dasharray: 345 345; } }
 
 html, body {
   height: 100%; }

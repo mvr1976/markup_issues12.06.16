@@ -1,20 +1,9 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        title= portfolio
-        link(href="favicon.ico" rel="shortcut icon" type="image/x-icon")
-        link(rel='stylesheet', href='bower_components/normalize-css/normalize.css')   
-        link(rel='stylesheet', href='bower_components/font-awesome/css/font-awesome.css')   
-        link(rel='stylesheet', href='app/css/main.css')
-        script(src='bower_components/jquery/dist/jquery.min.js')
-        script(src='app/js/main.js')
-    body
-        div.wrapper_preloader
+extends layout
+block content
+    div.wrapper_preloader
         svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="144px" height="144px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve" class="svg_preloader")
             circle(opacity="0.4" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" enable-background="new    " cx="72" cy="71.999" r="70" class="circle_preload circle_preload_outer")
             circle(opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="3.8938" stroke-miterlimit="10" enable-background="new    " cx="72" cy="72" r="55" class="circle_preload circle_preload_mid")
             circle(fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="72" cy="72" r="40" class="circle_preload circle_preload_inner")
-            text(transform="matrix(1 0 0 1 51.5391 79.0127)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24") 100
-        block content
+            text(transform="matrix(1 0 0 1 51.5391 79.0127)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24" id="preloader_text")
+                tspan 50

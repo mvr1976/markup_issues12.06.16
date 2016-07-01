@@ -1,9 +1,10 @@
 .modal_window{
-	display: none;
-	opacity:0;
+	display: block;
+	// opacity:0;
 	position:relative;
 }
 .modal_nav{
+	display:none;
 	width: 450px; 
 	height: 600px; 	
 	position: fixed;
@@ -19,15 +20,27 @@
 .overlay{
 	z-index:3;
 	position:fixed;	
-	width:100%; 
+	width:50%; 
 	height:100%; 
 	top:0;
-	left:0;
+	left:-50%;
+	// cursor:pointer;
+	// display:none; 
+	background-color: rgba(7,172,153,.8);
+}
+.overlay_right{
+	z-index:3;
+	position:fixed;	
+	width:50%; 
+	height:100%; 
+	top:0;
+	right:-50%;
 	// cursor:pointer;
 	// display:none; 
 	background-color: rgba(7,172,153,.8);
 }
 .modal_close{
+	display:none;
 	position: fixed;
 	z-index:6;
 	top: 22px;
