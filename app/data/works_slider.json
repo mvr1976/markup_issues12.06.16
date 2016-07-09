@@ -1,0 +1,28 @@
+[
+
+{
+	"link": "https://rudik.info",
+	"description": "Мой предыдущий сайт-портфолио",
+	"skills": "html, css, jquery",
+	"path": "app/img/printscreen4.jpg"
+	},
+{
+	"link": "https://rudik.info/RandomQuotes/index.html",
+	"description": "Генератор цитат из Пелевина",
+	"skills": "html, css, js",
+	"path": "app/img/printscreen1.jpg"
+	},
+{
+	"link": "https://rudik.info/NewPomodoro/index.html",
+	"description": "Обратный отсчет помидоров",
+	"skills": "html, css, js",
+	"path": "app/img/printscreen2.jpg"
+	},
+{
+	"link": "https://rudik.info/Calculator/index.html",
+	"description": "Калькулятор",
+	"skills": "html, css, js",
+	"path": "app/img/printscreen3.jpg"
+}
+
+]

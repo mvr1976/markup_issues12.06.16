@@ -12,13 +12,16 @@
     <script src="app/js/main.js"></script>
   </head>
   <body>
-    <div class="wrapper_preloader"></div>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="144px" height="144px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve" class="svg_preloader">
-      <circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" enable-background="new    " cx="72" cy="71.999" r="70" class="circle_preload circle_preload_outer"></circle>
-      <circle opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="3.8938" stroke-miterlimit="10" enable-background="new    " cx="72" cy="72" r="55" class="circle_preload circle_preload_mid"></circle>
-      <circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="72" cy="72" r="40" class="circle_preload circle_preload_inner"></circle>
-      <text transform="matrix(1 0 0 1 51.5391 79.0127)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">100</text>
-    </svg>
+    <div class="wrapper_preloader">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="144px" height="144px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve" class="svg_preloader">
+        <circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" enable-background="new    " cx="72" cy="71.999" r="70" class="circle_preload circle_preload_outer"></circle>
+        <circle opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="3.8938" stroke-miterlimit="10" enable-background="new    " cx="72" cy="72" r="55" class="circle_preload circle_preload_mid"></circle>
+        <circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="72" cy="72" r="40" class="circle_preload circle_preload_inner"></circle>
+        <text transform="matrix(1 0 0 1 51.5391 79.0127)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24" id="preloader_text">
+          <tspan></tspan>
+        </text>
+      </svg>
+    </div>
     <wrapper class="wrapper">
       <header class="header">
         <h1 class="admin__head">Панель администрирования</h1><a class="back__to__site">вернуться на сайт</a>
@@ -66,7 +69,56 @@
         </div>
       </div>
       <div class="blog__edit"></div>
-      <div class="my__works__edit"></div>
+      <div class="myWorksAdd">
+        <ul class="myWorksAdd_list">
+          <li class="myWorksAdd_item">example-site1</li>
+          <li class="myWorksAdd_item">example-site2</li>
+          <li class="myWorksAdd_item">example-site3</li>
+          <li class="myWorksAdd_item">example-site4</li>
+          <li class="myWorksAdd_item addNewItem"></li>
+          <button class="add_new_item">add new example</button>
+          <div id="new_project_popup">
+            <div class="modal_wrapper">
+              <div class="modal_header">
+                <button type="button" class="b-close"></button>
+                <h4 class="modal-title">Добавление проекта</h4>
+              </div>
+              <div class="modal_body">
+                <form id="add_new_project" role="form" class="form">
+                  <div class="server-mes error_mes"></div>
+                  <div class="server-mes success_mes"></div>
+                  <div class="form-group">
+                    <label for="projectName" class="label">Название проекта</label>
+                    <input id="projectName" name="projectName" type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="input">
+                  </div>
+                  <div class="form-group">
+                    <div id="uploadfile" class="fileupload-wrapper"><span class="label">Картинка проекта
+                        <label class="fileupload-label">
+                          <input id="fileupload" type="file" name="files[]" class="fileupload">
+                          <input id="fileurl" type="hidden" name="fileurl">
+                        </label>
+                        <input id="filename" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" class="input"></span></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="projectURL" class="label">URL проекта
+                      <input id="projectURL" name="projectURL" type="text" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="input">
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="projectDesc" name="text" class="label">Описание</label>
+                    <textarea id="projectDesc" name="text" rows="3" placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно" class="textarea"></textarea>
+                  </div>
+                  <div class="btn-wrap">
+                    <button type="submit" class="button">Добавить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
     </wrapper>
+    <script src="bower_components/bPopup/jquery.bpopup.js"></script>
+    <script src="app/js/add_project.js"></script>
   </body>
 </html>

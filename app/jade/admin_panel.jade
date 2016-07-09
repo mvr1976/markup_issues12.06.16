@@ -42,4 +42,51 @@ block content
                         span %
                     button.submit Добавить
         div.blog__edit
-        div.my__works__edit
+        div.myWorksAdd
+            ul.myWorksAdd_list
+                li.myWorksAdd_item example-site1
+                li.myWorksAdd_item example-site2
+                li.myWorksAdd_item example-site3
+                li.myWorksAdd_item example-site4
+                li.myWorksAdd_item.addNewItem
+                button(class="add_new_item") add new example
+                div(id="new_project_popup")
+                    div(class="modal_wrapper")
+                        div(class="modal_header")
+                            button(type="button" class="b-close")
+                            h4(class="modal-title") Добавление проекта
+                        div(class="modal_body")
+                            form(id="add_new_project" role="form" class="form")
+                                div(class="server-mes error_mes")
+                                div(class="server-mes success_mes")
+                                div(class="form-group")
+                                    label(for="projectName" class="label") Название проекта
+                                    input(id="projectName" name="projectName" type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="input")
+                                div(class="form-group")
+                                    div(id="uploadfile" class="fileupload-wrapper")
+                                        span(class="label") Картинка проекта
+                                            label(class="fileupload-label")
+                                                input(id="fileupload" type="file" name="files[]" class="fileupload")
+                                                input(id="fileurl" type="hidden" name="fileurl")
+                                            input(id="filename" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" class="input")
+                                div(class="form-group")
+                                    label(for="projectURL" class="label") URL проекта
+                                        input(id="projectURL" name="projectURL" type="text" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="input")
+                                div(class="form-group")
+                                    label(for="projectDesc" name="text" class="label") Описание
+                                    textarea(id="projectDesc" name="text" rows="3" placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно" class="textarea")
+                                div(class="btn-wrap")
+                                    button(type="submit" class="button") Добавить
+    script(src="bower_components/bPopup/jquery.bpopup.js")
+    script(src="app/js/add_project.js")
+
+
+
+                                          
+                                          
+
+            
+
+        
+                   
+           
