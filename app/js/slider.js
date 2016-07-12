@@ -38,24 +38,19 @@ for(i = 0; i < workJson.length; i++){//формирую разметку
 			src: workJson[i].path
 			})
 		);
-	$('.slider_preview').append(liItem);
-
-	// if(liItem.hasClass('active')){
-	// 			$("#a-i-d_title").text(workJson[i].description);//пытаюсь вывести название активного сайта
-	// 													// в блоке справа от слайдера - не работает!!!
-	// }
+	$('.slider_preview').append(liItem);	
 }
 //output code
-var setTitle = function(el, title){
-	el = $('#a-i-d_title');
-	for(i = 0; i < workJson.length; i++){
-		title = workJson[i].description;
-		console.log(title);// выводит заголовки
-		// el.text(title); - не работает!!!
-		}
-		return title;
-};
-setTitle();	
+// var setTitle = function(){
+// 	var el = $('#a-i-d_title');
+// 	for(i = 0; i < workJson.length; i++){		
+// 		var title = workJson[i].description;
+// 		console.log(title);// выводит заголовки
+// 		el.text(title); //- не работает!!!
+// 		}
+// 		return title;
+// };
+// setTitle();	
 
 //slider
 
@@ -64,18 +59,20 @@ setTitle();
 		
 		$('#works_arrow-down').on('click', function(e){
 		    e.preventDefault();
+		    console.log(counter);
 
 			var $this = $(this),
-				container = $this.closest('.work__items__slider'),
+				container = $this.closest('.work__items__slider'),//надо разделить слайдеры по контейнеру
 				items = container.find('.slider_item'),
 				activeItem = container.find('.slider_item.active');
-			
-			
+			console.log(items.length);
+			items.css("top", "-100%");
 				
 			if (counter >= items.length) {
 				counter = 0;
 			}
-			var reqItem = items.eq(counter);			
+			var reqItem = items.eq(counter);
+			console.log(reqItem);			
 			activeItem.animate({
 				'top' : '100%'
 			}, 300);
@@ -86,16 +83,26 @@ setTitle();
 				$(this).addClass('active');
 			});
 
+			//output
+			var i = counter;
+			var el = $('#a-i-d_title');						
+			var title = workJson[i].description;			
+			el.text(title); 
+		
+			//output
+
 			counter++;
 		});
 
 		$('#works_arrow-up').on('click', function(e){
 		    e.preventDefault();
+		    console.log(counter);
 			var $this = $(this),
 				container = $this.closest('.work__items__slider'),
 				items = container.find('.slider_item'),
 				activeItem = container.find('.slider_item.active');
 				console.log(items);
+			items.css("top", "100%");
 			if (counter == 0 ) {
 				counter = items.length-1;
 			}
@@ -109,6 +116,7 @@ setTitle();
 				activeItem.removeClass('active').css('top', '100%');
 				$(this).addClass('active');
 			});
+
 			counter--;
 		});
 	}());

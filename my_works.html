@@ -7,6 +7,7 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
     <link rel="stylesheet" href="app/css/main.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="app/js/main.js"></script>
@@ -86,7 +87,7 @@
         <div class="work__items__slider">
           <div class="slider_top">
             <div class="slider__display-top">
-              <ul class="slider_preview"></ul>
+              <ul id="slider_preview-top" class="slider_preview-top"></ul>
             </div>
           </div>
           <div class="works_preview">
@@ -97,10 +98,10 @@
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_up"></use>
             </svg>
             <div class="slider__display">
-              <ul class="slider_preview slider_prewiew-down"></ul>
+              <ul id="slider_preview-down" class="slider_prewiew-down"></ul>
             </div>
             <div class="slider__display">   
-              <ul class="slider_preview slider_prewiew-up"></ul>
+              <ul id="slider_preview-up" class="slider_prewiew-up"></ul>
             </div>
           </div>
         </div>
@@ -134,7 +135,7 @@
             </div>
           </div>
         </div>
-        <div class="feedback__form">
+        <form id="feedback_form" class="feedback__form">
           <label class="feedback_form_label">Связаться со мной</label>
           <input name="name" placeholder="имя" class="feedback_form_input">
           <input name="email" placeholder="Email" class="feedback_form_input">
@@ -143,7 +144,7 @@
             <button type="submit" class="button_item button__submit">Отправить</button>
             <button type="reset" class="button_item button__reset">Очистить</button>
           </div>
-        </div>
+        </form>
         <div class="works_arrow_up">
           <svg width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435" class="svg-portf_arrow_up-dims svg_works_arrow_up2">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_up"></use>
@@ -199,7 +200,10 @@
       <div class="modal_close"></div>
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/qtip2/jquery.qtip.js"></script>
     <script src="app/js/main.js"></script>
-    <script src="app/js/slider.js"></script>
+    <script src="app/js/slider_module.js" defer></script>
+    <script src="app/js/validation.js" defer></script>
+    <script src="app/js/contactMe.js" defer></script>
   </body>
 </html>

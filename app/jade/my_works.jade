@@ -50,16 +50,16 @@ block content
             div.work__items__slider
                 div.slider_top
                     div.slider__display-top
-                        ul.slider_preview
+                        ul.slider_preview-top(id="slider_preview-top")
                 div.works_preview
                     svg(class="svg-portf_arrow_down-dims svg_works_arrow_down" id="works_arrow-down" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
                             use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_down")
                     svg(class="svg-portf_arrow_up-dims svg_works_arrow_up" id="works_arrow-up" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
                             use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_up")
                     div.slider__display
-                        ul.slider_preview.slider_prewiew-down
+                        ul.slider_prewiew-down(id="slider_preview-down")
                     div.slider__display    
-                        ul.slider_preview.slider_prewiew-up
+                        ul.slider_prewiew-up(id="slider_preview-up")
                        
              
         section.people__feedback
@@ -86,7 +86,7 @@ block content
                         div.tutor_name
                             h4.tutor_surname Зар Захаров
                             p.tutor_position главный преподаватель
-            div.feedback__form
+            form.feedback__form(id = "feedback_form")
                 label.feedback_form_label Связаться со мной
                 input.feedback_form_input(name="name", placeholder="имя")
                 input.feedback_form_input(name="email", placeholder="Email")
@@ -126,7 +126,10 @@ block content
         //- include inner_footern
     include modal_window        
     script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="bower_components/qtip2/jquery.qtip.js")
     script(src="app/js/main.js")
-    script(src="app/js/slider.js")
+    script(src="app/js/slider_module.js" defer)
+    script(src="app/js/validation.js" defer)
+    script(src="app/js/contactMe.js" defer)
 
         

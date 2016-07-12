@@ -154,13 +154,13 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function(){
-	gulp.watch(src_jade, ['jade']);
-	gulp.watch(src_sass, ['sass']);
-	gulp.watch(src_js, ['js']);
+	gulp.watch(src_jade, ['jade']).on('change', browserSync.reload);
+	gulp.watch(src_sass, ['sass']).on('change', browserSync.reload);
+	gulp.watch(src_js, ['js']).on('change', browserSync.reload);
 	gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default',['watch']);
+gulp.task('default',['watch', 'browser-sync' ]);
 
 // gulp.task('default', gulp.series(
 // 	gulp.parallel(
