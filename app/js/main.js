@@ -1,5 +1,5 @@
 //flipover welcome
-debugger;
+
 var flipover = (function(){
 	return {
 		auth: function(){

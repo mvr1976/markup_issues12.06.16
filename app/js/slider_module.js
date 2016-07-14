@@ -2,7 +2,7 @@ var sliderModule = (function(){
 		debugger;
 		var counter = 0,
 			
-			container = $this.closest('.work__items__slider'),//вct слайдеры
+			//вct слайдеры
 
 		//слайдер под стрелкой вниз
 			itemsDown = container.find('.slider_item-down'),
@@ -62,7 +62,8 @@ var sliderModule = (function(){
 		e.preventDefault();
 
 		var counter = 0,
-		$this = $(this);
+		$this = $(this),
+		container = $this.closest('.work__items__slider');
 		// container = $this.closest('.work__items__slider'),//вct слайдеры
 
 		// //слайдер под стрелкой вниз
@@ -92,7 +93,8 @@ var sliderModule = (function(){
 	var _slideUp = function(e){
 		e.preventDefault();
 		var counter = 1,
-		$this = $(this);
+		$this = $(this),
+		container = $this.closest('.work__items__slider');
 		// container = $this.closest('.work__items__slider');//весь слайдер
 		//реверс слайдов в нижних слайдерах
 		_slideReverse();
