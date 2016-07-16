@@ -1,7 +1,36 @@
 var sliderModule = (function(){
+	var workJson = [
+					{
+				"link": "https://rudik.info",
+				"description": "Мой предыдущий сайт-портфолио",
+				"skills": "html, css, jquery",
+				"path": "app/img/printscreen4.jpg"
+				},
+					{
+				"link": "https://rudik.info/RandomQuotes/index.html",
+				"description": "Генератор цитат из Пелевина",
+				"skills": "html, css, js",
+				"path": "app/img/printscreen1.jpg"
+				},
+					{
+				"link": "https://rudik.info/NewPomodoro/index.html",
+				"description": "Обратный отсчет помидоров",
+				"skills": "html, css, js",
+				"path": "app/img/printscreen2.jpg"
+				},
+					{
+				"link": "https://rudik.info/Calculator/index.html",
+				"description": "Калькулятор",
+				"skills": "html, css, js",
+				"path": "app/img/printscreen3.jpg"
+				}
+		];
 		// debugger;
 		var counter = 0;
-			
+		if (counter > workJson.length-1) {
+				counter = 0;
+			}
+		console.log(workJson.length);
 			//вct слайдеры
 
 		//слайдер под стрелкой вниз
@@ -32,7 +61,7 @@ var sliderModule = (function(){
 				'top' : '0%'
 			}, 300, function () {
 				activeDown.removeClass('active').css('top', '-100%');
-				// $(this).addClass('active');
+				nextDown.addClass('active');
 			});
 		//крутим правый слайд вверх
 		activeUp.animate({
@@ -42,20 +71,12 @@ var sliderModule = (function(){
 				'top' : '0%'
 			}, 300, function () {
 				activeUp.removeClass('active').css('top', '100%');
-				// $(this).addClass('active');
+				nextUp.addClass('active');
 			});
 	};
 	//по клику вниз
-	var _slideDown = function(e){
-
-		// console.log('it is clicked');
-		e.preventDefault();
-
-		var counter = 0,
-		// $this = $(this),
-		container = $('.work__items__slider');
-		// container = $this.closest('.work__items__slider'),//вct слайдеры
-
+	var _slideDown = function(){
+		var container = $('.work__items__slider'),
 		//слайдер под стрелкой вниз
 			itemsDown = container.find('.slider_item-down'),
 			activeItemDown = container.find('.slider_item-down.active'),	
@@ -71,23 +92,27 @@ var sliderModule = (function(){
 			activeItemTop = container.find('.slider_item-top.active'),	
 			nextItemTop = activeItemTop.next(),
 			prevItemTop = activeItemTop.prev();
-		
+			// console.log(itemsDown.length);
+		if (counter > itemsDown.length-1){
+			counter = 0;
+			// _slideReverse(nextItemUp, nextItemDown, activeItemUp, activeItemDown);
+		}
+				
+				
+			
+		_slideReverse(nextItemUp, nextItemDown, activeItemUp, activeItemDown);			
 		//реверс слайдов в нижних слайдерах
-		_slideReverse(nextItemUp, nextItemDown, activeItemUp, activeItemDown);
+		
 		nextItemTop.addClass('active');//вывод слайда в верхний слайдер
-		activeItemTop.removeClass('active');		
-		//закольцовка слайдера
-		if (counter >= itemsDown.length) {
-				counter = 0;
-			}else if(counter < 0){
-			 counter = itemsDown.length}
+		activeItemTop.removeClass('active');
+		//закольцовка слайдера		
 		
 		counter++;
 	};
 	//по клику вверх
-	var _slideUp = function(e){
-		e.preventDefault();
-		var counter = 1,
+	var _slideUp = function(){
+		// e.preventDefault();
+		// var counter = 1,
 		// $this = $(this),
 		container = $('.work__items__slider'),
 		itemsDown = container.find('.slider_item-down'),
@@ -104,47 +129,26 @@ var sliderModule = (function(){
 			activeItemTop = container.find('.slider_item-top.active'),	
 			nextItemTop = activeItemTop.next(),
 			prevItemTop = activeItemTop.prev();
+
+			if(counter < 0){
+			 counter = itemsDown.length-1}
 		//реверс слайдов в нижних слайдерах
 		_slideReverse(nextItemUp, nextItemDown, activeItemUp, activeItemDown);
+
 		prevItemTop.addClass('active');//вывод слайда в верхний слайдер
 		activeItemTop.removeClass('active');		
 		//закольцовка слайдера
-		if(counter < 0){
-			 counter = itemsDown.length}
+		
 		
 		counter--;
 	}
 
 
-	var workJson = [
-					{
-				"link": "https://rudik.info",
-				"description": "Мой предыдущий сайт-портфолио",
-				"skills": "html, css, jquery",
-				"path": "app/img/printscreen4.jpg"
-				},
-					{
-				"link": "https://rudik.info/RandomQuotes/index.html",
-				"description": "Генератор цитат из Пелевина",
-				"skills": "html, css, js",
-				"path": "app/img/printscreen1.jpg"
-				},
-					{
-				"link": "https://rudik.info/NewPomodoro/index.html",
-				"description": "Обратный отсчет помидоров",
-				"skills": "html, css, js",
-				"path": "app/img/printscreen2.jpg"
-				},
-					{
-				"link": "https://rudik.info/Calculator/index.html",
-				"description": "Калькулятор",
-				"skills": "html, css, js",
-				"path": "app/img/printscreen3.jpg"
-				}
-		];
+	
 
 		// создание активного класса
 	function setActiveClass(el) {
+
     el.addClass('active');
 	}
 
@@ -182,7 +186,7 @@ var sliderModule = (function(){
 		$('#slider_preview-down').append(liItem);	
 			}
 		
-		var firstItem = $('.slider_item-down').first();
+		var firstItem = $('.slider_item-down').eq(counter);
 		setActiveClass(firstItem);
 		};
 		//разметка слайдера под кнопкой вверх
@@ -198,8 +202,9 @@ var sliderModule = (function(){
 		);
 		$('#slider_preview-up').append(liItem);	
 			}		
-		var firstItem = $('.slider_item-up').first();
-		setActiveClass(firstItem);
+		var firstItem = $('.slider_item-up').eq(counter),
+			secondItem = firstItem.next();
+		setActiveClass(secondItem);
 		};
 		//вывод фото в верхний слайдер, названия, ссылки и списка скилов
 		var _dataOutput = function(jsondata){

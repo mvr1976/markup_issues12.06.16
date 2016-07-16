@@ -648,9 +648,9 @@ body {
   right: 0;
   bottom: 0;
   max-width: 100%;
-  opacity: 1; }
-  .slider_item-top:active {
-    opacity: 0; }
+  opacity: 0; }
+  .slider_item-top.active {
+    opacity: 1; }
 
 .slider_item-down {
   position: absolute;
@@ -659,7 +659,7 @@ body {
   right: 0;
   bottom: 0;
   max-width: 100%; }
-  .slider_item-down:active {
+  .slider_item-down.active {
     top: 0; }
 
 .slider_item-up {
@@ -669,7 +669,7 @@ body {
   right: 0;
   bottom: 0;
   max-width: 100%; }
-  .slider_item-up:active {
+  .slider_item-up.active {
     top: 0; }
 
 .works_preview {

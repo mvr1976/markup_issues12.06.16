@@ -110,9 +110,9 @@ $top-4: 38px;
 	right:0;
 	bottom:0;
 	max-width: 100%;
-	opacity:1;
-	&:active{
-		opacity:0;
+	opacity:0;
+	&.active{
+		opacity:1;
 	}
 }
 .slider_item-down{
@@ -122,7 +122,7 @@ $top-4: 38px;
 	right:0;
 	bottom:0;
 	max-width: 100%;	
-	&:active{
+	&.active{
 		top:0;
 	}
 }
@@ -133,7 +133,7 @@ $top-4: 38px;
 	right:0;
 	bottom:0;
 	max-width: 100%;	
-	&:active{
+	&.active{
 		top:0;
 	}
 }
