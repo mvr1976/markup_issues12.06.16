@@ -40,10 +40,13 @@ var modalWin = (function(){
 		close: function(){
 			$('.modal_close').on('click', function(){
 			console.log('i am here bro');
-			$('.overlay_right').animate({right:'-50%'},500);
-			$('.overlay').animate({left:'-50%'},500);
-			$('.modal_nav').fadeOut();
-			$('.modal_close').fadeOut();			
+				$('.overlay_right').animate({right:'-50%'},500);
+				$('.overlay').animate({left:'-50%'},500);
+				$('.modal_nav').fadeOut();
+				$('.modal_close').fadeOut();
+				$('.modal_close:after').animate({
+					'transform': 'rotate:0'
+				},300);			
 			});
 		}
 	}
@@ -196,3 +199,46 @@ function initMap() {
 //     {name: "Styled Map"});
 //   	map.mapTypes.set(styledMap);  
 }
+
+//modal window close
+// $('.modal_close').on('click', function(e){
+// 		e.preventDefault();
+// 		$('.modal_close').addClass('modal-closeRotate');
+// 		});
+// end modal window close
+
+//sticky menu blog
+$(window).scroll(function() {
+	var
+		wScroll = $(window).scrollTop(),
+		menu = $('.static .blog_menu'),
+		sidebar = $('.static .blog_menu__wrapper '),
+		stickyStart = sidebar.offset().top,
+		menuClone = sidebar.clone(),
+		fixedSidebar = $('.blog_fixed .blog_left__col'),
+
+		articleActive = $('.blog_right__col').find('.active'),
+		articleNext = articleActive.next();
+		articleScroll = articleActive.offset().top;
+		console.log(articleScroll);
+
+		console.log(menu);
+	if (wScroll >= stickyStart) {
+
+		// menu.css({
+		// 	top : wScroll - stickyStart + 'px'
+		// });
+
+		if (!fixedSidebar.find('.blog_menu__wrapper').length) {
+			fixedSidebar.append(menuClone);
+			menu.hide();
+		}
+
+
+	} else {
+		fixedSidebar.find('.blog_menu__wrapper').remove();
+		menu.show();
+	}
+
+});
+// end sticky menu blog

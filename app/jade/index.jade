@@ -1,6 +1,9 @@
 extends layout
 block content
-    div.wrapper__welcome        
+    div.wrapper__welcome
+        div.parallax
+            div.parallax-bg
+                img(src="app/img/parallax-bg.jpg")        
         button.welcome_login Авторизоваться
         div.avatar__vert__align__wrap.flip_container
             div.flipper
@@ -76,3 +79,4 @@ block content
         div.modal_close
     script(src="bower_components/jquery/dist/jquery.min.js")
     script(src="app/js/main.js")
+    script(src="app/js/my_parallax.js" defer)

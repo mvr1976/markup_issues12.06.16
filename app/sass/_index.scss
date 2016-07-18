@@ -4,13 +4,37 @@ body{
 	box-sizing:border-box;
 }
 .wrapper__welcome{
-	background: url(../img/welcome-bg.jpg) no-repeat center;	
+	// background: url(../img/welcome-bg.jpg) no-repeat center;	
+	overflow: hidden;
 	width:100%;
 	max-width:1800px;	
 	height: 100%;	
 	margin-bottom: -50px;
 	position:relative;
 	display: none;
+}
+.parallax{
+	height:100%;
+	overflow: hidden;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.parallax-bg{
+	position:absolute;	
+	left: 50%;
+	bottom:0;
+	margin-left: -1000px;
+	width: 2000px;
+	height: 100%;
+
+	& img{
+		display:block;
+		max-width: 100%;
+		bottom:0; 
+	}
 }
 .wrapper__welcome:after {	
 	content: '';

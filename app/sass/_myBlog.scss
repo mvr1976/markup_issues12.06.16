@@ -95,54 +95,128 @@ body{
 }
 //content block
 
-.blog_articles_and_nav{
-	@include clearfix();
+// .blog_articles_and_nav{
+// 	@include clearfix();
+// 	width: 90%;
+// 	margin: 0 auto;
+// 	color:#77868d;
+// }
+.blog_fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.blog_container {
 	width: 90%;
 	margin: 0 auto;
+	@include clearfix();
+	height: 1500px;
 	color:#77868d;
 }
-.articles_blog{
-	width: 70%;
-	float: right;
-	padding:0 35px;
-	box-sizing:border-box;
-	& h2{
-		font-family: 'bernier-regular';
-		font-weight:normal;
-	}
-	& span{
-		color:#58d5c4;
-	}
+.blog_header {
+	height: 200px;
 }
-.articles_navy_blog{
+.blog_left__col {
 	width: 30%;
 	float: left;
+	height: 1px;
+
 }
+
+.blog_right__col {
+	width: 70%;
+	float: left;
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+.blog_menu {
+	padding-right: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.blog_content{
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+// .articles_blog{
+// 	width: 70%;
+// 	float: right;
+// 	padding:0 35px;
+// 	box-sizing:border-box;
+// 	& h2{
+// 		font-family: 'bernier-regular';
+// 		font-weight:normal;
+// 	}
+// 	& span{
+// 		color:#58d5c4;
+// 	}
+// }
+// .articles_navy_blog{
+// 	width: 30%;
+// 	float: left;
+// }
 .blog_footer{
 	margin-top:0;
 }
 
 //nav
-.navy__list_blog{
-	display:block;
-	width: 90%;
-	margin: 25px 0 0 auto;
-	height: auto;
-	
-	
-}
-.navy__list__item_blog{
-	display: block;
-	width:100%;
+.blog_menu__link {
 	padding: 10px;
+	// background: #bdc3c7;
+	display: block;
 	text-align: right;
-	box-sizing:border-box;
-	border-right: 2px solid #58d5c4;
-}
-.navy__link_blog{
+	// color: #ecf0f1;
+	text-transform: uppercase;
 	text-decoration: none;
 	color:#77868d;
 }
+
+.blog_menu__item {	
+	margin-bottom: 20px;
+	&.active{
+		border-right: 2px solid #1abc9c;
+	}
+}
+
+.blog_menu__wrapper {
+	position: relative;
+	height: 1px;
+}
+.blog_content__wrapper{
+	position: relative;
+	height: 1px;
+}
+
+// .navy__list_blog{
+// 	display:block;
+// 	width: 90%;
+// 	margin: 25px 0 0 auto;
+// 	height: auto;
+	
+	
+// }
+// .navy__list__item_blog{
+// 	display: block;
+// 	width:100%;
+// 	padding: 10px;
+// 	text-align: right;
+// 	box-sizing:border-box;
+// 	border-right: 2px solid #58d5c4;
+// }
+// .navy__link_blog{
+// 	text-decoration: none;
+// 	color:#77868d;
+// }
 //footer
 .blog_footer{
 	background-color:#555b5e;

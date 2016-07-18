@@ -36,23 +36,53 @@ block content
                     polygon.trian_left(points="0,0   0,86   500.8,86   500.8,75.5")
                     polygon.trian_right(points="1000,0   1000,86   500,86   500,75.5")
         
-        div.blog_articles_and_nav   
-            section.articles_blog
-                article
-                    h2 Самое важное в САСС
-                    p
-                        span 22 ноября 2016
-                    p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.                              
-                article
-                    h2 Приемы верстки, без которых не обходится ни один сайт
-                    p
-                        span 23 ноября 2016
-                    p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
-            aside.articles_navy_blog
-                ul.navy__list_blog
-                    each val, index in {'Самое важное в САСС': '#', 'Приемы верстки, без которых не обходится ни один сайт':'#', 'Джентльменский набор плагинов Gulp':'#', 'Почему я выбрал Jade':'#'}             
-                            li.navy__list__item_blog
-                                a.navy__link_blog(href= val)= index
+        div.blog_articles_and_nav
+            div.blog_fixed
+                div.blog_container
+                    div.blog_left__col            
+                    div.blog_right__col
+            div.blog_header
+            div.blog_container.static
+                div.blog_left__col
+                    div.blog_menu__wrapper
+                        ul.blog_menu
+                            li.blog_menu__item.active
+                                a(href="#" class="blog_menu__link") Самое важное в САСС
+                            li.blog_menu__item
+                                a(href="#" class="blog_menu__link") Приемы верстки, без которых не обходится ни один сайт
+                            li.blog_menu__item
+                                a(href="#" class="blog_menu__link") Джентльменский набор плагинов Gulp
+                            li.blog_menu__item
+                                a(href="#" class="blog_menu__link") Почему я выбрал Jade
+                div.blog_right__col
+                    div.blog_content__wrapper
+                        section.blog_content           
+                            article.blog_article.active
+                                h2 Самое важное в САСС
+                                p
+                                    span 22 ноября 2016
+                                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.                              
+                            article.blog_article
+                                h2 Приемы верстки, без которых не обходится ни один сайт
+                                p
+                                    span 23 ноября 2016
+                                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+                            article.blog_article
+                                h2 Джентльменский набор плагинов Gulp
+                                p
+                                    span 23 ноября 2016
+                                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+                            article.blog_article
+                                h2 Почему я выбрал Jade
+                                p
+                                    span 23 ноября 2016
+                                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+
+            //- aside.articles_navy_blog
+            //-     ul.navy__list_blog
+            //-         each val, index in {'Самое важное в САСС': '#', 'Приемы верстки, без которых не обходится ни один сайт':'#', 'Джентльменский набор плагинов Gulp':'#', 'Почему я выбрал Jade':'#'}             
+            //-                 li.navy__list__item_blog
+            //-                     a.navy__link_blog(href= val)= index
         footer.blog_footer
             div.upper__footer
                 nav.footer__navy

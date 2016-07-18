@@ -79,8 +79,13 @@ var sliderModule = (function(){
 		var container = $('.work__items__slider'),
 		//слайдер под стрелкой вниз
 			itemsDown = container.find('.slider_item-down'),
-			activeItemDown = container.find('.slider_item-down.active'),	
-			nextItemDown = itemsDown.eq(counter+1),
+			activeItemDown = container.find('.slider_item-down.active');
+
+			if (counter === itemsDown.length-1){
+			counter = 0;
+			// _slideReverse(nextItemUp, nextItemDown, activeItemUp, activeItemDown);
+		}
+		var	nextItemDown = itemsDown.eq(counter+1),
 			prevItemDown = itemsDown.eq(counter-1),
 		//слайдер под стрелкой справа
 			itemsUp = container.find('.slider_item-up'),
@@ -89,14 +94,15 @@ var sliderModule = (function(){
 			prevItemUp = itemsUp.eq(counter+1),
 
 			itemsTop = container.find('.slider_item-top'),
-			activeItemTop = container.find('.slider_item-top.active'),	
-			nextItemTop = activeItemTop.next(),
+			activeItemTop = container.find('.slider_item-top.active');
+			
+			if(counter === itemsTop.length - 1){
+				itemsTop.first().addClass('active');
+			}	
+		var	nextItemTop = activeItemTop.next(),
 			prevItemTop = activeItemTop.prev();
-			// console.log(itemsDown.length);
-		if (counter > itemsDown.length-1){
-			counter = 0;
-			// _slideReverse(nextItemUp, nextItemDown, activeItemUp, activeItemDown);
-		}
+			console.log(nextItemTop);
+		
 				
 				
 			

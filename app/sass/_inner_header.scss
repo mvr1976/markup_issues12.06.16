@@ -42,9 +42,12 @@ body{
 	}
 }
 .hamburger{
-	float: right;
-	margin: 24px 29px 0 0;
+	// float: right;
+	// margin: 24px 29px 0 0;
 	cursor: pointer;
+	position: absolute;
+	top: 23px;
+	right: 28px;
 }
 .portfolio_bg{
 	position: absolute;
