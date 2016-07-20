@@ -209,6 +209,7 @@ function initMap() {
 
 //sticky menu blog
 $(window).scroll(function() {
+	checkSection();
 	var
 		wScroll = $(window).scrollTop(),
 		menu = $('.static .blog_menu'),
@@ -220,9 +221,9 @@ $(window).scroll(function() {
 		articleActive = $('.blog_right__col').find('.active'),
 		articleNext = articleActive.next();
 		articleScroll = articleActive.offset().top;
-		console.log(articleScroll);
+		// console.log(articleScroll);
 
-		console.log(menu);
+		// console.log(menu);
 	if (wScroll >= stickyStart) {
 
 		// menu.css({
@@ -242,3 +243,26 @@ $(window).scroll(function() {
 
 });
 // end sticky menu blog
+
+//blog scroll
+// $(window).scroll(function(){
+	
+// });
+
+function checkSection(){
+		$(".blog_content").each(function(){
+			var $this = $(this),
+				topEdge = $this.offset().top - 200,
+				bottomEdge = topEdge + $this.height(),
+				wscroll = $(window).scrollTop();
+			if(topEdge < wscroll && bottomEdge > wscroll){
+				var currentID = $this.data("section"),
+				activeLink = $(".blog_menu__link").filter('[href="'+ currentID +'"]');
+				activeLink.closest(".blog_menu__item").addClass("active")
+				.siblings().removeClass("active");
+				console.log(activeLink);
+			}
+		});
+	}	
+	
+// end blog scroll

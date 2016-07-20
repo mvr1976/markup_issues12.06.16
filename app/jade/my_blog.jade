@@ -46,32 +46,35 @@ block content
                 div.blog_left__col
                     div.blog_menu__wrapper
                         ul.blog_menu
-                            li.blog_menu__item.active
-                                a(href="#" class="blog_menu__link") Самое важное в САСС
                             li.blog_menu__item
-                                a(href="#" class="blog_menu__link") Приемы верстки, без которых не обходится ни один сайт
+                                a(href="one" class="blog_menu__link") Самое важное в САСС
                             li.blog_menu__item
-                                a(href="#" class="blog_menu__link") Джентльменский набор плагинов Gulp
+                                a(href="two" class="blog_menu__link") Приемы верстки, без которых не обходится ни один сайт
                             li.blog_menu__item
-                                a(href="#" class="blog_menu__link") Почему я выбрал Jade
+                                a(href="three" class="blog_menu__link") Джентльменский набор плагинов Gulp
+                            li.blog_menu__item
+                                a(href="four" class="blog_menu__link") Почему я выбрал Jade
                 div.blog_right__col
                     div.blog_content__wrapper
-                        section.blog_content           
+                        section.blog_content(data-section="one")           
                             article.blog_article.active
                                 h2 Самое важное в САСС
                                 p
                                     span 22 ноября 2016
-                                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.                              
+                                p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+                        section.blog_content(data-section="two")                              
                             article.blog_article
                                 h2 Приемы верстки, без которых не обходится ни один сайт
                                 p
                                     span 23 ноября 2016
                                 p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+                        section.blog_content(data-section="three")
                             article.blog_article
                                 h2 Джентльменский набор плагинов Gulp
                                 p
                                     span 23 ноября 2016
                                 p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+                        section.blog_content(data-section="four")
                             article.blog_article
                                 h2 Почему я выбрал Jade
                                 p

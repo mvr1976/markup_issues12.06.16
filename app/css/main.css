@@ -231,7 +231,8 @@ body {
   .parallax-bg img {
     display: block;
     max-width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    margin-top: -20px; }
 
 .wrapper__welcome:after {
   content: '';
@@ -1511,11 +1512,7 @@ body {
   right: 0; }
 
 .blog_content {
-  padding-left: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; }
+  padding-left: 10px; }
 
 .blog_footer {
   margin-top: 0; }
@@ -1534,10 +1531,6 @@ body {
     border-right: 2px solid #1abc9c; }
 
 .blog_menu__wrapper {
-  position: relative;
-  height: 1px; }
-
-.blog_content__wrapper {
   position: relative;
   height: 1px; }
 

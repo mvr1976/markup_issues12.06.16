@@ -95,12 +95,15 @@ var sliderModule = (function(){
 
 			itemsTop = container.find('.slider_item-top'),
 			activeItemTop = container.find('.slider_item-top.active');
-			
+
 			if(counter === itemsTop.length - 1){
 				itemsTop.first().addClass('active');
 			}	
 		var	nextItemTop = activeItemTop.next(),
 			prevItemTop = activeItemTop.prev();
+			if(nextItemTop.eq(itemsTop.length - 1)){
+				nextItemTop = itemsTop.eq(0);
+			}
 			console.log(nextItemTop);
 		
 				
