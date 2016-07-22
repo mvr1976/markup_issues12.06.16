@@ -1,0 +1,83 @@
+@media screen and (max-width: 1200px){
+	// .parallax-bg{
+	// width: 1400px;}
+
+	.arrow__down{
+	margin-top: 11%;
+	}
+}
+@media screen and (max-width: 992px){
+	// .parallax-bg{
+	// width: 1100px;}
+
+	.arrow__down{
+	margin-top: 15%;
+	}
+}
+@media screen (min-width: 481px) and (max-width: 768px) {
+	.arrow__down{
+	margin-top: 18%;
+	}
+
+	// .parallax-bg{
+	// width: 900px;}
+
+	.flip_container {	
+	width: 300px;
+	height:320px;	
+}
+	.avatar,.log__in__welcome{	
+	width: 300px;	
+	}
+	.avatar__img__store{
+		// width: 120px;
+		// height: 120px;
+	    margin: 22px auto 19px;
+	}
+	.welcome__social__list{
+		margin: 12px auto 12px;
+	}
+	.log__in__header h3{
+		font-size: .8em;
+	}
+	.log__in__header:before {    
+    position: absolute;
+    left: 52px;
+    top: 42px;
+	}
+	.log__in__header:after {    
+    position: absolute;
+    right: 52px;
+    top: 42px;
+	}
+	.log__in__header {    
+    margin: 20px auto 20px;   
+	}
+	.radio {    
+    margin: 8px auto 10px;
+	}
+	.log-input {    
+    margin: 10px auto;
+	}
+	.login_nav_link {    
+    padding: 10px 0;
+	}
+	.login-key,.login-user {    
+    left: 19px;
+	}
+	.fa.fa-check-square {    
+    left: 101px;    
+	}
+	.login__radio:after {    
+    left: 57px;
+	}
+}
+@media screen and (max-width: 480px){
+	.welcome_login {    
+    // position: absolute;
+    // right: 0;
+    // left: 0;
+    top: 20px;    
+    margin: 0 auto;    
+	}
+}

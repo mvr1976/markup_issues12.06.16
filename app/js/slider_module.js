@@ -101,9 +101,15 @@ var sliderModule = (function(){
 			}	
 		var	nextItemTop = activeItemTop.next(),
 			prevItemTop = activeItemTop.prev();
-			if(nextItemTop.eq(itemsTop.length - 1)){
-				nextItemTop = itemsTop.eq(0);
-			}
+			if(activeItemTop.next().length){
+				if(activeItemTop.next().index() <= itemsTop.length-1){
+					nextItemTop = activeItemTop.next();
+				}else{
+					nextItemTop = itemsTop.eq(0);
+				}
+			}else{
+					nextItemTop = itemsTop.eq(0);
+				}
 			console.log(nextItemTop);
 		
 				

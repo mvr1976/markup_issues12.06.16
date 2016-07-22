@@ -568,6 +568,7 @@ body {
 .works_background_container {
   position: relative;
   overflow: hidden;
+  background: url(../img/welcome-bg.jpg) no-repeat center;
   width: 100%;
   height: 100%;
   margin-bottom: -100px; }
@@ -1009,12 +1010,15 @@ body {
   cursor: pointer;
   position: absolute;
   top: 23px;
-  right: 28px; }
+  right: 26px; }
 
 .portfolio_bg {
+  width: 80%;
+  margin: 0 auto;
   position: absolute;
   top: 30%;
-  left: 5%; }
+  left: 0;
+  right: 0; }
 
 .svg_portfolio_bg {
   fill: rgba(255, 255, 255, 0.1);
@@ -1035,7 +1039,7 @@ body {
   font-size: 2em; }
 
 .arrow__down {
-  margin-top: 5%; }
+  margin-top: 7%; }
 
 .svg_inner_header_arrow {
   margin: 0 auto;
@@ -1586,6 +1590,56 @@ body {
   height: 20px;
   background: #fff;
   color: #555; }
+
+@media screen and (max-width: 1200px) {
+  .arrow__down {
+    margin-top: 11%; } }
+
+@media screen and (max-width: 992px) {
+  .arrow__down {
+    margin-top: 15%; } }
+
+@media screen and (max-width: 768px) {
+  .arrow__down {
+    margin-top: 18%; }
+  .flip_container {
+    width: 300px;
+    height: 320px; }
+  .avatar, .log__in__welcome {
+    width: 300px; }
+  .avatar__img__store {
+    margin: 22px auto 19px; }
+  .welcome__social__list {
+    margin: 12px auto 12px; }
+  .log__in__header h3 {
+    font-size: .8em; }
+  .log__in__header:before {
+    position: absolute;
+    left: 52px;
+    top: 42px; }
+  .log__in__header:after {
+    position: absolute;
+    right: 52px;
+    top: 42px; }
+  .log__in__header {
+    margin: 20px auto 20px; }
+  .radio {
+    margin: 8px auto 10px; }
+  .log-input {
+    margin: 10px auto; }
+  .login_nav_link {
+    padding: 10px 0; }
+  .login-key, .login-user {
+    left: 19px; }
+  .fa.fa-check-square {
+    left: 101px; }
+  .login__radio:after {
+    left: 57px; } }
+
+@media screen and (max-width: 480px) {
+  .welcome_login {
+    top: 20px;
+    margin: 0 auto; } }
 
 html, body {
   height: 100%; }

@@ -213,7 +213,7 @@ $(window).scroll(function() {
 	var
 		wScroll = $(window).scrollTop(),
 		menu = $('.static .blog_menu'),
-		sidebar = $('.static .blog_menu__wrapper '),
+		sidebar = $('.static .blog_menu__wrapper'),
 		stickyStart = sidebar.offset().top,
 		menuClone = sidebar.clone(),
 		fixedSidebar = $('.blog_fixed .blog_left__col'),
@@ -221,7 +221,7 @@ $(window).scroll(function() {
 		articleActive = $('.blog_right__col').find('.active'),
 		articleNext = articleActive.next();
 		articleScroll = articleActive.offset().top;
-		// console.log(articleScroll);
+		console.log(sidebar);
 
 		// console.log(menu);
 	if (wScroll >= stickyStart) {
@@ -260,7 +260,7 @@ function checkSection(){
 				activeLink = $(".blog_menu__link").filter('[href="'+ currentID +'"]');
 				activeLink.closest(".blog_menu__item").addClass("active")
 				.siblings().removeClass("active");
-				console.log(activeLink);
+				// console.log(activeLink);
 			}
 		});
 	}	
