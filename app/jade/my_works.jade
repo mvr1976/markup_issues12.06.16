@@ -39,6 +39,11 @@ block content
                 use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#works_header")
             //- include inner_header 
         section.work__items
+            
+            //- div.work__items__slider
+            div.slider_top
+                div.slider__display-top
+                    ul.slider_preview-top(id="slider_preview-top")
             div.active__item__description
                 div.a-i-d_center
                     div.a-i-d_title(id="a-i-d_title") 
@@ -46,20 +51,16 @@ block content
                     button.a-i-d_button
                         svg(class="svg-socials--link-dims svg_works_link" viewbox="0 0 200 30")
                             use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#link")
-                        a.a-i-d_link(href="" alt="link_to_site") Посмотреть сайт
-            div.work__items__slider
-                div.slider_top
-                    div.slider__display-top
-                        ul.slider_preview-top(id="slider_preview-top")
-                div.works_preview
-                    svg(class="svg-portf_arrow_down-dims svg_works_arrow_down" id="works_arrow-down" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
-                            use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_down")
-                    svg(class="svg-portf_arrow_up-dims svg_works_arrow_up" id="works_arrow-up" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
-                            use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_up")
-                    div.slider__display
-                        ul.slider_prewiew-down(id="slider_preview-down")
-                    div.slider__display    
-                        ul.slider_prewiew-up(id="slider_preview-up")
+                        a.a-i-d_link(href="#" alt="link_to_site" target="blank") Посмотреть сайт
+            div.works_preview
+                svg(class="svg-portf_arrow_down-dims svg_works_arrow_down" id="works_arrow-down" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
+                        use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_down")
+                svg(class="svg-portf_arrow_up-dims svg_works_arrow_up" id="works_arrow-up" width="42.736px" height="27.435px" viewBox="0 0 42.736 27.435")
+                        use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#portf_arrow_up")
+                div.slider__display
+                    ul.slider_prewiew-down(id="slider_preview-down")
+                div.slider__display    
+                    ul.slider_prewiew-up(id="slider_preview-up")
                        
              
         section.people__feedback
@@ -71,7 +72,7 @@ block content
                 div.people__feedback__item
                     div.blockquote_left
                         i(class="fa fa-quote-left fa-2x" aria-hidden="true")
-                    blockquote Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        blockquote Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                     div.tutor__avatar
                         img.tutor_img(src='app/img/dima.jpg' alt='Да это же Дима!')
                         div.tutor_name
@@ -80,7 +81,7 @@ block content
                 div.people__feedback__item
                     div.blockquote_left
                         i(class="fa fa-quote-left fa-2x" aria-hidden="true")
-                    blockquote Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!
+                        blockquote Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!
                     div.tutor__avatar
                         img.tutor_img(src='app/img/zar.jpg' alt='Да это же Зар!')
                         div.tutor_name
