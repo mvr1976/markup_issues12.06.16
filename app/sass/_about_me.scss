@@ -7,6 +7,9 @@ $top-6: 15px;
 $dash-left-7: 90px;
 $dash-right-7: 90px;
 $top-7: 15px;
+$dash-left-9: 90px;
+$dash-right-9: 90px;
+$top-9: 45px;
 .wrapper{
 	position: relative;
 	width:100%;
@@ -175,11 +178,56 @@ $top-7: 15px;
 }
 //google-map
 #google-map{
-	// position: relative;
+	position: relative;
 	width:100%;
 	max-width: 1800px;
 	height: 100%;
 	// z-index:5;
 	border: none;
 	// margin-bottom:-100px;
+}
+.contactsWrapper{
+	position: relative;
+}
+#google-map{
+	position: relative;
+}
+.aboutContacts{
+	// position: relative;
+	margin: 0 auto;
+	// top: 80%;
+	position: absolute;
+	bottom: 10%;
+	// top: 50%;
+	// left:50%;
+	// z-index:1;
+	width: 380px;
+	height: 380px;
+	
+	font-size:1.8em;
+	background: rgba(255,255,255,.5);
+    box-shadow: 0 0 15px 2px rgba(0,0,0,.2);
+    & h4{
+    	font-family: 'bernier-regular';
+    	text-align:center;
+    	padding-top: 30px;
+    }
+
+}
+.about-item{
+	margin: 25px 0;
+	padding-left: 35px;
+}
+.about-link{
+    color: #455a64;    
+    vertical-align: middle;
+    font-family: 'roboto-medium';
+    font-size: .6em;
+    @include titles-dashes($dash-left-9, $dash-right-9, $top-9);
+    & .fa{
+	    color: #00bfa5;
+	    font-size: 1.2em;
+	    vertical-align: middle;
+	    margin-right: 10px;
+    }
 }

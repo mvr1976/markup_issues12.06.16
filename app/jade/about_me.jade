@@ -114,10 +114,30 @@ block content
                                         svg.common_circle(width="120" height="120")
                                             circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
                                             circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
-        div(id="google-map")
+        //- div.contactsWrapper
+        div(id="google-map")            
             div(id="google-container")
             div(id="zoom-in")
             div(id="zoom-out")
+        div.aboutContacts
+                h4 Контакты
+                ul.aboutContactsList
+                    li.about-item
+                        a.about-link(href="skype:maxim_rudik?call")
+                            i.fa.fa-skype
+                            |maxim_rudik 
+                    li.about-item
+                        a.about-link(href="mailto:mvr1976@gmail.com")
+                            i.fa.fa-envelope
+                            |mvr1976@gmail.com 
+                    li.about-item
+                        a.about-link(href="skype:+79284001503?call")
+                            i.fa.fa-phone
+                            |+7-928-400-15-03
+                    li.about-item
+                        a.about-link(href="https://google.com")
+                            i.fa.fa-map-marker
+                            |г.Геленджик, мкр. Голубая Бухта
         include inner_footer
         script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADBkK0q02rT0ZN2wCEwIdTvmmHcG5AuP4&callback=initMap")        
         script(src="app/js/main.js")

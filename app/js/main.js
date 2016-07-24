@@ -191,15 +191,11 @@ function initMap() {
   	marker = new google.maps.Marker({
 	position: latLng,
 	map: map,
-	draggable: false,
+	draggable: false
 	// animation: google.maps.Animation.DROP
-	});
-  
-//   	var styledMap = new google.maps.StyledMapType(styles,
-//     {name: "Styled Map"});
-//   	map.mapTypes.set(styledMap);  
+	});  
 }
-
+// initMap();
 //modal window close
 // $('.modal_close').on('click', function(e){
 // 		e.preventDefault();

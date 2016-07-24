@@ -1,0 +1,96 @@
+@media screen and (max-width: 1200px){}
+@media screen and (max-width: 992px){}
+@media screen and (max-width: 768px){ 
+	.extent_left{    
+    display: block;    
+    width: 100%;    
+	}
+	.extent_right{
+	display: block;
+	width:100%;
+	}
+	.extent_left_left {
+    width: 100%;
+    float: none;
+	}
+	.extent_left_right {
+    width: 100%;
+    float: none;
+	}
+	.left_about_me_title {    
+    font-size: 3em;
+	    &:before{
+	    	left: 255px;
+	    	top: 28px;
+	    }
+	    &:after{
+	    	right: 255px;
+	    	top: 28px;
+	    }    
+	}
+	.page_about_ava {
+    display: block;
+    margin: 0 auto;
+	}
+	.who_am_i:before {    
+    left: 280px;
+    top: 17px;
+	}
+	.who_am_i:after {    
+    right: 280px;
+    top: 17px;
+	}
+	.skills_list{
+		text-align: center;
+	}
+	.frontend_list{
+		// display:flex;
+		// justify-content: center;
+	}
+}
+@media screen and (max-width: 480px){
+	.extent_left{    
+    display: block;    
+    width: 100%;    
+	}
+	.extent_right{
+	display: block;
+	width:100%;
+	}
+	.extent_left_left {
+    width: 100%;
+    float: none;
+	}
+	.extent_left_right {
+    width: 100%;
+    float: none;
+	}
+	.left_about_me_title {    
+    font-size: 3em;
+	    &:before{
+	    	left: 255px;
+	    	top: 28px;
+	    }
+	    &:after{
+	    	right: 255px;
+	    	top: 28px;
+	    }    
+	}
+	.page_about_ava {
+    display: block;
+    margin: 0 auto;
+	}
+	.who_am_i:before {    
+    left: 280px;
+    top: 17px;
+	}
+	.who_am_i:after {    
+    right: 280px;
+    top: 17px;
+	}
+	.skills_list{
+		width:89%;
+		text-align: center;
+	}
+	
+}
