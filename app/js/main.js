@@ -10,17 +10,30 @@ var flipover = (function(){
 		});
 		},
 		backToWelcome: function(){
-			$('.login_nav_link').on('click', function(){
+			$('.parallax-bg').on('click', function(){
 		console.log('jquery is working');
 		$('.front').css('transform','rotateY(0deg)');		
 		$('.back').css('transform','rotateY(180deg)');
 		});
+		},
+		slowAppear: function(){
+			$(window).on('load', function(){
+				$('.front').animate({					
+					// transform: rotateX(0),
+					top: 0
+				},300);
+			});
 		}
 	}
 }());
 flipover.auth();
 flipover.backToWelcome();
+flipover.slowAppear();
 
+//login checkbox
+$('.fa-check-login').on('click', function(){
+	$('.fa-check-login').css('left', '-1400px');
+})
 
 //flipover welcome
 
@@ -70,7 +83,7 @@ var preloader = (function(){
     		$preloader.delay(350).fadeOut('slow');
 			});
 		},
-		GetImgArrray: function(){
+		GetImgArray: function(){
 			$.each($('*'), function () {
 			var $this = $(this),
 				background = $this.css('background-image'),
@@ -80,8 +93,8 @@ var preloader = (function(){
 				imgs.push(path);
 			}
 			if (img) {
-				var path = $this.attr('src');
-				if (path) {
+				var path = $this.attr('src');				
+				if (path) {						
 					imgs.push(path);
 				}
 			}
@@ -116,9 +129,10 @@ var preloader = (function(){
 	// console.log(imgs.length);
 }());
 preloader.load();
+preloader.GetImgArray();
 preloader.setPercents();
 // preloader.percentageOutput();
-// preloader.GetImgArrray();
+
 //preloader
 
 // percentage counter
@@ -292,3 +306,21 @@ var blogMenu = (function(){
 
 }());
 // end blog menu
+
+// плагин для анимации статей при скролле
+$('.blog_content').onScreen({
+   container: window,
+   direction: 'vertical',
+   doIn: function() {
+     $('.blog_content').fadeIn();
+   },
+   doOut: function() {
+      $('.blog_content').fadeOut();
+   },
+   tolerance: 0,
+   throttle: 50,
+   toggleClass: 'onScreen',
+   lazyAttr: null,
+   lazyPlaceholder: 'app/img/ava.jpg',
+   debug: false
+});

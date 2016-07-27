@@ -95,14 +95,16 @@ $top2:74px;
 	outline:none;
 	border: none;
 }
-.fa.fa-check-square{
+.fa.fa-check-square.fa-lg{
 	display:block;
 	position: absolute;
 	top:3px;
 	left:140px;
 	padding:0;
 	color:$welcome_nav;
+	
 }
+
 .radio{
 	position: relative;
 	margin-bottom:10px;

@@ -267,7 +267,7 @@ body {
 .front, .back {
   backface-visibility: hidden;
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0; }
 
 .front {
@@ -459,6 +459,19 @@ body {
   left: 140px;
   padding: 0;
   color: #07ac99; }
+
+.fa-check-login {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background-color: #07ac99;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 140px;
+  cursor: pointer;
+  z-index: 10; }
 
 .radio {
   position: relative;

@@ -70,12 +70,13 @@ body{
 .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
-	top: 0;
+	top: -100px;
 	left: 0;
 }
 .front {
 	z-index: 2;	
 	transform: rotateY(0deg);
+	// transform: rotateX(-45deg);
 	transition: 1s;
 }
 .back {
@@ -286,6 +287,19 @@ $top2:49px;
 	left:140px;
 	padding:0;
 	color:$welcome_nav;
+}
+.fa-check-login{
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	background-color:$welcome_nav;
+	display:block;
+	position: absolute;
+	top:3px;
+	left:140px;
+	cursor:pointer;
+	z-index:10;
 }
 .radio{
 	position: relative;
