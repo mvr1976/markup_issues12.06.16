@@ -44,16 +44,16 @@ block content
             div.blog_header
             div.blog_container.static
                 div.blog_left__col
-                    div.blog_menu__wrapper
+                    div.blog_menu__wrapper                        
                         ul.blog_menu
                             li.blog_menu__item
-                                a(href="one" class="blog_menu__link") Самое важное в САСС
+                                a(href="#one" class="blog_menu__link") Самое важное в САСС
                             li.blog_menu__item
-                                a(href="two" class="blog_menu__link") Приемы верстки, без которых не обходится ни один сайт
+                                a(href="#two" class="blog_menu__link") Приемы верстки, без которых не обходится ни один сайт
                             li.blog_menu__item
-                                a(href="three" class="blog_menu__link") Джентльменский набор плагинов Gulp
+                                a(href="#three" class="blog_menu__link") Джентльменский набор плагинов Gulp
                             li.blog_menu__item
-                                a(href="four" class="blog_menu__link") Почему я выбрал Jade
+                                a(href="#four" class="blog_menu__link") Почему я выбрал Jade
                 div.blog_right__col
                     div.blog_content__wrapper
                         section.blog_content(data-section="one")           
@@ -80,7 +80,19 @@ block content
                                 p
                                     span 23 ноября 2016
                                 p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
-
+        div.blog_overlay
+            ul.blog_menu.blog_menu-overlay
+                li.blog_menu__item
+                    a(href="#one" class="blog_menu__link") Самое важное в САСС
+                li.blog_menu__item
+                    a(href="#two" class="blog_menu__link") Приемы верстки, без которых не обходится ни один сайт
+                li.blog_menu__item
+                    a(href="#three" class="blog_menu__link") Джентльменский набор плагинов Gulp
+                li.blog_menu__item
+                    a(href="#four" class="blog_menu__link") Почему я выбрал Jade
+            div.blog_menu-button
+                i.fa.fa-chevron-right.blog
+                i.fa.fa-chevron-left.blog
             //- aside.articles_navy_blog
             //-     ul.navy__list_blog
             //-         each val, index in {'Самое важное в САСС': '#', 'Приемы верстки, без которых не обходится ни один сайт':'#', 'Джентльменский набор плагинов Gulp':'#', 'Почему я выбрал Jade':'#'}             

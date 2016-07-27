@@ -26,10 +26,11 @@ body{
 	justify-content: space-between;
 	align-items:center;
 }
-.hamburger_blog{
+.hamburger.hamburger_blog{
 	float: right;
-	margin-top: 15px;
+	position: static;
 	cursor:pointer;
+	margin-top: 15px;
 }
 .avatar__inner_blog{
 	margin: 0 auto;
@@ -111,7 +112,7 @@ body{
 	width: 90%;
 	margin: 0 auto;
 	@include clearfix();
-	height: 1500px;
+	// height: 1500px;
 	color:#77868d;
 }
 .blog_header {
@@ -141,12 +142,18 @@ body{
 	left: 0;
 	right: 0;
 }
+.blog_menu-button{
+	display: none;
+}
 .blog_content{
 	padding-left: 10px;
 	// position: absolute;
 	// top: 0;
 	// left: 0;
 	// right: 0;
+}
+.blog_overlay{
+	display:none;
 }
 // .articles_blog{
 // 	width: 70%;

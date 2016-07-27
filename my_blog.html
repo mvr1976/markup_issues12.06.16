@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
     <link rel="stylesheet" href="app/css/main.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="app/js/main.js"></script>
   </head>
   <body>
@@ -80,12 +81,12 @@
         <div class="blog_header"></div>
         <div class="blog_container static">
           <div class="blog_left__col">
-            <div class="blog_menu__wrapper">
+            <div class="blog_menu__wrapper">                       
               <ul class="blog_menu">
-                <li class="blog_menu__item"><a href="one" class="blog_menu__link">Самое важное в САСС</a></li>
-                <li class="blog_menu__item"><a href="two" class="blog_menu__link">Приемы верстки, без которых не обходится ни один сайт</a></li>
-                <li class="blog_menu__item"><a href="three" class="blog_menu__link">Джентльменский набор плагинов Gulp</a></li>
-                <li class="blog_menu__item"><a href="four" class="blog_menu__link">Почему я выбрал Jade</a></li>
+                <li class="blog_menu__item"><a href="#one" class="blog_menu__link">Самое важное в САСС</a></li>
+                <li class="blog_menu__item"><a href="#two" class="blog_menu__link">Приемы верстки, без которых не обходится ни один сайт</a></li>
+                <li class="blog_menu__item"><a href="#three" class="blog_menu__link">Джентльменский набор плагинов Gulp</a></li>
+                <li class="blog_menu__item"><a href="#four" class="blog_menu__link">Почему я выбрал Jade</a></li>
               </ul>
             </div>
           </div>
@@ -122,6 +123,15 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="blog_overlay">
+        <ul class="blog_menu blog_menu-overlay">
+          <li class="blog_menu__item"><a href="#one" class="blog_menu__link">Самое важное в САСС</a></li>
+          <li class="blog_menu__item"><a href="#two" class="blog_menu__link">Приемы верстки, без которых не обходится ни один сайт</a></li>
+          <li class="blog_menu__item"><a href="#three" class="blog_menu__link">Джентльменский набор плагинов Gulp</a></li>
+          <li class="blog_menu__item"><a href="#four" class="blog_menu__link">Почему я выбрал Jade</a></li>
+        </ul>
+        <div class="blog_menu-button"><i class="fa fa-chevron-right blog"></i><i class="fa fa-chevron-left blog"></i></div>
       </div>
       <footer class="blog_footer">
         <div class="upper__footer">
@@ -169,7 +179,7 @@
       </div>
       <div class="overlay"></div>
       <div class="overlay_right"></div>
-      <div class="modal_close"></div>
+      <div class="modal_close modal_close-blog"></div>
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="app/js/main.js"></script>

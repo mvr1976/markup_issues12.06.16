@@ -114,12 +114,12 @@ block content
                                         svg.common_circle(width="120" height="120")
                                             circle(r="50" cx="60" cy="60" stroke="#dfdcd5" fill="none")
                                             circle.sector(r="50" cx="60" cy="60" stroke="#10c1a8" transform="rotate(-90 60 60)")
-        //- div.contactsWrapper
-        div(id="google-map")            
-            div(id="google-container")
-            div(id="zoom-in")
-            div(id="zoom-out")
-        div.aboutContacts
+        div.contactsWrapper
+            div(id="google-map")            
+                //- div(id="google-container")
+                //- div(id="zoom-in")
+                //- div(id="zoom-out")
+            div.aboutContacts
                 h4 Контакты
                 ul.aboutContactsList
                     li.about-item
@@ -144,5 +144,6 @@ block content
     include modal_window
     script(src="bower_components/jquery/dist/jquery.min.js")
     script(src="app/js/main.js")
+    script(src="app/js/google-map.js")
 
         

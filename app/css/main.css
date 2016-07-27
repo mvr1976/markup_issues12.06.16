@@ -105,6 +105,10 @@
   .modal_close:after {
     transform: rotate(-45deg); }
 
+.modal_close.modal_close-blog {
+  top: 15px;
+  right: 127px; }
+
 .modal_nav_list {
   width: 100%;
   height: 100%;
@@ -1375,17 +1379,19 @@ body {
   border: none; }
 
 .contactsWrapper {
-  position: relative; }
+  position: relative;
+  height: 650px; }
 
 #google-map {
   position: relative; }
 
 .aboutContacts {
-  margin: 0 auto;
   position: absolute;
-  bottom: 10%;
+  top: 56px;
+  left: 56px;
   width: 380px;
   height: 380px;
+  border-radius: 5px;
   font-size: 1.8em;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2); }
@@ -1454,10 +1460,11 @@ body {
   justify-content: space-between;
   align-items: center; }
 
-.hamburger_blog {
+.hamburger.hamburger_blog {
   float: right;
-  margin-top: 15px;
-  cursor: pointer; }
+  position: static;
+  cursor: pointer;
+  margin-top: 15px; }
 
 .avatar__inner_blog {
   margin: 0 auto; }
@@ -1540,7 +1547,6 @@ body {
 .blog_container {
   width: 90%;
   margin: 0 auto;
-  height: 1500px;
   color: #77868d; }
   .blog_container:before, .blog_container:after {
     content: "";
@@ -1570,8 +1576,14 @@ body {
   left: 0;
   right: 0; }
 
+.blog_menu-button {
+  display: none; }
+
 .blog_content {
   padding-left: 10px; }
+
+.blog_overlay {
+  display: none; }
 
 .blog_footer {
   margin-top: 0; }
@@ -1920,6 +1932,70 @@ body {
   .skills_list {
     width: 89%;
     text-align: center; } }
+
+@media screen and (max-width: 1200px) {
+  .triangles_blog {
+    height: 85.7px;
+    bottom: 9px; } }
+
+@media screen and (max-width: 1110px) {
+  .triangles_blog {
+    height: 73.7px;
+    bottom: 3px; } }
+
+@media screen and (max-width: 992px) {
+  .triangles_blog {
+    height: 62.7px;
+    bottom: 0; } }
+
+@media screen and (max-width: 768px) {
+  .blog_left__col {
+    display: none; }
+  .blog_right__col {
+    width: 100%; }
+  .blog_content {
+    padding-left: 10px; }
+  .blog_footer {
+    margin-top: 0; }
+  .blog_menu__link {
+    padding: 10px;
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7); }
+  .blog_menu__item {
+    margin-bottom: 20px; }
+    .blog_menu__item.active {
+      color: #fff; }
+  .blog_overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -80%;
+    background: #07ac99;
+    height: 100%;
+    width: 80%; }
+  .blog_menu-button {
+    display: block;
+    background: #07ac99;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 43%;
+    right: -25px; }
+  .fa.fa-chevron-right.blog, .fa.fa-chevron-left.blog {
+    position: absolute;
+    right: 3px;
+    top: 36%;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer; }
+  .fa.fa-chevron-left.blog {
+    display: none; }
+  .blog_menu-overlay {
+    top: 20%; } }
 
 html, body {
   height: 100%; }
