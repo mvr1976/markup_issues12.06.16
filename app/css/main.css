@@ -761,6 +761,9 @@ body {
   left: 20%;
   cursor: pointer;
   z-index: 1; }
+  .svg_works_arrow_down:hover {
+    transform: translateY(10px);
+    transition: all .3s; }
 
 .svg_works_arrow_up {
   position: absolute;
@@ -769,6 +772,9 @@ body {
   left: 70%;
   cursor: pointer;
   z-index: 1; }
+  .svg_works_arrow_up:hover {
+    transform: translateY(-10px);
+    transition: all .3s; }
 
 .work_img {
   max-width: 100%; }
@@ -958,6 +964,13 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
   fill: rgba(255, 255, 255, 0.7); }
+  .svg_works_arrow_up2:hover {
+    transform: translateY(-10px);
+    transition: all .3s; }
+
+.svg_inner_header_arrow:hover {
+  transform: translateY(-10px);
+  transition: all .3s; }
 
 @font-face {
   font-family: 'bernier-distressed';
@@ -1110,7 +1123,17 @@ body {
 .svg_inner_header_arrow {
   margin: 0 auto;
   margin-bottom: 5%;
-  opacity: .7; }
+  opacity: .7;
+  cursor: pointer;
+  z-index: 10; }
+
+.svg_inner_header_arrow {
+  cursor: pointer; }
+  .svg_inner_header_arrow:hover {
+    transform: translateY(10px); }
+
+.svg_works_arrow_up2 {
+  cursor: pointer; }
 
 .triangles {
   position: relative;

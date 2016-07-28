@@ -210,6 +210,10 @@ $top-4: 38px;
 	left:20%;
 	cursor:pointer;
 	z-index:1;
+	&:hover{
+		transform: translateY(10px);
+		transition: all .3s;
+	}
 }
 .svg_works_arrow_up{
 	position: absolute;
@@ -218,6 +222,10 @@ $top-4: 38px;
 	left:70%;
 	cursor: pointer;
 	z-index:1;
+	&:hover{
+		transform: translateY(-10px);
+		transition: all .3s;
+	}
 }
 .work_img{
 	max-width:100%;
@@ -385,5 +393,15 @@ $top-4: 38px;
 	display:block;
 	margin: 0 auto;
 	margin-bottom: 30px;
-	fill:rgba(255, 255, 255, 0.7);
+	fill:rgba(255, 255, 255, 0.7);	
+		&:hover{
+		transform: translateY(-10px);
+		transition: all .3s;	
+	}
+}
+.svg_inner_header_arrow{
+	&:hover{
+		transform: translateY(-10px);
+		transition: all .3s;	
+	}
 }

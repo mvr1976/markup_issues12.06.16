@@ -344,19 +344,32 @@ var blogMenu = (function(){
 // end blog menu
 
 // плагин для анимации статей при скролле
-$('.blog_content').onScreen({
-   container: window,
-   direction: 'vertical',
-   doIn: function() {
-     $('.blog_content').fadeIn();
-   },
-   doOut: function() {
-      $('.blog_content').fadeOut();
-   },
-   tolerance: 0,
-   throttle: 50,
-   toggleClass: 'onScreen',
-   lazyAttr: null,
-   lazyPlaceholder: 'app/img/ava.jpg',
-   debug: false
+// $('.blog_content').onScreen({
+//    container: window,
+//    direction: 'vertical',
+//    doIn: function() {
+//      $('.blog_content').fadeIn();
+//    },
+//    doOut: function() {
+//       $('.blog_content').fadeOut();
+//    },
+//    tolerance: 0,
+//    throttle: 50,
+//    toggleClass: 'onScreen',
+//    lazyAttr: null,
+//    lazyPlaceholder: 'app/img/ava.jpg',
+//    debug: false
+// });
+
+//анимация якорей
+$(document).ready(function(){
+	console.log('hi!!!');
+	$('.svg_works_arrow_up2').on('click', function(e){
+
+			e.preventDefault();
+			var anchor = $(this).attr('href'),
+				top = anchor.offset().top;
+			$('body, html').animate({scrollTop:top},500);
+			console.log($('.svg_works_arrow_up2'));
+			});
 });

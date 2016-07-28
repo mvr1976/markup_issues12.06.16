@@ -115,13 +115,28 @@ body{
 }
 .arrow__down{
 	margin-top: 7%;
+	// cursor:pointer;
+	// &:hover{
+	// 	transform: translateY(10px);
+	// }
 }
 .svg_inner_header_arrow{
 	margin: 0 auto;
 	margin-bottom: 5%;
 	opacity:.7;
+	cursor: pointer;
+	z-index:10;
+	
 }
-
+.svg_inner_header_arrow{
+	cursor: pointer;
+	&:hover{
+		transform: translateY(10px);
+	}
+}
+.svg_works_arrow_up2{
+	cursor:pointer;
+}
 .triangles{
 	position: relative;	
 	width: 100%;
