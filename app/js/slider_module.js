@@ -2,25 +2,26 @@ var sliderModule = (function(){
 	var workJson = [
 					{
 				"link": "https://rudik.info",
-				"description": "Мой предыдущий сайт-портфолио",
+				"description": "Обратный отсчет помидоров",				
 				"skills": "html, css, jquery",
 				"path": "app/img/printscreen4.jpg"
 				},
 					{
 				"link": "https://rudik.info/RandomQuotes/index.html",
-				"description": "Генератор цитат из Пелевина",
+				"description": "Калькулятор",
+				
 				"skills": "html, css, js",
 				"path": "app/img/printscreen1.jpg"
 				},
 					{
 				"link": "https://rudik.info/NewPomodoro/index.html",
-				"description": "Обратный отсчет помидоров",
+				"description": "Генератор цитат из Пелевина",				
 				"skills": "html, css, js",
 				"path": "app/img/printscreen2.jpg"
 				},
 					{
 				"link": "https://rudik.info/Calculator/index.html",
-				"description": "Калькулятор",
+				"description": "Мой предыдущий сайт-портфолио",
 				"skills": "html, css, js",
 				"path": "app/img/printscreen3.jpg"
 				}
@@ -76,7 +77,7 @@ var sliderModule = (function(){
 	};
 	//по клику вниз
 	var _slideDown = function(){
-		var container = $('.work__items__slider'),
+		var container = $('.work__items'),
 		//слайдер под стрелкой вниз
 			itemsDown = container.find('.slider_item-down'),
 			activeItemDown = container.find('.slider_item-down.active');
@@ -139,7 +140,7 @@ var sliderModule = (function(){
 	//по клику вверх
 	var _slideUp = function(){
 		
-		var container = $('.work__items__slider'),
+		var container = $('.work__items'),
 			itemsDown = container.find('.slider_item-down'),
 			activeItemDown = container.find('.slider_item-down.active');
 			if(counter < 0){

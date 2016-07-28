@@ -7,9 +7,10 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
     <link rel="stylesheet" href="app/css/main.css">
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js">       </script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="app/js/main.js"></script>
   </head>
@@ -74,16 +75,16 @@
                 <div class="checkbox">
                   <div class="fa-check-login"></div><i aria-hidden="true" class="fa fa-check-square fa-lg"></i>
                   <input type="checkbox" name="checkbox">
-                  <label>Я человек                    </label>
+                  <label class="checkbox_label">Я человек                    </label>
                 </div>
               </div>
               <h4>Вы точно не робот?</h4>
               <div class="radio">
-                <label class="login__radio">
-                  <input type="radio" checked="checked" name="yes"><span>Да</span>
+                <label class="login__radio login__radio-left">Да
+                  <input type="radio" checked="checked" name="yes">
                 </label>
-                <label class="login__radio"> 
-                  <input type="radio" checked="checked" name="yes"><span>Не уверен</span>
+                <label class="login__radio login__radio-right">Не уверен
+                  <input type="radio" checked="checked" name="yes">
                 </label>
               </div>
               <ul class="login_nav_list">

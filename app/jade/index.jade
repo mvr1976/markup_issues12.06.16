@@ -50,15 +50,15 @@ block content
                                 div.fa-check-login
                                 i(class="fa fa-check-square fa-lg" aria-hidden="true")
                                 input(type="checkbox", name="checkbox")
-                                label Я человек                    
+                                label.checkbox_label Я человек                    
                         h4 Вы точно не робот?
                         div.radio
-                            label.login__radio
+                            label.login__radio.login__radio-left Да
                                 input(type="radio", checked="checked", name="yes")
-                                span Да
-                            label.login__radio 
+                                //- span Да
+                            label.login__radio.login__radio-right Не уверен
                                 input(type="radio", checked="checked", name="yes")
-                                span Не уверен
+                                //- span Не уверен
                         ul.login_nav_list
                             li.login_nav_item
                                 a.login_nav_link(href="#" alt="#") На главную

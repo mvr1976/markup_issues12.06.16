@@ -48,11 +48,11 @@
 	cursor:pointer;
 	border-radius: 50%;
 	border: 1px solid rgba(255,255,255,.5);
-	fill:none;
+	fill:rgba(255,255,255,.5);
 	// fill:rgba(255,255,255,.1);
-	stroke: #fff;
+	// stroke: #fff;
 	&:hover{
-		fill:rgba(255,255,255,.5);
+		fill:#fff;
 	}
 	
 }

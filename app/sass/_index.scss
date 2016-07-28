@@ -310,10 +310,12 @@ $top2:49px;
 	position:relative;
 	
 }
-.login__radio{
-	margin-right: 20px;
-	&:before{
-		content:"";
+.login__radio-left,.login__radio-right{
+	margin-right: 75px;
+	cursor: pointer;
+	text-indent: 25px;
+	text-wrap: no-wrap;
+		// content:"";
 		width:20px;
 		height:20px;
 		border: 1px solid #cfcfd0;
@@ -322,8 +324,8 @@ $top2:49px;
 		position:relative;
 		display:inline-block;
 		vertical-align: middle;
-		margin-right:-18px;
-	}
+		// margin-right:-18px;
+	
 	&:after{
 		content:"";
 		width: 10px;
@@ -331,14 +333,41 @@ $top2:49px;
 		background:$welcome_nav;
 		border-radius:50%;
 		position:absolute;
-		top:8px;
-		left:97px;//170 px - position yes i'm robot!!! js on.click()		
+		top:5px;
+		left:5px;//170 px - position yes i'm robot!!! js on.click()
+		opacity: 0;		
 	}
-	& span{
-		padding-left: 7px;
+	& input{
+		position: absolute;
+		display: block;
+		top:4px;
+		left:4px;
+		z-index: -1;
 	}
 }
-
+// .login__radio-right{
+// 	&:after{
+// 		content:"";
+// 		width: 10px;
+// 		height:10px;
+// 		background:$welcome_nav;
+// 		border-radius:50%;
+// 		position:absolute;
+// 		top:5px;
+// 		left:5px;//170 px - position yes i'm robot!!! js on.click()
+// 		opacity: 0;		
+// 	}
+// }
+.login__radio.login__radio-left.active{
+	&:after{
+		opacity: 1;
+	}
+}
+.login__radio.login__radio-right.active{
+	&:after{
+		opacity: 1;
+	}
+}
 .login_nav_list{
 	margin:0;
 	padding:0;
