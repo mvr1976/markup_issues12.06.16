@@ -23,6 +23,9 @@
 .footer__navy{
 	float: left;
 }
+.footer__navy__list{
+	margin-left: 20px; 
+}
 .footer__navy__item{
 	display:inline-block;
 	padding:15px 0;
@@ -65,9 +68,11 @@
 .down__footer__left{
 	float: left;
 	width: 40%;
+	margin-left: 20px; 
 }
 .down__footer__right{
 	float: right;
+	margin-right: 20px;  
 
 }
 .footer_socials_item{

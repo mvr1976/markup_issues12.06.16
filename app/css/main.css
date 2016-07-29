@@ -651,7 +651,7 @@ body {
 
 .a-i-d_title {
   font-family: 'bernier-regular';
-  font-size: 2.1em;
+  font-size: 1.8em;
   margin-bottom: 30px;
   color: #455a64; }
 
@@ -1215,6 +1215,9 @@ body {
 .footer__navy {
   float: left; }
 
+.footer__navy__list {
+  margin-left: 20px; }
+
 .footer__navy__item {
   display: inline-block;
   padding: 15px 0;
@@ -1252,10 +1255,12 @@ body {
 
 .down__footer__left {
   float: left;
-  width: 40%; }
+  width: 40%;
+  margin-left: 20px; }
 
 .down__footer__right {
-  float: right; }
+  float: right;
+  margin-right: 20px; }
 
 .footer_socials_item {
   display: inline-block; }

@@ -108,7 +108,7 @@ modalWin.close();
 
 //preloader
 var preloader = (function(){
-	var imgs = [];
+	var imgs = ['app/img/welcome-bg.jpg', 'app/img/parallax-bg.jpg', 'app/img/printscreen4.jpg', 'app/img/dima.jpg', 'app/img/zar.jpg'];
 	var percents = 1;
 	return{
 		load: function(){
@@ -119,24 +119,24 @@ var preloader = (function(){
     		$preloader.delay(350).fadeOut('slow');
 			});
 		},
-		GetImgArray: function(){
-			$.each($('*'), function () {
-			var $this = $(this),
-				background = $this.css('background-image'),
-				img = $this.is('img');
-			if (background != 'none') {
-				var path = background.replace('url("', '').replace('")', '');
-				imgs.push(path);
-			}
-			if (img) {
-				var path = $this.attr('src');				
-				if (path) {						
-					imgs.push(path);
-				}
-			}
-			console.log(path);
-			});
-		},
+		// GetImgArray: function(){
+		// 	$.each($('*'), function () {
+		// 	var $this = $(this),
+		// 		background = $this.css('background-image'),
+		// 		img = $this.is('img');
+		// 	if (background != 'none') {
+		// 		var path = background.replace('url("', '').replace('")', '');
+		// 		imgs.push(path);
+		// 	}
+		// 	if (img) {
+		// 		var path = $this.attr('src');				
+		// 		if (path) {						
+		// 			imgs.push(path);
+		// 		}
+		// 	}
+		// 	console.log(background);
+		// 	});
+		// },
 		percentageOutput: function(){			
 			for (var i = 0; i < imgs.length; i++) {
 			var image = $('<img>', {
@@ -157,16 +157,28 @@ var preloader = (function(){
 			var percent = Math.ceil(current / total * 100);
 			// console.log(percent);
 			// if(percent >= 100){
-				$('.wrapper__welcome').css({display: "flex"});				
-				$('#preloader_text tspan').text(percent + '%');
+				// $('.wrapper__welcome').css({display: "flex"});				
+				// $('#preloader_text tspan').text(percent + '%');
 			// }			
+		},
+		newAttempt: function(){
+			var percentCounter = 0;
+			$.each(imgs, function(index, value) {
+    			$('<img></img>').attr('src', value)    //load image
+        		.load(function() {
+            percentCounter = (index / imgs.length) * 100;
+            $('#preloader_text tspan').text(percentCounter + '%');
+            $('.wrapper__welcome').css({display: "flex"});	
+        });
+});
 		}
 	}
 	// console.log(imgs.length);
 }());
 preloader.load();
-preloader.GetImgArray();
-preloader.setPercents();
+// preloader.GetImgArray();
+preloader.newAttempt();
+// preloader.setPercents();
 // preloader.percentageOutput();
 
 //preloader
