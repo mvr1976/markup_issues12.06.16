@@ -173,9 +173,20 @@ $top-9: 45px;
 }
 .sector{
 	stroke-dasharray: 408;
-	stroke-dashoffset: 240;
+	// stroke-dashoffset: 240;
 	transition: all 1s;
 }
+.sector-html{stroke-dashoffset: 220;}
+.sector-css{stroke-dashoffset: 240;}
+.sector-js{stroke-dashoffset: 300;}
+.sector-php{stroke-dashoffset: 350;}
+.sector-mysql{stroke-dashoffset: 380;}
+.sector-node{stroke-dashoffset: 380;}
+.sector-mongo{stroke-dashoffset: 380;}
+.sector-git{stroke-dashoffset: 280;}
+.sector-gulp{stroke-dashoffset: 250;}
+.sector-bower{stroke-dashoffset: 230;}
+
 //google-map
 #google-map{
 	position: relative;

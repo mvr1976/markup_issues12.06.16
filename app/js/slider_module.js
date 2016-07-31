@@ -26,34 +26,24 @@ var sliderModule = (function(){
 				"path": "app/img/printscreen3.jpg"
 				}
 		];
-		// debugger;
+		
 		var counter = 0;
 		if (counter > workJson.length-1) {
 				counter = 0;
 			}
-		console.log(workJson.length);
-			//вct слайдеры
-
-		//слайдер под стрелкой вниз
-			
-		//большой слайдер сверху
-			
-		
+				
 	var initSlider = function(){
 		_createSliderTop(workJson);
 		_createSliderUp(workJson);
 		_createSliderDown(workJson);
-		_setUpListeners();
-		// _dataOutput(workJson);
+		_setUpListeners();		
 	};
 	var _setUpListeners = function(){
-
 		$("#works_arrow-down").on('click', _slideDown);
 		$("#works_arrow-up").on('click', _slideUp);				
 	};
 
-	var _slideReverse = function(nextUp, nextDown, activeUp, activeDown){
-		// debugger;
+	var _slideReverse = function(nextUp, nextDown, activeUp, activeDown){		
 		//крутим левый слайд вниз
 		activeDown.animate({
 				'top' : '100%'
@@ -83,12 +73,11 @@ var sliderModule = (function(){
 			activeItemDown = container.find('.slider_item-down.active');
 
 			if (counter === itemsDown.length-1){
-			counter = 0;
-			// _slideReverse(nextItemUp, nextItemDown, activeItemUp, activeItemDown);
-		}
+			counter = 0;			
+			}
 		var	nextItemDown = itemsDown.eq(counter+1),
 			prevItemDown = itemsDown.eq(counter-1),
-		//слайдер под стрелкой справа
+		//слайдер под стрелкой вверх
 			itemsUp = container.find('.slider_item-up'),
 			activeItemUp = container.find('.slider_item-up.active'),	
 			nextItemUp = itemsUp.eq(counter-1),
@@ -110,12 +99,7 @@ var sliderModule = (function(){
 				}
 			}else{
 					nextItemTop = itemsTop.eq(0);
-				}
-
-			
-			console.log(nextItemTop);
-		
-				
+				}				
 				
 			
 		_slideReverse(nextItemUp, nextItemDown, activeItemUp, activeItemDown);			
@@ -186,16 +170,11 @@ var sliderModule = (function(){
 			var title = workJson[i].description;			
 			el.text(title);
 		
-		counter--;
-		// return activeItemTop;
-	}
-
-
-	
+		counter--;		
+	}	
 
 		// создание активного класса
 	function setActiveClass(el) {
-
     el.addClass('active');
 	}
 
@@ -221,7 +200,7 @@ var sliderModule = (function(){
 		//разметка слайдера под кнопкой вниз
 	var _createSliderDown = function(jsondata){
 		for(i = 0; i < jsondata.length; i++){
-			console.log(jsondata.length);
+			//console.log(jsondata.length);
 		var liItem = $("<li/>",{
 		class: 'slider_item-down'		
 		});	
@@ -249,23 +228,12 @@ var sliderModule = (function(){
 		);
 		$('#slider_preview-up').append(liItem);	
 			}		
-		var firstItem = $('.slider_item-up').eq(counter),
-			secondItem = firstItem.next();
+		var secondItem = $('.slider_item-up').eq(counter + 1);
+		// var firstItem = $('.slider_item-up').eq(counter),
+			// secondItem = firstItem.next();
+			
 		setActiveClass(secondItem);
-		};
-		//вывод фото в верхний слайдер, названия, ссылки и списка скилов
-		// var _dataOutput = function(jsondata){
-		// 	//вывод названия слайда (заголовок слева)
-		// 	var i = activeItemTop.index();
-		// 	console.log(i);
-		// 	var el = $('#a-i-d_title');						
-		// 	var title = jsondata[i].description;			
-		// 	el.text(title);
-			//вывод слайда верхнего слайдера
-
-		// };
-
-	
+		};	
 
 	return{
 		init: initSlider

@@ -35,18 +35,6 @@ flipover.auth();
 flipover.backToWelcome();
 flipover.slowAppear();
 
-//modal menu animation
-// $(window).on('load', function(){
-// 	var modalMenuList = $('.modal_nav_list'),
-// 		modalMenuItem = modalMenuList.find('.modal_nav_item');
-// 	console.log(modalMenuitem.length);
-// 	for (var i = 0; i<modalMenuList.length; i++){
-// 		console.log(modalMenuItem[i]);
-// 		setTimeout(function(){
-// 			modalMenuItem[i].addClass('bounceInDown');
-// 		},300);
-// 	}
-// });
 
 //login checkbox
 $('.fa-check-login').on('click', function(){
@@ -101,8 +89,8 @@ var modalWin = (function(){
 	}
 }());
 
-modalWin.open();
-modalWin.close();
+//modalWin.open();
+//modalWin.close();
 
 //end modal window
 
@@ -178,92 +166,7 @@ var preloader = (function(){
 preloader.load();
 // preloader.GetImgArray();
 preloader.newAttempt();
-// preloader.setPercents();
-// preloader.percentageOutput();
 
-//preloader
-
-// percentage counter
-
-
-// $(document).ready(function () {
-// 	$(function () {
-// 		var imgs = [];
-// 		$.each($('*'), function () {
-// 			var $this = $(this),
-// 				background = $this.css('background-image'),
-// 				img = $this.is('img');
-// 			if (background != 'none') {
-// 				var path = background.replace('url("', '').replace('")', '');
-// 				imgs.push(path);
-// 			}
-// 			if (img) {
-// 				var path = $this.attr('src');
-// 				if (path) {
-// 					imgs.push(path);
-// 				}
-// 			}
-// 		});
-
-// 		var percents = 1;
-
-// 		for (var i = 0; i < imgs.length; i++) {
-// 			var image = $('<img>', {
-// 				attr: {
-// 					src : imgs[i]
-// 				}
-// 			});
-
-// 			image.on("load", function () {
-// 				setPercents(imgs.length, percents);
-// 				percents++;
-// 			});
-// 		}
-
-// 		function setPercents(total, current) {
-// 			var percent = Math.ceil(current / total * 100);
-				
-// 			// if (percent >= 100) {
-// 				// console.log(percent);
-// 				$('.wrapper__welcome').css({display: "flex"});//добавил вывод предварительно 				
-// 				$('#preloader_text tspan').text(percent + '%');//скрытой индексной страницы
-// 			// }			
-// 		}
-// 	});
-// });
-
-// percentage counter
-
-//initMap
-// var map;
-// function initMap() {
-// 	var latLng = new google.maps.LatLng(44.58527143, 37.98389912);
-// 	var styles = {
-// 		      stylers: [
-// 		        { hue: "#07ac99" },
-// 		        { saturation: -20 }
-// 		      ]
-// 		    };
-  
-//   	map = new google.maps.Map(document.getElementById('google-map'), {
-//     center: {lat: 44.58527143, lng: 37.98389912},
-//     zoom: 12
-//   });
-
-//   	marker = new google.maps.Marker({
-// 	position: latLng,
-// 	map: map,
-// 	draggable: false
-// 	// animation: google.maps.Animation.DROP
-// 	});  
-// }
-// initMap();
-//modal window close
-// $('.modal_close').on('click', function(e){
-// 		e.preventDefault();
-// 		$('.modal_close').addClass('modal-closeRotate');
-// 		});
-// end modal window close
 
 //sticky menu blog
 $(window).scroll(function() {
@@ -303,11 +206,11 @@ $(document).ready(function(){
 	showSection(window.location.hash, false);
 });
 function showSection(section, isAnimate){
-	// debugger;
+	
 	var direction = section.replace(/#/, ''),
 		reqSection = $('.blog_content').filter('[data-section="'+direction+'"]'),
 		reqSectionPos = reqSection.offset().top;
-		// console.log(direction);
+		
 	if(isAnimate){
 		$('body, html').animate({scrollTop: reqSectionPos},500);
 	}else{
@@ -355,33 +258,25 @@ var blogMenu = (function(){
 }());
 // end blog menu
 
-// плагин для анимации статей при скролле
-// $('.blog_content').onScreen({
-//    container: window,
-//    direction: 'vertical',
-//    doIn: function() {
-//      $('.blog_content').fadeIn();
-//    },
-//    doOut: function() {
-//       $('.blog_content').fadeOut();
-//    },
-//    tolerance: 0,
-//    throttle: 50,
-//    toggleClass: 'onScreen',
-//    lazyAttr: null,
-//    lazyPlaceholder: 'app/img/ava.jpg',
-//    debug: false
-// });
+
 
 //анимация якорей
-$(document).ready(function(){
-	console.log('hi!!!');
-	$('.svg_works_arrow_up2').on('click', function(e){
+// $(document).ready(function(){
+// 	console.log('hi!!!');
+// 	$('.svg_works_arrow_up2').on('click', function(e){
 
-			e.preventDefault();
-			var anchor = $(this).attr('href'),
-				top = anchor.offset().top;
-			$('body, html').animate({scrollTop:top},500);
-			console.log($('.svg_works_arrow_up2'));
-			});
-});
+// 			e.preventDefault();
+// 			var anchor = $(this).attr('href'),
+// 				top = anchor.offset().top;
+// 			$('body, html').animate({scrollTop:top},500);
+// 			console.log($('.svg_works_arrow_up2'));
+// 			});
+// });
+ $('.svg_works_arrow_up2').on('click', function(e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href'),
+      element = $('#' + anchor),
+      top = element.offset().top;
+    $('body, html').animate({scrollTop: top}, 500);
+    console.log($('.svg_works_arrow_up2'));
+  });

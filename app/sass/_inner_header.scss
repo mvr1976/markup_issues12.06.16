@@ -62,7 +62,7 @@ body{
 	top:0;
 	left:0;
 }
-.hamburger-top.hamburger-topClose{
+.hamburger-topClose{
 	position:absolute;
 	top:16px;
 	left:0;
@@ -74,12 +74,16 @@ body{
 	top:15px;
 	left:0;
 }
+.hamburger-midClose{
+	display:none;
+	transition: .7s;
+}
 .hamburger-bottom{
 	position:absolute;
 	bottom:0;
 	left:0;
 }
-.hamburger-bottom.hamburger-bottomClose{
+.hamburger-bottomClose{
 	position:absolute;
 	bottom:14px;
 	left:0;

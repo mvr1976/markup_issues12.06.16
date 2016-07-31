@@ -1,5 +1,7 @@
 @media screen and (max-width: 1200px){}
-@media screen and (max-width: 992px){}
+@media screen and (max-width: 992px){
+
+}
 @media screen and (max-width: 768px){ 
 	.extent_left{    
     display: block;    
@@ -92,5 +94,8 @@
 		width:89%;
 		text-align: center;
 	}
+	
+}
+@media screen and (min-width: 320px) and (max-width: 479px){
 	
 }
