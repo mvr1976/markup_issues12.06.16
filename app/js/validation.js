@@ -25,6 +25,7 @@ var validation = (function(){
 			content:{
 				text: function(){
 					return $(this).attr('qtip-content');
+					// return $(this).attr('Вы не заполнили поле');
 				}
 				},
 			show: {

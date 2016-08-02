@@ -7,7 +7,8 @@
     "jquery": "2.1.4",
     "qtip2": "^2.2.1",
     "onScreen": "^1.1.3",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "validate": "validate.js#^0.10.0"
   },
   "resolutions": {
     "jquery": "2.1.4"

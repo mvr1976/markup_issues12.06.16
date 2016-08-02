@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
     <link rel="stylesheet" href="app/css/main.css">
-    <script src="bower_components/jquery/dist/jquery.min.js">       </script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/validate/validate.min.js">       </script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="app/js/main.js"></script>
+    <script src="app/js/validateForm.js"></script>
   </head>
   <body>
     <div class="wrapper_preloader">
@@ -25,51 +27,51 @@
         </text>
       </svg>
     </div>
-    <div class="wrapper__welcome">
+    <div class="wrapperWelcome">
       <div class="parallax">
-        <div class="parallax-bg"><img src="app/img/parallax-bg.jpg"></div>
+        <div class="parallax__bg"><img src="app/img/parallax-bg.jpg"></div>
       </div>
-      <button class="welcome_login">Авторизоваться</button>
-      <div class="avatar__vert__align__wrap flip_container">
+      <button class="wrapperWelcome__login">Авторизоваться</button>
+      <div class="avatar__vert__align__wrap flipContainer">
         <div class="flipper">
-          <div class="front">
+          <div class="flipper__front">
             <div class="avatar">
-              <div class="avatar__img__store"><img src="app/img/ava.jpg" class="ava__img"></div>
-              <h3 class="avatar_name">Максим Рудик</h3><span>Личный сайт веб-разработчика</span>
-              <ul class="welcome__social__list">                   
-                <li class="welcome__social__item"><a href="https://vk.com" target="blank" class="welcome__social__link">
-                    <svg width="30.011" height="17.123" viewbox="0 0 30.011 17.123" class="svg-socials--vk-dims svg_welcome_social vk">
+              <div class="avatar__imgStore"><img src="app/img/ava.jpg" class="avatar__img"></div>
+              <h3 class="avatar__name">Максим Рудик</h3><span>Личный сайт веб-разработчика</span>
+              <ul class="welcome__social--list">                   
+                <li class="welcome__social--item"><a href="https://vk.com" target="blank" class="welcome__social--link">
+                    <svg width="30.011" height="17.123" viewbox="0 0 30.011 17.123" class="svg-socials--vk-dims svg__welcome--social vk">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#vk"></use>
                     </svg></a></li>
-                <li class="welcome__social__item"><a href="https://github.com" target="blank" class="welcome__social__link">
-                    <svg width="26" height="22" viewbox="0 0 26 22" class="svg-socials--github-dims svg_welcome_social github">
+                <li class="welcome__social--item"><a href="https://github.com" target="blank" class="welcome__social--link">
+                    <svg width="26" height="22" viewbox="0 0 26 22" class="svg-socials--github-dims svg__welcome--social github">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#github">                   </use>
                     </svg></a></li>
-                <li class="welcome__social__item"><a href="https://linkedin.com" target="blank" class="welcome__social__link">
-                    <svg width="24" height="23" viewbox="0 0 24 23" class="svg-socials--in-dims svg_welcome_social linkedin">
+                <li class="welcome__social--item"><a href="https://linkedin.com" target="blank" class="welcome__social--link">
+                    <svg width="24" height="23" viewbox="0 0 24 23" class="svg-socials--in-dims svg__welcome--social linkedin">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="app/icons/sprites/sprite_social.svg#in">               </use>
                     </svg></a></li>
               </ul>
-              <ul class="welcome__nav__list">
-                <li class="welcome__nav__item"><a href="my_works.html" class="welcome__nav__link">Мои работы</a></li>
-                <li class="welcome__nav__item"><a href="about_me.html" class="welcome__nav__link">Обо мне</a></li>
-                <li class="welcome__nav__item"><a href="my_blog.html" class="welcome__nav__link">Блог</a></li>
+              <ul class="flipper__nav--list">
+                <li class="flipper__nav--item"><a href="my_works.html" class="flipper__nav--link">Мои работы</a></li>
+                <li class="flipper__nav--item"><a href="about_me.html" class="flipper__nav--link">Обо мне</a></li>
+                <li class="flipper__nav--item"><a href="my_blog.html" class="flipper__nav--link">Блог</a></li>
               </ul>
             </div>
           </div>
-          <div class="back">
-            <div class="log__in__welcome">
-              <div class="log__in__header">
+          <div class="flipper__back">
+            <div class="flipper-log-in">
+              <div class="flipper-log-in__header">
                 <h3>Авторизуйтесь</h3>
               </div>
-              <div class="form__group__log-in">
-                <label class="log-in__label"><i aria-hidden="true" class="fa fa-key login-key"></i>
-                  <input id="login" name="login" type="text" placeholder="Логин" class="log-input login_input_text">
+              <div class="form-group__log-in">
+                <label class="form-group__label"><i aria-hidden="true" class="fa fa-key login-key"></i>
+                  <input id="login" name="login" type="text" placeholder="Логин" class="log-input login-input--text">
                 </label>
               </div>
-              <div class="form__group__log-in">
-                <label class="log-in__label"></label><i aria-hidden="true" class="fa fa-user login-user"></i>
-                <input id="password" name="password" type="text" placeholder="Пароль" class="log-input login_input_text">
+              <div class="form-group__log-in">
+                <label class="form-group__label"></label><i aria-hidden="true" class="fa fa-user login-user"></i>
+                <input id="password" name="password" type="text" placeholder="Пароль" class="log-input login-input--text">
               </div>
               <div class="capcha">
                 <div class="checkbox">
@@ -87,16 +89,16 @@
                   <input type="radio" checked="checked" name="yes">
                 </label>
               </div>
-              <ul class="login_nav_list">
-                <li class="login_nav_item"><a href="#" alt="#" class="login_nav_link">На главную</a></li>
-                <li class="login_nav_item"><a href="#" alt="#" class="login_nav_link">Войти                    </a></li>
+              <ul class="login-nav-list">
+                <li class="login-nav__item"><a href="#" alt="#" class="login-nav__link">На главную</a></li>
+                <li class="login-nav_item"><a href="#" alt="#" class="login-nav__link">Войти                    </a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer_welcome">&copy Максим Рудик | создано с любовью в Loftschool | 2016</footer>
+    <footer class="footerWelcome">&copy Максим Рудик | создано с любовью в Loftschool | 2016</footer>
     <div class="modal_window">
       <div class="modal_nav">
         <ul class="modal_nav_list">

@@ -15,20 +15,7 @@ $dash-left-4: 25px;
 $dash-right-4: 25px;
 $top-4: 38px;
 
-// .parallax-bg{
-// 	position:absolute;
-// 	top: 0;
-// 	right:0;
-// 	left: 0;
-// 	// bottom:0;
-// 	width: 2000px;
-// 	height: 1329px;
 
-// 	& img{
-// 		display:block;
-// 		max-width: 100%;
-// 	}
-// }
 .works_background_container{
 	position: relative;
 	overflow: hidden;
@@ -134,6 +121,7 @@ $top-4: 38px;
 	opacity:0;
 	&.active{
 		opacity:1;
+		transition: all 1s;
 	}
 }
 .slider_item-down{
@@ -165,23 +153,10 @@ $top-4: 38px;
 	float: left;
 	display:flex;
 	justify-content: space-around;
-	align-items: center;
-	// background-color: rgba(0,0,0,.2);
+	align-items: center;	
 	& img{
 		max-width: 100%;
-	}
-	// &:before{
-	// 	display: block;
-	// 	height: 100%;
-	// 	width:50%;
-	// 	content:"";
-	// 	position:absolute;
-	// 	top:0;
-	// 	left:0;
-	// 	background: transparent; 
-	// 	background-color: rgba(0,0,0,.2);
-	// 	// z-index:5;
-	// }
+	}	
 	&:after{
 		display: block;
 		height: 100%;
@@ -191,13 +166,11 @@ $top-4: 38px;
 		top:0;
 		right:0;
 		background: transparent; 
-		background-color: rgba(0,0,0,.3);
-		// z-index:5;
+		background-color: rgba(0,0,0,.3);		
 	}
 }
 
-.slider__display {
-  // float: left;
+.slider__display { 
   @include clearfix();
   overflow: hidden;
   width: 240px;
@@ -212,28 +185,12 @@ $top-4: 38px;
 	box-sizing: border-box;
 
 }
-// .slider_item {  
-//   position: absolute;
-//   top: -100%;
-//   left: 0;
-//   right:0;
-//   bottom:0;
-//   max-width: 100%;
-//   // height: 100%; 
-//   & .active{
-//   	top: 0%;
-//   }
-// }
-
- 
  
 .svg_works_arrow_down {
 	position: absolute;
 	fill:rgba(255,255,255,.7);
 	top: 43%;
-	left: 38%;
-	// right:0;
-	// bottom:0;
+	left: 38%;	
 	cursor:pointer;
 	z-index:1;
 	&:hover{
@@ -262,7 +219,6 @@ $top-4: 38px;
 	left:-100px;
 	opacity: .1;
 }
-//section about me inner
 .people__feedback{
 	width:100%;
 	max-width: 1800px;
@@ -296,7 +252,6 @@ $top-4: 38px;
 .feedback_list{
 	display:flex;
 	justify-content:space-between;
-
 	margin: 0 auto;
 	width:72%;
 	
@@ -352,11 +307,13 @@ $top-4: 38px;
   		background: rgba(255,255,255,.5);
 		-webkit-filter: blur(1px);  
   		filter: blur(1px);
+  		// z-index: 0;
   	}
 	
 }
 .feedback_form_input,.feedback__form_textarea{
 	display:block;
+	position: relative;
 	width:80%;
 	outline: none;
 	padding: 15px;
@@ -364,7 +321,8 @@ $top-4: 38px;
 	border-radius:5px;
 	border-width:0;
 	border-style:none;
-	border-color:none;
+	border-color:none; 
+	z-index: 10;
 
 }
 .feedback__form_textarea{

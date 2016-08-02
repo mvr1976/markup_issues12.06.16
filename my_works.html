@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
     <link rel="stylesheet" href="app/css/main.css">
-    <script src="bower_components/jquery/dist/jquery.min.js">       </script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/validate/validate.min.js">       </script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="app/js/main.js"></script>
+    <script src="app/js/validateForm.js"></script>
   </head>
   <body>
     <div class="wrapper_preloader">
@@ -45,7 +47,7 @@
           <div class="hamburger">
             <div class="hamburger-top"></div>
             <div class="hamburger-mid"></div>
-            <div class="hamburger-bottom"></div>
+            <div class="hamburger-bottom">                   </div>
           </div>
           <div class="portfolio_bg">
             <svg width="1175.495px" height="313.961px" viewBox="0 0 1175.495 313.961" enable-background="new 0 0 1175.495 313.961" class="svg-portfolio_header-dims svg_portfolio_bg">
@@ -139,9 +141,9 @@
         </div>
         <form id="feedback_form" class="feedback__form">
           <label class="feedback_form_label">Связаться со мной</label>
-          <input name="name" placeholder="имя" class="feedback_form_input">
-          <input name="email" placeholder="Email" class="feedback_form_input">
-          <textarea name="text" rows="3" placeholder="Ваше сообщение" class="feedback__form_textarea"></textarea>
+          <input type="text" name="name" placeholder="Имя" qtip-content="Впишите имя" class="feedback_form_input">
+          <input type="text" name="email" placeholder="Email" qtip-content="Укажите емейл " class="feedback_form_input">
+          <textarea name="text" rows="3" placeholder="Ваше сообщение" qtip-content="Вы что-то сказали?" class="feedback__form_textarea"></textarea>
           <div class="buttons_list">
             <button type="submit" class="button_item button__submit">Отправить</button>
             <button type="reset" class="button_item button__reset">Очистить</button>
@@ -202,9 +204,9 @@
       <div class="modal_close modal_close-blog"> </div>
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/qtip2/jquery.qtip.js"></script>
+    <script src="bower_components/qtip2/jquery.qtip.js">   </script>
     <script src="app/js/main.js"></script>
-    <script src="app/js/slider_module.js" defer></script>
+    <script src="app/js/sliderNext.js" defer></script>
     <script src="app/js/validation.js" defer></script>
     <script src="app/js/contactMe.js" defer></script>
     <script src="app/js/my_parallax.js" defer></script>
