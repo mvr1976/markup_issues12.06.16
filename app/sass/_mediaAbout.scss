@@ -49,6 +49,15 @@
 		// display:flex;
 		// justify-content: center;
 	}
+	.footer__navy__list {
+    width: 85%;   
+	}
+	.footer__socials {   
+    width: 47%;   
+	}
+	.inner_footer {    
+    margin-top: 0px;
+	}
 }
 @media screen and (max-width: 480px){
 	.extent_left{    
@@ -95,7 +104,28 @@
 		text-align: center;
 	}
 	
+	
 }
 @media screen and (min-width: 320px) and (max-width: 479px){
-	
+	.common_circle {
+    
+    stroke-width: 7px;
+	}
+	.frontend_item, .backend_item, .workflow_item {
+    display: inline-block;
+    margin: 0;
+	}
+	.aboutContacts {    
+    top:0;
+    left: 5px;
+    width: 292px;
+    height: 342px;    
+    font-size: 1.5em;    
+	}
+	.down__footer {
+    display: none;    
+	}
+	.inner_footer {    
+    margin-top: -300px;
+	}
 }

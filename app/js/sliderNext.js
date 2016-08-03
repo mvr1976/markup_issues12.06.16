@@ -47,10 +47,10 @@ var sliderModule = (function(){
 		//крутим левый слайд вниз
 		activeDown.animate({
 				'top' : '100%'
-			}, 300);
+			}, 500);
 		nextDown.animate({
 				'top' : '0%'
-			}, 300, function () {
+			}, 500, function () {
 				activeDown.removeClass('active');
 				activeDown.css('top', '-100%');
 				nextDown.addClass('active');
@@ -59,10 +59,10 @@ var sliderModule = (function(){
 		//крутим правый слайд вверх
 		activeUp.animate({
 				'top' : '-100%'
-			}, 300);
+			}, 500);
 		nextUp.animate({
 				'top' : '0%'
-			}, 300, function () {
+			}, 500, function () {
 				activeUp.removeClass('active').css('top', '100%');
 				nextUp.addClass('active');
 			});
@@ -72,10 +72,10 @@ var sliderModule = (function(){
 		//крутим левый слайд ddtpx
 		activeDown.animate({
 				'top' : '-100%'
-			}, 300);
+			}, 500);
 		prevDown.animate({
 				'top' : '0%'
-			}, 300, function () {
+			}, 500, function () {
 				activeDown.removeClass('active').css('top', '100%');
 				prevDown.addClass('active');
 			});
@@ -83,10 +83,10 @@ var sliderModule = (function(){
 		//крутим правый слайд dybp
 		activeUp.animate({
 				'top' : '100%'
-			}, 300);
+			}, 500);
 		prevUp.animate({
 				'top' : '0%'
-			}, 300, function () {
+			}, 500, function () {
 				activeUp.removeClass('active').css('top', '-100%');
 				prevUp.addClass('active');
 			});

@@ -280,3 +280,11 @@ var blogMenu = (function(){
     $('body, html').animate({scrollTop: top}, 500);
     console.log($('.svg_works_arrow_up2'));
   });
+ $('.svg_inner_header_arrow').on('click', function(e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href'),
+      element = $('#' + anchor),
+      top = element.offset().top;
+    $('body, html').animate({scrollTop: top}, 500);
+    console.log($('.svg_works_arrow_up2'));
+  });

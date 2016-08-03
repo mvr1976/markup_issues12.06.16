@@ -2,18 +2,26 @@
 @import "_fonts.scss";
 $trian_color:#faf8f0;
 $dash: #c5cbcd;
+
 $dash-left: 385px;
 $dash-right: 385px;
 $top: 72px;
-$dash-left-1: 36px;
-$dash-right-1: 36px;
-$top-1: 18px;
+
+$dash-left-1: 0;
+$dash-right-1: 0;
+$top-1: 15px;
+
 $dash-left-3: -27px;
 $dash-right-3: -27px;
 $top-3: 17px;
-$dash-left-4: 25px;
-$dash-right-4: 25px;
-$top-4: 38px;
+
+$dash-left-4: 39px;
+$dash-right-4: 23px;
+$top-4: 39px;
+
+$dash-left-10: 25px;
+$dash-right-10: 25px;
+$top-10: 15px;
 
 
 .works_background_container{
@@ -54,7 +62,7 @@ $top-4: 38px;
 	margin-top: 23vh;
 	text-align: center;
 	text-transform: uppercase;
-	@include titles-dashes($dash-left-1, $dash-right-1, $top-1)
+	// @include titles-dashes($dash-left-1, $dash-right-1, $top-1)
 }
 
 
@@ -64,6 +72,7 @@ $top-4: 38px;
 	font-size: 1.8em;
 	margin-bottom: 30px;
 	color: #455a64;
+	
 }
 .a-i-d_text{
 	color:$welcome_nav;

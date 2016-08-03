@@ -3,7 +3,7 @@
 	// width: 1400px;}
 
 	.arrow__down{
-	margin-top: 11%;
+	margin-top: 3%;
 	}
 }
 @media screen and (max-width: 992px){
@@ -11,7 +11,7 @@
 	// width: 1100px;}
 
 	.arrow__down{
-	margin-top: 11%;
+	margin-top: 5%;
 	}
 	.title__inner__text {   
     font-size: 50px;    
@@ -35,7 +35,7 @@
 		right: 0;
 	}
 	.arrow__down{
-	margin-top: 11%;
+	margin-top: 6%;
 	}	
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -235,7 +235,7 @@
     bottom: 36px;
 	}
 	.arrow__down{
-	margin-top: 23%;
+	margin-top: 12%;
 	}
 	.title__inner__text {   
     font-size: 34px;    
@@ -366,5 +366,10 @@
 	}
 	.feedback_form_label {    
     font-size: 26px;    
+	}
+	.modal_nav_link {
+    
+    font-size: 3em;
+   
 	}
 }
