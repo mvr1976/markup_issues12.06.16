@@ -69,12 +69,23 @@ body{
 	transform: rotate(-45deg);
 	transition: all .3s;
 }
+.hamburger-topClose.hamburger-topClose--blog{
+	position:absolute;
+	top:8px;
+	left:0;
+	transform: rotate(-45deg);
+	transition: all .3s;
+}
 .hamburger-mid{
 	position:absolute;
 	top:15px;
 	left:0;
 }
 .hamburger-midClose{
+	display:none;
+	transition: .7s;
+}
+.hamburger-midClose--blog{
 	display:none;
 	transition: .7s;
 }
@@ -86,6 +97,13 @@ body{
 .hamburger-bottomClose{
 	position:absolute;
 	bottom:14px;
+	left:0;
+	transform: rotate(45deg);
+	transition: all .3s;
+}
+.hamburger-bottomClose.hamburger-bottomClose--blog{
+	position:absolute;
+	bottom:22px;
 	left:0;
 	transform: rotate(45deg);
 	transition: all .3s;
@@ -119,7 +137,7 @@ body{
 }
 .arrow__down{
 	margin-top: 2%;
-	
+
 	// cursor:pointer;
 	// &:hover{
 	// 	transform: translateY(10px);

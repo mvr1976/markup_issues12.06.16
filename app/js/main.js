@@ -210,6 +210,7 @@ function showSection(section, isAnimate){
 	var direction = section.replace(/#/, ''),
 		reqSection = $('.blog_content').filter('[data-section="'+direction+'"]'),
 		reqSectionPos = reqSection.offset().top;
+		console.log(reqSectionPos);
 		
 	if(isAnimate){
 		$('body, html').animate({scrollTop: reqSectionPos},500);

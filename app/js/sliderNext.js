@@ -37,59 +37,93 @@ var sliderModule = (function(){
 
 	var _setUpListeners = function(){
 		$("#works_arrow-down").on('click', _slideDown);
-		$("#works_arrow-up").on('click', _slideUp);				
+		
+		$("#works_arrow-up").on('click', _slideUp);
+
+
 	};
 	// создание активного класса
 		function setActiveClass(el) {
 	    el.addClass('active');
 		}
-	var _slideReverseDown = function(nextUp, nextDown, activeUp, activeDown){		
-		//крутим левый слайд вниз
-		activeDown.animate({
-				'top' : '100%'
-			}, 500);
-		nextDown.animate({
-				'top' : '0%'
-			}, 500, function () {
-				activeDown.removeClass('active');
-				activeDown.css('top', '-100%');
-				nextDown.addClass('active');
-			});
+	var _slideReverseDown = function(nextUp, nextDown, activeUp, activeDown, active1, active2){
+		$('.slider_item-down').each(function(index, elem){
+			// console.log(elem);
+			$(elem).css("top", "-100%");			
+			// $(elem).animate({"top": "100%"},500);			
+		});	
+		// active1.css("top", "0");	
+		active1.animate({"top": 0},500);
 
-		//крутим правый слайд вверх
-		activeUp.animate({
-				'top' : '-100%'
-			}, 500);
-		nextUp.animate({
-				'top' : '0%'
-			}, 500, function () {
-				activeUp.removeClass('active').css('top', '100%');
-				nextUp.addClass('active');
-			});
+		// $('.slider_item-up').each(function(index, elem){
+		// 	// console.log(elem);
+		// 	$(elem).css("top", "100%");			
+		// });	
+		// active2.animate({"top": 0},500);	
+		//крутим левый слайд вниз
+	// 	activeDown.animate({
+	// 			'top' : '100%'
+	// 		}, 500);
+	// 	console.log(active1);
+	// 	// nextDown.animate({
+	// 	// 		'top' : '0%'
+	// 	// 	}, 500
+	// 	// 	//  function () {
+	// 	// 	// 	activeDown.removeClass('active');
+	// 	// 	// 	activeDown.css('top', '-100%');
+	// 	// 	// 	nextDown.addClass('active');
+	// 	// 	// }
+	// 	// 	);
+
+	// 	//крутим правый слайд вверх
+	// 	activeUp.animate({
+	// 			'top' : '-100%'
+	// 		}, 500);
+	// 	nextUp.animate({
+	// 			'top' : '0%'
+	// 		}, 500
+	// 		// , function () {
+	// 		// 	activeUp.removeClass('active').css('top', '100%');
+	// 		// 	nextUp.addClass('active');
+	// 		// }
+			// );
 	};
 
-	var _slideReverseUp = function(prevUp, prevDown, activeUp, activeDown){		
-		//крутим левый слайд ddtpx
-		activeDown.animate({
-				'top' : '-100%'
-			}, 500);
-		prevDown.animate({
-				'top' : '0%'
-			}, 500, function () {
-				activeDown.removeClass('active').css('top', '100%');
-				prevDown.addClass('active');
-			});
+	var _slideReverseUp = function(prevUp, prevDown, activeUp, activeDown,active1, active2){
+		$('.slider_item-up').each(function(index, elem){
+			// console.log(elem);
+			$(elem).css("top", "100%");			
+		});	
+		active2.animate({"top": 0},500);
 
-		//крутим правый слайд dybp
-		activeUp.animate({
-				'top' : '100%'
-			}, 500);
-		prevUp.animate({
-				'top' : '0%'
-			}, 500, function () {
-				activeUp.removeClass('active').css('top', '-100%');
-				prevUp.addClass('active');
-			});
+		// $('.slider_item-down').each(function(index, elem){
+		// 	// console.log(elem);
+		// 	$(elem).css("top", "-100%");			
+		// 	// $(elem).animate({"top": "100%"},500);			
+		// });	
+		// active1.css("top", "0");	
+		// active1.animate({"top": 0},500);		
+		//крутим левый слайд ddtpx
+	// 	activeDown.animate({
+	// 			'top' : '-100%'
+	// 		}, 500);
+	// 	prevDown.animate({
+	// 			'top' : '0%'
+	// 		}, 500, function () {
+	// 			activeDown.removeClass('active').css('top', '100%');
+	// 			prevDown.addClass('active');
+	// 		});
+
+	// 	//крутим правый слайд dybp
+	// 	activeUp.animate({
+	// 			'top' : '100%'
+	// 		}, 500);
+	// 	prevUp.animate({
+	// 			'top' : '0%'
+	// 		}, 500, function () {
+	// 			activeUp.removeClass('active').css('top', '-100%');
+	// 			prevUp.addClass('active');
+	// 		});
 	};
 	//по клику вниз
 	var _slideDown = function(){
@@ -127,27 +161,35 @@ var sliderModule = (function(){
 		//закольцовка слайдера под стрелкой вниз
 		var downIndex = activeItemDown.index();
 		// console.log(itemsDown.first());
+		// console.log(downIndex);
 		if(downIndex === itemsDown.length-1){
-			itemsDown.first().addClass('active');
-			
+			itemsDown.first().addClass('active');			
 			activeItemDown.removeClass('active');
+			var active1 = itemsDown.first();
 		}else{
+
 			nextItemDown.addClass('active');
 			activeItemDown.removeClass('active');
+			var active1 = nextItemDown; 
 		}
 
 		//закольцовка слайдера под стрелкой вверх
-		var upIndex = activeItemUp.index();
+		var upIndex = activeItemUp.index(),
+			circleIndex = itemsUp.length-1;
 		if(upIndex === itemsUp.length-1){
 			itemsUp.first().addClass('active');
 			activeItemUp.removeClass('active');
+			var active2 = itemsUp.first();
+			// console.log(active2);
 		}else{
 			nextItemUp.addClass('active');
 			activeItemUp.removeClass('active');
+			var active2 = nextItemUp;
 		}
 
 		//реверс слайдов в нижних слайдерах
-		_slideReverseDown(nextItemUp, nextItemDown, activeItemUp, activeItemDown);
+		_slideReverseDown(nextItemUp, nextItemDown, activeItemUp, activeItemDown, active1, active2);
+		
 		//вывод заголовка и передача значения в href
 			var i = activeItemTop.index();
 			// console.log(i);
@@ -183,7 +225,7 @@ var sliderModule = (function(){
 		//закольцовка верхнего слайдера
 		var activeIndex = activeItemTop.index(),
 			circleIndex = itemsTop.length-1;
-		// console.log(itemsTop.eq(circleIndex));
+		// console.log(circleIndex);
 		if(activeIndex === 0){
 			itemsTop.eq(circleIndex).addClass('active');
 			activeItemTop.removeClass('active');
@@ -194,13 +236,16 @@ var sliderModule = (function(){
 		
 		//закольцовка слайдера под стрелкой вниз
 		var downIndex = activeItemDown.index();
-		console.log(itemsDown.eq(circleIndex));
+		// console.log(itemsDown.eq(circleIndex));
 		if(downIndex === 0){
 			itemsDown.eq(circleIndex).addClass('active');
 			activeItemDown.removeClass('active');
+			var active1 = itemsDown.eq(circleIndex);
+			// console.log(active1);
 		}else{
 			prevItemDown.addClass('active');
 			activeItemDown.removeClass('active');
+			var active1 = prevItemDown;
 		}
 
 		//закольцовка слайдера под стрелкой вверх
@@ -208,13 +253,18 @@ var sliderModule = (function(){
 		if(upIndex === 0){
 			itemsUp.eq(circleIndex).addClass('active');
 			activeItemUp.removeClass('active');
+			var active2 = itemsUp.eq(circleIndex);
+			// console.log(active2);
 		}else{
 			prevItemUp.addClass('active');
 			activeItemUp.removeClass('active');
+			var active2 = prevItemUp;
 		}
 
 		//реверс слайдов в нижних слайдерах
-		_slideReverseUp(prevItemUp, prevItemDown, activeItemUp, activeItemDown);
+		_slideReverseUp(prevItemUp, prevItemDown, activeItemUp, activeItemDown,active1, active2);
+		console.log(active1.index());
+		console.log(active2.index());
 		//вывод заголовка и передача значения в href
 			var i = activeItemTop.index();
 			// console.log(i);
