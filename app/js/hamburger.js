@@ -6,13 +6,18 @@ var modalWin = (function(){
 			});
 		$('.hamburger.hamburger_blog').on('click', function(){
 			console.log('hi!');
-			greenCurtains();
+			greenCurtainsBlog();
 			hamburgerCrossBlog();	
 			});
 	};
 	var greenCurtains = function(){
 		$('.overlay_right').toggleClass('overlay_right-close');
 		$('.overlay').toggleClass('overlay-close');
+	};
+
+	var greenCurtainsBlog = function(){
+		$('.overlay_right').toggleClass('overlay_right-close');
+		$('.blog_overlay').toggleClass('overlay-close');
 	};
 	var hamburgerCross = function(){
 		$('.modal_nav').toggleClass('modal_nav-close');
@@ -22,9 +27,9 @@ var modalWin = (function(){
 	}
 	var hamburgerCrossBlog = function(){
 		$('.modal_nav').toggleClass('modal_nav-close');
-		$('.hamburger-mid').toggleClass('hamburger-midClose--blog');
-		$('.hamburger-top').toggleClass('hamburger-topClose--blog');
-		$('.hamburger-bottom').toggleClass('hamburger-bottomClose--blog');
+		$('.hamburger-mid--blog').toggleClass('hamburger-midClose--blog');
+		$('.hamburger-top--blog').toggleClass('hamburger-topClose--blog');
+		$('.hamburger-bottom--blog').toggleClass('hamburger-bottomClose--blog');
 	}
 	return{
 		init: initMe

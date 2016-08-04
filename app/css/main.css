@@ -662,7 +662,9 @@ body {
   position: relative;
   background-color: #07ac99;
   padding: 10px 18px 10px 50px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px; }
 
 .a-i-d_link {
   color: #fff;
@@ -671,7 +673,7 @@ body {
 .svg_works_link {
   position: absolute;
   left: -40px;
-  top: 12px; }
+  top: 10px; }
 
 .slider_top {
   width: 50%;
@@ -1716,6 +1718,12 @@ body {
     display: table; }
   .blog_container:after {
     clear: both; }
+
+.blog_article h2 {
+  font-family: 'bernier-regular'; }
+
+.blog_article span {
+  color: #07ac99; }
 
 .blog_header {
   height: 200px; }

@@ -86,6 +86,8 @@ $top-10: 15px;
 	background-color: $welcome_nav;	
 	padding: 10px 18px 10px 50px;
 	border-radius: 5px;
+	border: 0;
+	font-size: 16px;
 }
 .a-i-d_link{
 	color: #fff;
@@ -94,7 +96,7 @@ $top-10: 15px;
 .svg_works_link{
 	position: absolute;
 	left: -40px;
-	top: 12px;
+	top: 10px;
 }
 // .work__items__slider{	
 // 	position: relative;	

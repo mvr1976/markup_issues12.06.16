@@ -127,6 +127,15 @@ body{
 	// height: 1500px;
 	color:#77868d;
 }
+.blog_article {
+	& h2{
+		font-family: 'bernier-regular';
+	}
+	& span{
+		color: $welcome_nav;
+	}
+	
+}
 .blog_header {
 	height: 200px;
 }
