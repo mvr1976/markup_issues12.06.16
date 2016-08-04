@@ -53,13 +53,14 @@ var sliderModule = (function(){
 			// $(elem).animate({"top": "100%"},500);			
 		});	
 		// active1.css("top", "0");	
-		active1.animate({"top": 0},500);
+		
 
-		// $('.slider_item-up').each(function(index, elem){
-		// 	// console.log(elem);
-		// 	$(elem).css("top", "100%");			
-		// });	
-		// active2.animate({"top": 0},500);	
+		$('.slider_item-up').each(function(index, elem){
+			// console.log(elem);
+			$(elem).css("top", "100%");			
+		});	
+		active2.animate({"top": 0},500);
+		active1.animate({"top": 0},500);	
 		//крутим левый слайд вниз
 	// 	activeDown.animate({
 	// 			'top' : '100%'
@@ -94,14 +95,15 @@ var sliderModule = (function(){
 			// console.log(elem);
 			$(elem).css("top", "100%");			
 		});	
-		active2.animate({"top": 0},500);
+		
 
-		// $('.slider_item-down').each(function(index, elem){
-		// 	// console.log(elem);
-		// 	$(elem).css("top", "-100%");			
-		// 	// $(elem).animate({"top": "100%"},500);			
-		// });	
-		// active1.css("top", "0");	
+		$('.slider_item-down').each(function(index, elem){
+			// console.log(elem);
+			$(elem).css("top", "-100%");			
+			// $(elem).animate({"top": "100%"},500);			
+		});	
+		active1.animate({"top": 0},500);
+		active2.animate({"top": 0},500);	
 		// active1.animate({"top": 0},500);		
 		//крутим левый слайд ddtpx
 	// 	activeDown.animate({
