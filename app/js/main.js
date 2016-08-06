@@ -200,17 +200,21 @@ $(document).ready(function(){
 	$('.blog_menu__link').on('click', function(e){
 		e.preventDefault();
 		var $this = $(this);
-		console.log($this);
+		// console.log('hi!');
 		showSection($(this).attr('href'),true);		
 	});
 	showSection(window.location.hash, false);
 });
 function showSection(section, isAnimate){
-	
-	var direction = section.replace(/#/, ''),
+	if(window.location.hash){
+		var direction = section.replace(/#/, ''),
 		reqSection = $('.blog_content').filter('[data-section="'+direction+'"]'),
 		reqSectionPos = reqSection.offset().top;
 		console.log(reqSectionPos);
+	}else{
+		return false
+	}
+	
 		
 	if(isAnimate){
 		$('body, html').animate({scrollTop: reqSectionPos},500);

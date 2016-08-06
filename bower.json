@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "dependencies": {
-    "normalize-css": "^4.1.1",
+    "normalize-css": "^4.2.0",
     "font-awesome": "fontawesome#^4.6.3",
     "bPopup": "bpopup#^0.11.0",
     "jquery": "2.1.4",

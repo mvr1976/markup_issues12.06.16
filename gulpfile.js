@@ -97,11 +97,14 @@
 var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	sass = require('gulp-sass'),
+	concat = require('gulp-concat'),
+	concatCss = require('gulp-concat-css'),
 	svgSprite = require('gulp-svg-sprite'),
 	browserSync = require('browser-sync').create();
 
 var src_sass = 'app/sass/**/*.scss',
-	src_jade = 'app/jade/*.jade',
+	src_jade = '[app/jade/about_me.jade,app/jade/index.jade,app/jade/my_blog.jade,app/jade/my_works.jade]',
+	// src_jade = 'app/jade/*.jade',
 	src_js = 'app/js/*.js',
 	dest_sass = 'app/css',
 	dest_jade = './';
@@ -123,6 +126,18 @@ gulp.task('js', function(){
   	return gulp.src(src_js)
 
   // .pipe(reload({stream:true}));
+});
+
+gulp.task('concat', function() {
+  return gulp.src('app/js/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('app/js/'));
+});
+
+gulp.task('concat-css', function () {
+  return gulp.src('assets/**/*.css')
+    .pipe(concatCss("styles/bundle.css"))
+    .pipe(gulp.dest('out/'));
 });
 
 gulp.task('svgSprite', function(){

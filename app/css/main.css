@@ -1720,10 +1720,16 @@ body {
     clear: both; }
 
 .blog_article h2 {
-  font-family: 'bernier-regular'; }
+  font-family: 'bernier-regular';
+  font-size: 2.1em; }
 
 .blog_article span {
   color: #07ac99; }
+
+.blog_article p {
+  font-size: 16px;
+  font-family: 'roboto-regular';
+  color: #53666D; }
 
 .blog_header {
   height: 200px; }
@@ -1763,7 +1769,6 @@ body {
   padding: 10px;
   display: block;
   text-align: right;
-  text-transform: uppercase;
   text-decoration: none;
   color: #77868d; }
 

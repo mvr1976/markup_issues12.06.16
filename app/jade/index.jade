@@ -3,14 +3,14 @@ block content
     div.wrapperWelcome
         div.parallax
             div.parallax__bg
-                img(src="app/img/parallax-bg.jpg")        
+                img(src="app/img/parallax-bg.jpg" alt="parallax")        
         button.wrapperWelcome__login Авторизоваться
         div.avatar__vert__align__wrap.flipContainer
             div.flipper
                 div.flipper__front
                     div.avatar
                         div.avatar__imgStore
-                            img.avatar__img(src="app/img/ava.jpg")                    
+                            img.avatar__img(src="app/img/ava.jpg" alt="ava")                    
                         h3.avatar__name Максим Рудик
                         span Личный сайт веб-разработчика
                         ul.welcome__social--list                    
@@ -64,7 +64,7 @@ block content
                                 a.login-nav__link(href="#" alt="#") На главную
                             li.login-nav_item
                                 a.login-nav__link(href="#" alt="#") Войти                    
-    footer.footerWelcome &copy Максим Рудик | создано с любовью в Loftschool | 2016
+    footer.footerWelcome &copy; Максим Рудик | создано с любовью в Loftschool | 2016
     div.modal_window
         div.modal_nav
             ul.modal_nav_list
@@ -79,5 +79,6 @@ block content
         div.overlay
         div.modal_close
     script(src="bower_components/jquery/dist/jquery.min.js")
-    script(src="app/js/main.js")
-    script(src="app/js/my_parallax.js" defer)
+    //- script(src="app/js/main.js")
+    //- script(src="app/js/my_parallax.js" defer)
+    script(src="app/js/all.js")
